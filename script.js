@@ -1,6 +1,6 @@
 const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-const enhance = (id) => {
+const enhance = id => {
 //   alert("Hello");
   const element = document.getElementById(id),
     text = element.innerText.split("");

@@ -15,6 +15,13 @@ button {
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    display: inline;
+}
+
+.hero_nav {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 @keyframes float {
@@ -41,10 +48,10 @@ button {
 
 body {
     height: 100vh;
-    width: auto;
+    width: 100vw;
     margin: 0rem;
     overflow: hidden;
-    display: grid;
+    /* display: grid; */
     place-items: center;
     background-color: var(--main-color);
     transition: background-color 0.3s ease;
@@ -67,6 +74,24 @@ body {
 a {
     text-decoration: none;
     justify-content: space-around;
+}
+
+#text {
+    width: 100%;
+    max-width: 820px;
+    /* background-color: #000000; */
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+   /* display: grid;
+   place-items: center; */
+   height: 90vh;
+   border: 1px solid red;
 }
 
 #text:has(.fancy:hover) .word:not(.fancy:hover) {
