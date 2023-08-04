@@ -14,17 +14,47 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Chianugo's Portfolio</title>
+    <script src="script.js"></script>
+    <script>applyRandomColor();</script>
 </head>
 
 <body>
-    <div class="code">
-        <!-- <a href="#">Code <br> Portofolio</a> -->
-        <p>Code Portfolio</p>
+    <button id="colorButton" onclick="applyRandomColor()">Color</button>
+    <button id="blackButton" onclick="toggleMonochrome()">Mono</button>
+    <div id="text">
+        <div class="line">
+            <p class="word">C. </p>
+            <p class="word">'Kiz' Ononuju</p>
+        </div>
+
+        <div class="line">
+            <p class="word">View</p>
+            <p class="word">My</p>
+        </div>
+
+        <div class="line">
+            <a id="coding-portfolio-link" href="#" class="word fancy">
+                PortfolioPhoto
+            </a>
+        </div>
+
+        <div class="line">
+            <a id="coding-portfolio-link" href="#" class="word fancy">
+                PortfolioCodes
+            </a>
+        </div>
+        <div class="line">
+            <a id="coding-portfolio-link" href="#" class="word fancy">
+                Contact
+            </a>
+            <a id="coding-portfolio-link" href="#" class="word fancy">
+                Email
+            </a>
+        </div>
     </div>
-    <div class="photo">
-        <!-- <a href="#">Photo <br> Portofolio</a> -->
-        <p>Photo Porfolio</p>
-    </div>
+
+
+
 </body>
 
 </html>
