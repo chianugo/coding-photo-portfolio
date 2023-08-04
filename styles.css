@@ -12,8 +12,9 @@ button {
     color: var(--accent-color);
     background-color: var(--main-color);
     border: 3px dotted var(--accent-color);
-    border-radius: 10%;
+    border-radius: 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 @keyframes float {
@@ -40,11 +41,13 @@ button {
 
 body {
     height: 100vh;
+    width: auto;
     margin: 0rem;
     overflow: hidden;
     display: grid;
     place-items: center;
     background-color: var(--main-color);
+    transition: background-color 0.3s ease;
 }
 
 .line {
@@ -63,6 +66,7 @@ body {
 
 a {
     text-decoration: none;
+    justify-content: space-around;
 }
 
 #text:has(.fancy:hover) .word:not(.fancy:hover) {
