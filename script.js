@@ -116,6 +116,35 @@ function toggleMonochrome() {
   //     accentColor = '#ffffff';
   // }
 
+  function applyColorCombination() {
+    // Define color combinations
+    const colorCombinations = [
+        { main: '#FF0000', accent: '#000000' }, // Red and Black
+        { main: '#000000', accent: '#FFFF00' }, // Black and Yellow
+        { main: '#008000', accent: '#FFC0CB' }, // Green and Pink
+        { main: '#FFFFFF', accent: '#A52A2A' }  // White and Brown
+        // Add more color combinations as needed
+    ];
+
+    // Choose a random color combination
+    const randomIndex = Math.floor(Math.random() * colorCombinations.length);
+    const selectedCombination = colorCombinations[randomIndex];
+
+    // Update mainColor and accentColor with the selected combination
+    mainColor = selectedCombination.main;
+    accentColor = selectedCombination.accent;
+
+    // Save the new colors to localStorage
+    localStorage.setItem("mainColor", mainColor);
+    localStorage.setItem("accentColor", accentColor);
+
+    document.documentElement.style.setProperty('--main-color', mainColor);
+    document.documentElement.style.setProperty("--accent-color", accentColor);
+
+    // Update the CSS variables and button colors
+    setButtonColors();
+}
+
   localStorage.setItem("mainColor", mainColor);
   localStorage.setItem("accentColor", accentColor);
 
@@ -135,8 +164,11 @@ document.documentElement.style.setProperty("--accent-color", accentColor);
 
 setButtonColors();
 
+var colorCombinationButton = document.getElementById('colorCombinationButton');
+
 button.addEventListener("click", applyRandomColor);
 blackButton.addEventListener("click", toggleMonochrome);
+colorCombinationButton.addEventListener("click", applyColorCombination);
 
 // Function to simulate button click when arrow keys are pressed
 function handleKeyPress(event) {
