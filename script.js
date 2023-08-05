@@ -1,7 +1,7 @@
 const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-const enhance = id => {
-//   alert("Hello");
+const enhance = (id) => {
+  //   alert("Hello");
   const element = document.getElementById(id),
     text = element.innerText.split("");
 
@@ -114,44 +114,10 @@ function toggleMonochrome() {
   // else if (probability >= 0.5){
   //     mainColor = '#000000';
   //     accentColor = '#ffffff';
-  // }
-
-  function applyColorCombination() {
-    // Define color combinations
-    const colorCombinations = [
-        { main: '#FF0000', accent: '#000000' }, // Red and Black
-        { main: '#000000', accent: '#FFFF00' }, // Black and Yellow
-        { main: '#008000', accent: '#FFC0CB' }, // Green and Pink
-        { main: '#FFFFFF', accent: '#A52A2A' }  // White and Brown
-        // Add more color combinations as needed
-    ];
-
-    // Choose a random color combination
-    const randomIndex = Math.floor(Math.random() * colorCombinations.length);
-    const selectedCombination = colorCombinations[randomIndex];
-
-    // Update mainColor and accentColor with the selected combination
-    mainColor = selectedCombination.main;
-    // alert(mainColor);
-    accentColor = selectedCombination.accent;
-
-    // Save the new colors to localStorage
-    localStorage.setItem("mainColor", mainColor);
-    localStorage.setItem("accentColor", accentColor);
-
-    document.documentElement.style.setProperty('--main-color', mainColor);
-    document.documentElement.style.setProperty("--accent-color", accentColor);
-
-    // Update the CSS variables and button colors
-    setButtonColors();
-}
-
-  localStorage.setItem("mainColor", mainColor);
-  localStorage.setItem("accentColor", accentColor);
-
   document.documentElement.style.setProperty("--main-color", mainColor);
   document.documentElement.style.setProperty("--accent-color", accentColor);
-
+  localStorage.setItem("mainColor", mainColor);
+  localStorage.setItem("accentColor", accentColor);
   setButtonColors();
 
   var thisElements = document.getElementsByClassName("button");
@@ -160,12 +126,100 @@ function toggleMonochrome() {
   }
 }
 
+function applyColorCombination() {
+  // Define color combinations
+  const colorCombinations = [
+    { main: "#FF0000", accent: "#000000" }, // Red and Black
+    { main: "#000000", accent: "#FFFF00" }, // Black and Yellow
+    { main: "#008000", accent: "#FFC0CB" }, // Green and Pink
+    { main: "#FFFFFF", accent: "#A52A2A" }, // White and Brown
+    // Add more color combinations as needed
+  ];
+
+  // Choose a random color combination
+  const randomIndex = Math.floor(Math.random() * colorCombinations.length);
+  const selectedCombination = colorCombinations[randomIndex];
+
+  // Update mainColor and accentColor with the selected combination
+  mainColor = selectedCombination.main;
+  // alert(mainColor);
+  accentColor = selectedCombination.accent;
+
+  // Save the new colors to localStorage
+  localStorage.setItem("mainColor", mainColor);
+  localStorage.setItem("accentColor", accentColor);
+
+  document.documentElement.style.setProperty("--main-color", mainColor);
+  document.documentElement.style.setProperty("--accent-color", accentColor);
+
+  // Update the CSS variables and button colors
+  setButtonColors();
+}
+
+localStorage.setItem("mainColor", mainColor);
+localStorage.setItem("accentColor", accentColor);
+
 document.documentElement.style.setProperty("--main-color", mainColor);
 document.documentElement.style.setProperty("--accent-color", accentColor);
 
 setButtonColors();
 
-var colorCombinationButton = document.getElementById('colorCombinationButton');
+var thisElements = document.getElementsByClassName("button");
+for (var i = 0; i < thisElements.length; i++) {
+  thisElements[i].style.color = accentColor;
+}
+
+function toggleInvert() {
+  // Toggle the invert state and save it to localStorage
+  let invertState = localStorage.getItem("invertState");
+  invertState = invertState === "true" ? "false" : "true";
+  localStorage.setItem("invertState", invertState);
+
+  // Swap mainColor and accentColor when the invertState is "true"
+  if (invertState === "true") {
+    [mainColor, accentColor] = [accentColor, mainColor];
+  }
+  else{
+    [accentColor, mainColor] = [mainColor, accentColor];
+  }
+
+  // Update the CSS variables and button colors
+  document.documentElement.style.setProperty("--main-color", mainColor);
+  document.documentElement.style.setProperty("--accent-color", accentColor);
+  localStorage.setItem("mainColor", mainColor);
+  localStorage.setItem("accentColor", accentColor);
+  setButtonColors();
+
+  // Update the text color of the buttons based on monochrome and invert state
+  var thisElements = document.getElementsByClassName("button");
+  for (var i = 0; i < thisElements.length; i++) {
+    thisElements[i].style.color =
+      invertState === "true" ? mainColor : accentColor;
+  }
+}
+
+// Initialize mainColor and accentColor from localStorage or generate random colors if not present
+mainColor = localStorage.getItem("mainColor");
+accentColor = localStorage.getItem("accentColor");
+
+if (!mainColor || !accentColor) {
+  mainColor = getRandomColor();
+  accentColor = getRandomColor();
+  localStorage.setItem("mainColor", mainColor);
+  localStorage.setItem("accentColor", accentColor);
+  document.documentElement.style.setProperty("--main-color", mainColor);
+  document.documentElement.style.setProperty("--accent-color", accentColor);
+}
+
+var invertButton = document.getElementById("invertButton");
+invertButton.addEventListener("click", toggleInvert);
+
+document.documentElement.style.setProperty("--main-color", mainColor);
+document.documentElement.style.setProperty("--accent-color", accentColor);
+
+setButtonColors();
+
+var colorCombinationButton = document.getElementById("colorCombinationButton");
 
 button.addEventListener("click", applyRandomColor);
 blackButton.addEventListener("click", toggleMonochrome);
