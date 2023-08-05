@@ -56,6 +56,41 @@ function getRandomColor() {
     "#FF00FF",
     "#DC143C",
     "#8A2BE2",
+    "#000000",
+    "#FFFF00",
+    "#FFC0CB", 
+    "#A52A2A",
+    "#EEA47F",
+    "#8638CD",
+    "#323D25",
+    "#200f8e",
+    "#0ff786",
+    "#260f58",
+    "#061e07",
+    "#dc2c45",
+    "#5a0610",
+    "#0676cb",
+    "#f26bc3",
+    "#0ac0fe",
+    "#df2c8c",
+    "#fafb1a",
+    "#34b70c",
+    "#dc6f8c",
+    "#e3eb1c",
+    "#070703",
+    "#bbe70e",
+    "#ef77eb",
+    "#b5d16f",
+    "#ecba32",
+    "#4b0032",
+    "#f9805a",
+    "#001c5d",
+    "#04121b",
+    "#05011a",
+    "#1c3929",
+    "#031e04",
+    "#b10b6b",
+    "#256288",
   ];
 
   for (let i = colors.length - 1; i > 0; i--) {
@@ -133,7 +168,40 @@ function applyColorCombination() {
     { main: "#000000", accent: "#FFFF00" }, // Black and Yellow
     { main: "#008000", accent: "#FFC0CB" }, // Green and Pink
     { main: "#FFFFFF", accent: "#A52A2A" }, // White and Brown
-    // Add more color combinations as needed
+    { main: "#00539C", accent: "#EEA47F"},// Royal Blue and Peach
+    { main: "#E0FC5F", accent: "#8638CD"},
+    { main: "#F44962", accent: "#0F050C"},
+    { main: "#c8db79", accent: "#323D25"},
+    { main: "#ff69b4", accent: "#200f8e"},
+    { main: "#0000ff", accent: "#0ff786"},
+    { main: "#ff4500", accent: "#260f58"},
+    { main: "#ff4500", accent: "#07011a"},
+    { main: "#ff4500", accent: "#061e07"},
+    { main: "#ffffff", accent: "#dc2c45"},
+    { main: "#ffffff", accent: "#5a0610"},
+    { main: "#ffffff", accent: "#0676cb"},
+    { main: "#000000", accent: "#f26bc3"},
+    { main: "#000000", accent: "#0ac0fe"},
+    { main: "#000000", accent: "#df2c8c"},
+    { main: "#000000", accent: "#fafb1a"},
+    { main: "#000000", accent: "#34b70c"},
+    { main: "#000000", accent: "#dc6f8c"},
+    { main: "#565a53", accent: "#e3eb1c"},
+    { main: "#007fb8", accent: "#070703"},
+    { main: "#9204d4", accent: "#bbe70e"},
+    { main: "#143078", accent: "#ef77eb"},
+    { main: "#0000ff", accent: "#b5d16f"},
+    { main: "#0000ff", accent: "#ecba32"},
+    { main: "#d5bbcb", accent: "#4b0032"},
+    { main: "#4b0082", accent: "#f9805a"},
+    { main: "#ff00ff", accent: "#001c5d"},
+    { main: "#ff00ff", accent: "#04121b"},
+    { main: "#ff0000", accent: "#05011a"},
+    { main: "#ff0000", accent: "#200c30"},
+    { main: "#ffd700", accent: "#1c3929"},
+    { main: "#ffd700", accent: "#031e04"},
+    { main: "#ffd700", accent: "#b10b6b"},
+    { main: "#ffd700", accent: "#256288"},
   ];
 
   // Choose a random color combination
@@ -243,3 +311,4 @@ enhance("coding-portfolio-link");
 enhance("photo-portfolio-link");
 enhance("contact-link");
 enhance("email-link");
+enhance("text");
