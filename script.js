@@ -132,6 +132,7 @@ function toggleMonochrome() {
 
     // Update mainColor and accentColor with the selected combination
     mainColor = selectedCombination.main;
+    // alert(mainColor);
     accentColor = selectedCombination.accent;
 
     // Save the new colors to localStorage

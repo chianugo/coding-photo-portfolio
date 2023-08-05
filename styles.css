@@ -5,6 +5,11 @@
     --accent-color: #ffffff;
 }
 
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+
 button, 
 .page_nav {
     padding: 8px 16px;
@@ -29,7 +34,7 @@ button,
     position: absolute;
     top: 0;
     right: 0;
-    display: flex;
+    /* display: flex; */
 }
 
 @keyframes float {
