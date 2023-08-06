@@ -34,6 +34,20 @@ const enhance = (id) => {
   });
 };
 
+document.addEventListener("DOMContentLoaded", function () {
+  enhance("coding-portfolio-link");
+});
+document.addEventListener("DOMContentLoaded", function () {
+  enhance("photo-portfolio-link");
+});
+document.addEventListener("DOMContentLoaded", function () {
+  enhance("contact-link");
+});
+document.addEventListener("DOMContentLoaded", function () {
+  enhance("email-link");
+});
+
+
 function getRandomColor() {
   const colors = [
     "#FF0000",
@@ -307,8 +321,5 @@ function handleKeyPress(event) {
 // Listen for the 'keydown' event on the document
 document.addEventListener("keydown", handleKeyPress);
 
-enhance("coding-portfolio-link");
-enhance("photo-portfolio-link");
-enhance("contact-link");
-enhance("email-link");
-enhance("text");
+
+

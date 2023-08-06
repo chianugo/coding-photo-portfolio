@@ -68,6 +68,7 @@ body {
     margin: 0rem;
     overflow: hidden;
     /* display: grid; */
+    /* display: grid; */
     place-items: center;
     background-color: var(--main-color);
     transition: background-color 0.3s ease;
@@ -78,8 +79,7 @@ body {
     justify-content: space-between;
 }
 
-.word,
-.letter {
+.word{
     color: var(--accent-color);
     font-size: clamp(2rem, 6.5vw, 4rem);
     font-family: "Rubik", sans-serif;
@@ -90,14 +90,11 @@ body {
 
 a {
     text-decoration: none;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 
 #text {
-    /* width: 100%; */
-    /* max-width: 820px; */
     max-width: 820px;
-    /* background-color: #000000; */
     padding: 200px;
     margin: 0 auto;
     display: block;
@@ -143,15 +140,16 @@ a {
 }
 
 .fancy:hover>.outer>.inner>.letter {
+    border: 1px var(--accent-color);
     background: linear-gradient(to right,
-            var(--blue),
-            var(--green),
-            var(--blue));
+            var(--accent-color),
+            var(--main-color),
+            var(--accent-color));
     background-size: 1000%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: background-pan 150s linear infinite;
+    animation: background-pan 450s linear infinite;
 }
 
 .fancy:hover>.outer:nth-child(1) {
@@ -163,7 +161,7 @@ a {
 }
 
 .fancy:hover>.outer:nth-child(3) {
-    transform: translate(-10%, 60%) rotate(-6deg);
+    transform: translate(-10%, 60%) rotate(-16deg);
 }
 
 .fancy:hover>.outer:nth-child(4) {
@@ -171,11 +169,11 @@ a {
 }
 
 .fancy:hover>.outer:nth-child(5) {
-    transform: translate(0%, -20%) rotate(5deg);
+    transform: translate(0%, -20%) rotate(-15deg);
 }
 
 .fancy:hover>.outer:nth-child(6) {
-    transform: translate(0%, 20%) rotate(-3deg);
+    transform: translate(5%, 25%) rotate(10deg);
 }
 
 .fancy:hover>.outer:nth-child(7) {
@@ -199,5 +197,45 @@ a {
 }
 
 .fancy:hover>.outer:nth-child(12) {
+    transform: translate(120%, -30%) rotate(-10deg);
+}
+
+.fancy:hover>.outer:nth-child(13) {
+    transform: translate(-10%, 60%) rotate(-6deg);
+}
+
+.fancy:hover>.outer:nth-child(14) {
+    transform: translate(0%, 8%) rotate(-8deg);
+}
+
+.fancy:hover>.outer:nth-child(15) {
+    transform: translate(0%, -20%) rotate(60deg);
+}
+
+.fancy:hover>.outer:nth-child(16) {
+    transform: translate(0%, 20%) rotate(-30deg);
+}
+
+.fancy:hover>.outer:nth-child(17) {
+    transform: translate(0%, -40%) rotate(-5deg);
+}
+
+.fancy:hover>.outer:nth-child(18) {
+    transform: translate(0%, 15%) rotate(10deg);
+}
+
+.fancy:hover>.outer:nth-child(19) {
+    transform: translate(0%, -50%) rotate(8deg);
+}
+
+.fancy:hover>.outer:nth-child(20) {
+    transform: translate(0%, 15%) rotate(-6deg);
+}
+
+.fancy:hover>.outer:nth-child(21) {
+    transform: translate(50%, -10%) rotate(-3deg);
+}
+
+.fancy:hover>.outer:nth-child(22) {
     transform: translate(120%, -30%) rotate(-10deg);
 }
