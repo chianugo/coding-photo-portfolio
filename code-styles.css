@@ -1,0 +1,32 @@
+.project-title{
+    background-color: var(--accent-color);
+}
+
+.square,
+.circle,
+.triangle {
+    background-color: var(--accent-color);
+}
+
+a {
+    display: inline-block;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.small {
+    height: 200px;
+    width: 200px;
+}
+
+.medium {
+    height: 350px;
+    width: 350px;
+}
+
+.large {
+    height: 500px;
+    width: 500px;
+}
