@@ -153,89 +153,89 @@ a {
 }
 
 .fancy:hover>.outer:nth-child(1) {
-    transform: translate(-80%, 60%) rotate(8deg);
+    transform: translate(-80%, 60%) rotate(8deg) scale(1.27);
 }
 
 .fancy:hover>.outer:nth-child(2) {
-    transform: translate(-40%, 20%) rotate(4deg);
+    transform: translate(-40%, 20%) rotate(4deg) scale(1.27);
 }
 
 .fancy:hover>.outer:nth-child(3) {
-    transform: translate(-10%, 60%) rotate(-16deg);
+    transform: translate(-10%, 60%) rotate(-16deg) scale(1.28); 
 }
 
 .fancy:hover>.outer:nth-child(4) {
-    transform: translate(0%, 8%) rotate(-8deg);
+    transform: translate(0%, 8%) rotate(-8deg) scale(1.26);
 }
 
 .fancy:hover>.outer:nth-child(5) {
-    transform: translate(0%, -20%) rotate(-15deg);
+    transform: translate(0%, -20%) rotate(-15deg) scale(1.265);
 }
 
 .fancy:hover>.outer:nth-child(6) {
-    transform: translate(5%, 25%) rotate(10deg);
+    transform: translate(5%, 25%) rotate(10deg) scale(1.27);
 }
 
 .fancy:hover>.outer:nth-child(7) {
-    transform: translate(0%, -40%) rotate(-5deg);
+    transform: translate(6%, -40%) rotate(-5deg) scale(1.21);
 }
 
 .fancy:hover>.outer:nth-child(8) {
-    transform: translate(0%, 15%) rotate(10deg);
+    transform: translate(3%, 15%) rotate(10deg) scale(1.27);
 }
 
 .fancy:hover>.outer:nth-child(9) {
-    transform: translate(0%, -50%) rotate(8deg);
+    transform: translate(2%, -50%) rotate(8deg) scale(1.24);
 }
 
 .fancy:hover>.outer:nth-child(10) {
-    transform: translate(0%, 15%) rotate(-6deg);
+    transform: translate(10%, 15%) rotate(-8deg) scale(1.22);
 }
 
 .fancy:hover>.outer:nth-child(11) {
-    transform: translate(50%, -10%) rotate(-3deg);
+    transform: translate(50%, -10%) rotate(-3deg) scale(1.27);
 }
 
 .fancy:hover>.outer:nth-child(12) {
-    transform: translate(120%, -30%) rotate(-10deg);
+    transform: translate(120%, -30%) rotate(-10deg) scale(1.27);
 }
 
 .fancy:hover>.outer:nth-child(13) {
-    transform: translate(-10%, 60%) rotate(-6deg);
+    transform: translate(-10%, 60%) rotate(-6deg) scale(1.25);
 }
 
 .fancy:hover>.outer:nth-child(14) {
-    transform: translate(0%, 8%) rotate(-8deg);
+    transform: translate(3%, 8%) rotate(-7deg) scale(1.21);
 }
 
 .fancy:hover>.outer:nth-child(15) {
-    transform: translate(0%, -20%) rotate(60deg);
+    transform: translate(2%, -19%) rotate(23deg) scale(1.23);
 }
 
 .fancy:hover>.outer:nth-child(16) {
-    transform: translate(0%, 20%) rotate(-30deg);
+    transform: translate(0%, 21%) rotate(-30deg) scale(1.28);
 }
 
 .fancy:hover>.outer:nth-child(17) {
-    transform: translate(0%, -40%) rotate(-5deg);
+    transform: translate(0%, -40%) rotate(-5deg) scale(1.22);
 }
 
 .fancy:hover>.outer:nth-child(18) {
-    transform: translate(0%, 15%) rotate(10deg);
+    transform: translate(0%, 15%) rotate(12deg) scale(1.17);
 }
 
 .fancy:hover>.outer:nth-child(19) {
-    transform: translate(0%, -50%) rotate(8deg);
+    transform: translate(0%, -48%) rotate(8deg) scale(1.20);
 }
 
 .fancy:hover>.outer:nth-child(20) {
-    transform: translate(0%, 15%) rotate(-6deg);
+    transform: translate(0%, 17%) rotate(-6deg) scale(1.27);
 }
 
 .fancy:hover>.outer:nth-child(21) {
-    transform: translate(50%, -10%) rotate(-3deg);
+    transform: translate(50%, -10%) rotate(-3deg) scale(1.21);
 }
 
 .fancy:hover>.outer:nth-child(22) {
-    transform: translate(120%, -30%) rotate(-10deg);
+    transform: translate(120%, -30%) rotate(-10deg) scale(1.23);
 }
