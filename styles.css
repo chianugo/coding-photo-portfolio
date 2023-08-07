@@ -20,8 +20,7 @@
 }
 
 
-button,
-.page_nav {
+button {
     padding: 8px 16px;
     font-size: 18px;
     color: var(--accent-color);
@@ -37,17 +36,23 @@ button:hover {
     transform: scale(1.07);
 }
 
-.hero_nav {
-    position: absolute;
+.navbar {
+    position: sticky;
     top: 0;
-    left: 0;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.page_nav {
-    position: absolute;
-    top: 0;
-    right: 0;
+.navbar .left {
+    display: flex;
 }
+
+.navbar .right {
+    display: flex;
+}
+
 
 @keyframes float {
 
@@ -72,11 +77,11 @@ button:hover {
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     /* width: 100vw; */
     position: relative;
     margin: 0rem;
-    overflow: hidden;
+    overflow: scroll;
     /* display: grid; */
     place-items: center;
     background-color: var(--main-color);

@@ -18,14 +18,19 @@
 </head>
 
 <body>
-    <div class="page_nav">
-        <a class='page_nav' href="/index.html">Home</a>
-        <a class='page_nav' href="/pages/code.html">Code</a>
+    <div class="navbar">
+        <div class="left">
+            <button id="colorButton hero_nav" onclick="applyRandomColor()">Color</button>
+            <button id="blackButton hero_nav" onclick="toggleMonochrome()">Mono</button>
+            <button id="colorCombinationButton hero_nav" onclick="applyColorCombination()">Combo</button>
+            <button id="invertButton hero_nav" onclick="toggleInvert()">Invert</button>
+        </div>
+        <div class="right">
+            <button class='page_nav' onClick="location.href='/index.html'">Home</button>
+            <button class='page_nav' onClick="location.href='/pages/code.html'">Code</button>
+        </div>
     </div>
-    <button id="colorButton hero_nav" onclick="applyRandomColor()">Color</button>
-    <button id="blackButton hero_nav" onclick="toggleMonochrome()">Mono</button>
-    <button id="colorCombinationButton hero_nav" onclick="applyColorCombination()">Combo</button>
-    <button id="invertButton her_nav" onclick="toggleInvert()">Invert</button>
+
     <div class="text">
         <div class="line">
             <p class="word">Hello Photo</p>

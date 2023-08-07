@@ -19,20 +19,27 @@
 </head>
 
 <body>
-    <button class="page_nav" onClick="location.href='/index.html'">Home</a>
-        <button class="page_nav" onClick="location.href='/pages/photo.html'">Photo</a>
-            <button id="colorButton hero_nav" onclick="applyRandomColor()">Color</button>
-            <button id="blackButton hero_nav" onclick="toggleMonochrome()">Mono</button>
-            <button id="colorCombinationButton hero_nav" onclick="applyColorCombination()">Combo</button>
-            <button id="invertButton her_nav" onclick="toggleInvert()">Invert</button>
+    <div class="navbar">
+        <div class="left">
+            <button id="colorButton" onclick="applyRandomColor()">Color</button>
+            <button id="blackButton" onclick="toggleMonochrome()">Mono</button>
+            <button id="colorCombinationButton" onclick="applyColorCombination()">Combo</button>
+            <button id="invertButton" onclick="toggleInvert()">Invert</button>
+        </div>
+        <div class="right">
+            <button class='' onClick="location.href='/index.html'">Home</button>
+            <button class='' onClick="location.href='/pages/photo.html'">Photo</button>
+        </div>
+    </div>
             <div class="text">
                 <div class="line">
                     <p class="word">Hello Code</p>
                 </div>
             </div>
-            <div class="square small"></div>
-            <div class="small circle"><div class="project-title"></div></div>
-            <a href="#" class="medium square"></a>
+            <a href="#" class="large transparent circle"></a>
+            <a href="#" class="medium solid square"></a>
+            <a href="" class="transparent pentagon"></a>
+
 </body>
 
 </html>

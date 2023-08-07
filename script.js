@@ -34,6 +34,7 @@ const enhance = (id) => {
   });
 };
 
+// Issue #2 fix. Should wait for dom content to be loaded before splitting text to ensure that id exists
 document.addEventListener("DOMContentLoaded", function () {
   enhance("coding-portfolio-link");
 });
@@ -47,6 +48,22 @@ document.addEventListener("DOMContentLoaded", function () {
   enhance("email-link");
 });
 
+// Navigation bar function to hide if scrolling down and show if scrolling up
+let prevScrollPos = window.pageYOffset;
+
+window.addEventListener('scroll', () => {
+  const currentScrollPos = window.pageYOffset;
+
+  if (prevScrollPos > currentScrollPos) {
+    // Scrolling up, show the navbar
+    document.querySelector('.navbar').style.top = '0';
+  } else {
+    // Scrolling down, hide the navbar
+    document.querySelector('.navbar').style.top = '-100px';
+  }
+
+  prevScrollPos = currentScrollPos;
+});
 
 function getRandomColor() {
   const colors = [
