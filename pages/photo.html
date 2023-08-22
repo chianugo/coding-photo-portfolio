@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/photo-styles.css">
     <title>Chianugo's Photo Portfolio</title>
     <script src="/script.js"></script>
+    <script src="/photo.js"></script>
 </head>
 
 <body>
@@ -31,13 +32,37 @@
             <button class='page_nav' onClick="location.href='/pages/code.html'">Code</button>
         </div>
     </div>
+    <div class="container">
+        <div class="sidebar" id="side">
+            <ul>
+                <li><a href="">Fête</a></li>
+                <li><a href="">Portraits</a></li>
+                <li><a href="">Photo Walks</a></li>
+                <li><a href="">Concerts</a></li>
+                <li><a href="">Swarm</a></li>
+                <li><a href="">You take one</a></li>
+            </ul>
+        </div>
+        <div class="picture_container">
+            <div class="slide fade">
+                <img src="/assets/goz-and-giles-min.jpg" alt="Goziem and Giles at Seyna's">
+                <div class="caption">
+                    <p>Goziem and Giles at Seyna's</p>
+                    <p>Kiz, 2023</p>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="/assets/jules-at-7th.jpg" alt="Jules with his shirt over his head at a 7th Street Party">
+                <div class="caption">
+                    <p>Jules at 7th Street</p>
+                    <p>Kiz, 2021</p>
+                </div>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-    <div class="sidebar">
-        <a href="">Fete</a>
-        <a href="">Portraits</a>
-        <a href="">Concerts</a>
-        <a href="">Swarm</a>
-        <a href="">Kiz</a>
+
     </div>
 </body>
 
