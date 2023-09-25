@@ -43,6 +43,7 @@ body {
 .sidebar li:hover {
     opacity: 1;
     transform: scale(1.09);
+    transform-origin: center top; 
 }
 
 .sidebar ul:hover li:not(:hover) {
