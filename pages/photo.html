@@ -35,13 +35,14 @@
     <div class="container">
         <div class="sidebar" id="side">
             <ul>
-                <li><a href="javascript:filterSelection('fete');" class="btn active">Fête</a></li>
+                <li><a href="#" onclick="filterSelection('fete'); return false" class="btn active">Fête</a></li>
                 <li><a href="javascript:filterSelection('portraits');" class="btn">Portraits</a></li>
                 <li><a href="javascript:filterSelection('walk');" class="btn">Photo Walks</a></li>
                 <li><a href="javascript:filterSelection('concerts');" class="btn">Concerts</a></li>
                 <li><a href="javascript:filterSelection('swarm');" class="btn">Swarm</a></li>
-                <li><a href="javascript:filterSelection('kiz');" class="btn">You take one</a></li>
-                <li><a href="javascript:filterSelection('other');" class="btn">+</a></li>
+                <li><a href="#" onclick="logHello(); return false" class="btn">You take one</a></li>
+                <!-- <li><a href="#" onclick="filterSelection('kiz'); return false" class="btn">You take one</a></li> -->
+                <li><a href="javascript:filterSelection('other');" class="btn increaseClick">+‎‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎  </a></li>
             </ul>
         </div>
         <div class="picture_container">

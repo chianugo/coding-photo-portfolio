@@ -36,6 +36,15 @@ button:hover {
     transform: scale(1.07);
 }
 
+/* .increaseClick { */
+    /* display: inline-block; */
+    /* position: relative; */
+    /* z-index: 1; */
+    /* padding-right: 2em; */
+    /* margin: -2em; */
+    /* border: 1px solid; */
+/* } */
+
 .navbar {
     position: sticky;
     top: 0;

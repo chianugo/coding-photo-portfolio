@@ -26,7 +26,7 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
 }
 
-filterSelection("kiz"); // Begin by showing fete
+filterSelection("fete"); // Begin by showing fete
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("slide");
@@ -73,4 +73,8 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
+}
+
+function logHello() {
+  console.log("Hello World");
 }
