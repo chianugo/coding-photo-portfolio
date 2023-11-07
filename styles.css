@@ -108,7 +108,10 @@ body {
 
 .word {
   color: var(--accent-color);
-  font-size: clamp(2rem, 6.5vw, 3.8rem);
+  /* font-size: clamp(2rem, 6.5vw, 3.8rem); */
+  /* font-size: 4.25vw; */
+  /* font-size: 3.3vw; */
+  font-size: clamp(3.3vw, 4.25vw, 4.25vw);
   font-family: "Mabry pro", "Rubik", sans-serif;
   margin: 0rem;
   text-transform: uppercase;
