@@ -32,6 +32,11 @@ span {
   color: var(--accent-color);
 }
 
+p {
+  font-size: 20px;
+  font-family: "Helvetica";
+}
+
 .right {
   float: right;
   /* display: inline-block; */
