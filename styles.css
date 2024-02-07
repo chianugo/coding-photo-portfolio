@@ -20,8 +20,13 @@
 }
 
 p,
-h1 {
+h1,
+.colored-text {
   color: var(--accent-color);
+}
+
+p {
+  padding: 20px;
 }
 button {
   padding: 8px 16px;

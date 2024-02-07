@@ -17,7 +17,19 @@
     <script src="/script.js"></script>
 </head>
 <body>
-    <h1>CONTACT ME</h1>
+    <div class="navbar">
+        <div class="left">
+            <button id="colorButton hero_nav" onclick="applyRandomColor()">Color</button>
+            <button id="blackButton hero_nav" onclick="toggleMonochrome()">Mono</button>
+            <button id="colorCombinationButton hero_nav" onclick="applyColorCombination()">Combo</button>
+            <button id="invertButton hero_nav" onclick="toggleInvert()">Invert</button>
+        </div>
+        <div class="right">
+            <button class='page_nav' onClick="location.href='/index.html'">Home</button>
+            <button class='page_nav' onClick="location.href='/pages/code.html'">Code</button>
+        </div>
+    </div>
+    <h2 class="colored-text">CONTACT ME</h2>
     
 </body>
 </html>
