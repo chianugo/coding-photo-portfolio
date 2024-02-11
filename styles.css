@@ -80,6 +80,14 @@ button:hover {
   /* background-color: var(--accent-color); */
 }
 
+.nav.active {
+  /* transform: scale(1.07); */
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  border: 3px dotted var(--main-color);
+  border-radius: 20px;
+}
+
 .glass {
   background-color: rgba(var(--accent-color), 0.5);
   backdrop-filter: blur(16px);

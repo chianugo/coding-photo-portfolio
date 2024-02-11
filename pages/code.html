@@ -27,35 +27,30 @@
     <div class="navbar">
       <div class="header">CHIANUGO</div>
       <div class="">
-        <button class="page_nav" onClick="location.href='/index.html'">
-          Home
-        </button>
-        <button class="page_nav" onClick="location.href='/pages/photo.html'">
+        <button class="nav" onClick="location.href='/index.html'">Home</button>
+        <button class="nav" onClick="location.href='/pages/photo.html'">
           Photo
         </button>
-        <button class="page_nav" onClick="location.href='/pages/about.html'">
+        <button class="nav active" onClick="location.href='/pages/photo.html'">
+          Code
+        </button>
+        <button class="nav" onClick="location.href='/pages/about.html'">
           About
         </button>
-        <button class="page_nav" onClick="location.href='/pages/contact.html'">
+        <button class="nav" onClick="location.href='/pages/contact.html'">
           Contact
         </button>
       </div>
       <div class="">
-        <button id="colorButton hero_nav" onclick="applyRandomColor()">
-          Color
-        </button>
-        <button id="blackButton hero_nav" onclick="toggleMonochrome()">
-          Mono
-        </button>
+        <button id="colorButton nav" onclick="applyRandomColor()">Color</button>
+        <button id="blackButton nav" onclick="toggleMonochrome()">Mono</button>
         <button
-          id="colorCombinationButton hero_nav"
+          id="colorCombinationButton nav"
           onclick="applyColorCombination()"
         >
           Combo
         </button>
-        <button id="invertButton hero_nav" onclick="toggleInvert()">
-          Invert
-        </button>
+        <button id="invertButton nav" onclick="toggleInvert()">Invert</button>
       </div>
     </div>
     <!--    <div class="shape right">
