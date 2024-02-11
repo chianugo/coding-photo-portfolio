@@ -1,40 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;900&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Poppins&family=Roboto:wght@400;500;900&family=Rubik:wght@300;400;500;600;700&family=Urbanist:wght@400;600;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/code-styles.css">
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;900&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Poppins&family=Roboto:wght@400;500;900&family=Rubik:wght@300;400;500;600;700&family=Urbanist:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/code-styles.css" />
     <title>Chianugo's Code Portfolio</title>
     <script src="/script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- TODO fix navbar jumpy appearance when scrolling close to the top -->
     <!-- TODO add horizontal scrolling to shapes -->
     <!-- TODO change positioning of text to below the shapes -->
     <!-- TODO streamline jiggle and remove from plain text anchor tags  -->
     <!-- TODO create minimal project table -->
     <div class="navbar">
-        <div class="left">
-            <button id="colorButton" onclick="applyRandomColor()">Color</button>
-            <button id="blackButton" onclick="toggleMonochrome()">Mono</button>
-            <button id="colorCombinationButton" onclick="applyColorCombination()">Combo</button>
-            <button id="invertButton" onclick="toggleInvert()">Invert</button>
-        </div>
-        <div class="right">
-            <button class='' onClick="location.href='/index.html'">Home</button>
-            <button class='' onClick="location.href='/pages/photo.html'">Photo</button>
-        </div>
+      <div class="header">CHIANUGO</div>
+      <div class="">
+        <button class="page_nav" onClick="location.href='/index.html'">
+          Home
+        </button>
+        <button class="page_nav" onClick="location.href='/pages/photo.html'">
+          Photo
+        </button>
+        <button class="page_nav" onClick="location.href='/pages/about.html'">
+          About
+        </button>
+        <button class="page_nav" onClick="location.href='/pages/contact.html'">
+          Contact
+        </button>
+      </div>
+      <div class="">
+        <button id="colorButton hero_nav" onclick="applyRandomColor()">
+          Color
+        </button>
+        <button id="blackButton hero_nav" onclick="toggleMonochrome()">
+          Mono
+        </button>
+        <button
+          id="colorCombinationButton hero_nav"
+          onclick="applyColorCombination()"
+        >
+          Combo
+        </button>
+        <button id="invertButton hero_nav" onclick="toggleInvert()">
+          Invert
+        </button>
+      </div>
     </div>
     <!--    <div class="shape right">
                 <a href="#" class="large solid circle"></a> 
@@ -61,35 +83,56 @@
                 <a href="#">Tradebot</a>
             </div> -->
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa rerum ea sed blanditiis? Eligendi rerum eveniet non voluptatibus autem, eos quis quaerat tenetur enim. Odio reiciendis praesentium dolore, quos beatae rem facilis, consequatur officia aspernatur repellendus quisquam nam accusantium earum corrupti, itaque culpa incidunt laborum aperiam natus ratione possimus? Blanditiis quasi modi voluptas, autem doloribus, iure nam eaque possimus dolor, accusamus facere rem. Odio laborum repellat magnam nemo eveniet tempora, voluptates provident modi quisquam nobis quas rem a delectus adipisci cupiditate amet dignissimos blanditiis enim similique minima accusantium molestias itaque odit facere. Voluptatibus consequatur obcaecati porro nam odio amet vero perferendis facilis temporibus placeat alias labore asperiores esse eius reprehenderit doloremque sequi, quaerat laborum? Natus, ab rem consectetur dolorum voluptatem maxime cumque expedita optio qui numquam ad explicabo dolore incidunt deserunt sunt necessitatibus fugiat error autem, repudiandae id omnis! Magnam ab ipsum dolores similique perspiciatis accusantium fuga error voluptatem numquam, quasi illum libero aliquam tenetur quo ad dolor voluptate? Voluptatibus labore molestias repellendus culpa tempora, id repellat quibusdam deserunt saepe mollitia sit voluptas vero cumque nam est incidunt dolor cum esse sed! Nihil pariatur velit ipsa, debitis ex eveniet, beatae est, aut necessitatibus quaerat vel placeat fugiat possimus enim!</p>
+    <p class="colored-text text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa rerum
+      ea sed blanditiis? Eligendi rerum eveniet non voluptatibus autem, eos quis
+      quaerat tenetur enim. Odio reiciendis praesentium dolore, quos beatae rem
+      facilis, consequatur officia aspernatur repellendus quisquam nam
+      accusantium earum corrupti, itaque culpa incidunt laborum aperiam natus
+      ratione possimus? Blanditiis quasi modi voluptas, autem doloribus, iure
+      nam eaque possimus dolor, accusamus facere rem. Odio laborum repellat
+      magnam nemo eveniet tempora, voluptates provident modi quisquam nobis quas
+      rem a delectus adipisci cupiditate amet dignissimos blanditiis enim
+      similique minima accusantium molestias itaque odit facere. Voluptatibus
+      consequatur obcaecati porro nam odio amet vero perferendis facilis
+      temporibus placeat alias labore asperiores esse eius reprehenderit
+      doloremque sequi, quaerat laborum? Natus, ab rem consectetur dolorum
+      voluptatem maxime cumque expedita optio qui numquam ad explicabo dolore
+      incidunt deserunt sunt necessitatibus fugiat error autem, repudiandae id
+      omnis! Magnam ab ipsum dolores similique perspiciatis accusantium fuga
+      error voluptatem numquam, quasi illum libero aliquam tenetur quo ad dolor
+      voluptate? Voluptatibus labore molestias repellendus culpa tempora, id
+      repellat quibusdam deserunt saepe mollitia sit voluptas vero cumque nam
+      est incidunt dolor cum esse sed! Nihil pariatur velit ipsa, debitis ex
+      eveniet, beatae est, aut necessitatibus quaerat vel placeat fugiat
+      possimus enim!
+    </p>
 
-            <div class="grid">
-                <span><strong>Year</strong></span>
-                <span><strong>Project</strong></span>
-                <span><strong>Description</strong></span>
-                <span><strong>Type</strong></span>
-                <span>2023</span>
-                <span>Nomen</span>
-                <span>Dictionary of West African Names</span>
-                <span>Website</span>
-                <span>2023</span>
-                <span>Lucid</span>
-                <span>Dream Logger</span>
-                <span>Mobile Application</span>
-                <span>2023</span>
-                <span>Lissin</span>
-                <span>Music Todo</span>
-                <span>Mobile Application</span>
-                <span>2023</span>
-                <span>CCP Analyzer</span>
-                <span>Cryptocurrency Market Analyzer</span>
-                <span>Website, AWS Integration</span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            
-</body>
-
+    <div class="grid text">
+      <span><strong>Year</strong></span>
+      <span><strong>Project</strong></span>
+      <span><strong>Description</strong></span>
+      <span><strong>Type</strong></span>
+      <span>2023</span>
+      <span>Nomen</span>
+      <span>Dictionary of West African Names</span>
+      <span>Website</span>
+      <span>2023</span>
+      <span>Lucid</span>
+      <span>Dream Logger</span>
+      <span>Mobile Application</span>
+      <span>2023</span>
+      <span>Lissin</span>
+      <span>Music Todo</span>
+      <span>Mobile Application</span>
+      <span>2023</span>
+      <span>CCP Analyzer</span>
+      <span>Cryptocurrency Market Analyzer</span>
+      <span>Website, AWS Integration</span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </body>
 </html>

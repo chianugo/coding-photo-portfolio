@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;900&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Poppins&family=Roboto:wght@400;500;900&family=Rubik:wght@300;400;500;600;700&family=Urbanist:wght@400;600;900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&family=Rubik:wght@700;900&display=swap");
+
 @font-face {
   font-family: "Mabry Pro";
   src: local("Mabry Pro Regular"), local("Mabry-Pro-Regular"),
@@ -13,6 +15,20 @@
 :root {
   --main-color: #000000;
   --accent-color: #ffffff;
+
+  --fs-300: 0.75rem;
+  --fs-400: 1rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.5rem;
+  --fs-700: 1.75rem;
+  --fs-800: 2rem;
+  --fs-900: 2.5rem;
+
+  --fs-body: var(--fs-400);
+  --fs-primary-heading: var(--fs-800);
+  --fs-secondary-heading: var(--fs-700);
+  --fs-nav: var(--fs-500);
+  --fs-button: var(--fs-300);
 }
 
 * {
@@ -21,7 +37,7 @@
 
 p,
 h1,
-.colored-text {
+.text {
   color: var(--accent-color);
 }
 
@@ -30,7 +46,7 @@ p {
 }
 button {
   padding: 8px 16px;
-  font-size: 18px;
+  font-size: var(--fs-body);
   color: var(--accent-color);
   background-color: var(--main-color);
   border: 3px dotted var(--accent-color);
@@ -54,12 +70,14 @@ button:hover {
 /* } */
 
 .navbar {
+  margin: 10px;
   position: sticky;
   top: 0;
   z-index: 999999;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* background-color: var(--accent-color); */
 }
 
 .glass {
@@ -67,13 +85,13 @@ button:hover {
   backdrop-filter: blur(16px);
 }
 
-.navbar .left {
+/* .navbar .left {
   display: flex;
 }
 
 .navbar .right {
   display: flex;
-}
+} */
 
 @keyframes float {
   from,
@@ -132,6 +150,16 @@ a {
   /* justify-content: space-around; */
 }
 
+.text,
+.grid.text span {
+  font-family: "Roboto Mono", monospace;
+  font-size: var(--fs-body);
+}
+
+.grid.text {
+  margin: 10px;
+}
+
 #text {
   max-width: 880px;
   padding: 200px;
@@ -140,6 +168,13 @@ a {
   align-items: center;
   justify-content: center;
   text-align: justify;
+}
+
+.header {
+  font-family: "Rubik", sans-serif;
+  font-size: var(--fs-primary-heading);
+  font-weight: 800;
+  color: var(--accent-color);
 }
 
 .container {
