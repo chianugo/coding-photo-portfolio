@@ -1,71 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;900&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Poppins&family=Roboto:wght@400;500;900&family=Rubik:wght@300;400;500;600;700&family=Urbanist:wght@400;600;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;900&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Poppins&family=Roboto:wght@400;500;900&family=Rubik:wght@300;400;500;600;700&family=Urbanist:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Chianugo's Portfolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- TODO add dynamic color changing cursor -->
     <!-- TODO frosted glass texture -->
     <div class="navbar glass">
-        <div class="left">
-            <button class="button" id="colorButton" onclick="applyRandomColor()">Color</button>
-            <button class="button" id="blackButton" onclick="toggleMonochrome()">Mono</button>
-            <button class="button" id="colorCombinationButton" onclick="applyColorCombination()">Combo</button>
-            <button class="button" id="invertButton" onclick="toggleInvert()">Invert</button>
-        </div>
+      <div class="right">
+        <button class="button" id="colorButton" onclick="applyRandomColor()">
+          Color
+        </button>
+        <button class="button" id="blackButton" onclick="toggleMonochrome()">
+          Mono
+        </button>
+        <button
+          class="button"
+          id="colorCombinationButton"
+          onclick="applyColorCombination()"
+        >
+          Combo
+        </button>
+        <button class="button" id="invertButton" onclick="toggleInvert()">
+          Invert
+        </button>
+      </div>
     </div>
     <!-- <div class="container"> -->
-    <div id="text">
-        <div class="line">
-            <p class="word">Chianugo &nbsp 'Kiz'</p>
-            <p class="word">Ononuju</p>
-        </div>
+    <div class="home-container" id="text">
+      <div class="line">
+        <p class="word">Chianugo &nbsp 'Kiz'</p>
+        <p class="word">Ononuju</p>
+      </div>
 
-        <div class="line">
-            <p class="word">click &nbsp &darr;</p>
-            <p class="word">to</p>
-            <p class="word">View</p>
-            <p class="word">My</p>
-        </div>
+      <div class="line">
+        <p class="word">click &nbsp &darr;</p>
+        <p class="word">to</p>
+        <p class="word">View</p>
+        <p class="word">My</p>
+      </div>
 
-        <div class="line">
-            <a id="photo-portfolio-link" href="/pages/photo.html" class="word fancy">
-                Photography &nbsp &nbsp Portfolio
-            </a>
-        </div>
+      <div class="line">
+        <a
+          id="photo-portfolio-link"
+          href="/pages/photo.html"
+          class="word fancy"
+        >
+          Photography &nbsp &nbsp Portfolio
+        </a>
+      </div>
 
-        <div class="line">
-            <a id="coding-portfolio-link" href="/pages/code.html" class="word fancy">
-                Code &nbsp&nbsp&nbsp&nbsp Portfolio
-            </a>
-            <p class="word">
-                OR
-            </p>
-        </div>
-        <div class="line">
-            <a id="contact-link" href="/pages/contact.html" class="word fancy">
-                Contact&nbsp&nbsp Me
-            </a>
-            <a id="email-link" href="/pages/about.html" class="word fancy">
-                About
-            </a>
-        </div>
+      <div class="line">
+        <a
+          id="coding-portfolio-link"
+          href="/pages/code.html"
+          class="word fancy"
+        >
+          Code &nbsp&nbsp&nbsp&nbsp Portfolio
+        </a>
+        <p class="word">OR</p>
+      </div>
+      <div class="line">
+        <a id="contact-link" href="/pages/contact.html" class="word fancy">
+          Contact&nbsp&nbsp Me
+        </a>
+        <a id="email-link" href="/pages/about.html" class="word fancy">
+          About
+        </a>
+      </div>
     </div>
     <!-- </div> -->
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

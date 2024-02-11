@@ -41,8 +41,9 @@ h1,
   color: var(--accent-color);
 }
 
-p {
-  padding: 20px;
+.line > p,
+.line > a {
+  padding: 0px 20px;
 }
 button {
   padding: 8px 16px;
@@ -57,7 +58,8 @@ button {
 }
 
 button:hover {
-  transform: scale(1.07);
+  transform: scale(1.2);
+  margin: 0px 7px;
 }
 
 /* .increaseClick { */
@@ -70,7 +72,7 @@ button:hover {
 /* } */
 
 .navbar {
-  margin: 10px;
+  margin: 20px;
   position: sticky;
   top: 0;
   z-index: 999999;
@@ -92,14 +94,6 @@ button:hover {
   background-color: rgba(var(--accent-color), 0.5);
   backdrop-filter: blur(16px);
 }
-
-/* .navbar .left {
-  display: flex;
-}
-
-.navbar .right {
-  display: flex;
-} */
 
 @keyframes float {
   from,
@@ -126,7 +120,7 @@ body {
   height: 100%;
   /* width: 100vw; */
   position: relative;
-  margin: 0rem;
+  /* margin: 3.125rem; */
   overflow: scroll;
   /* display: grid; */
   place-items: center;
@@ -158,7 +152,7 @@ a {
   /* justify-content: space-around; */
 }
 
-.text,
+.text *,
 .grid.text span {
   font-family: "Roboto Mono", monospace;
   font-size: var(--fs-body);
@@ -169,13 +163,25 @@ a {
 }
 
 #text {
-  max-width: 880px;
-  padding: 200px;
-  margin: 0 auto;
+  /* max-width: 880px; */
+  /* padding: 200px; */
+  /* margin: 0 auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: justify */
+}
+.home-container,
+.line > a {
+  margin: 10px;
   display: block;
   align-items: center;
   justify-content: center;
   text-align: justify;
+}
+
+.home-container * {
+  /* font-weight: 700; */
 }
 
 .header {
@@ -183,6 +189,10 @@ a {
   font-size: var(--fs-primary-heading);
   font-weight: 800;
   color: var(--accent-color);
+}
+
+.extra-large {
+  font-size: 5rem;
 }
 
 .container {

@@ -21,21 +21,38 @@
 
 <body>
     <div class="navbar">
-        <div class="left">
-            <button id="colorButton hero_nav" onclick="applyRandomColor()">Color</button>
-            <button id="blackButton hero_nav" onclick="toggleMonochrome()">Mono</button>
-            <button id="colorCombinationButton hero_nav" onclick="applyColorCombination()">Combo</button>
-            <button id="invertButton hero_nav" onclick="toggleInvert()">Invert</button>
+        <div class="header">CHIANUGO</div>
+        <div class="">
+          <button class="nav" onClick="location.href='/index.html'">Home</button>
+          <button class="nav active" onClick="location.href='/pages/photo.html'">
+            Photo
+          </button>
+          <button class="nav" onClick="location.href='/pages/code.html'">
+            Code
+          </button>
+          <button class="nav" onClick="location.href='/pages/about.html'">
+            About
+          </button>
+          <button class="nav" onClick="location.href='/pages/contact.html'">
+            Contact
+          </button>
         </div>
-        <div class="right">
-            <button class='page_nav' onClick="location.href='/index.html'">Home</button>
-            <button class='page_nav' onClick="location.href='/pages/code.html'">Code</button>
+        <div class="">
+          <button id="colorButton nav" onclick="applyRandomColor()">C</button>
+          <button id="blackButton nav" onclick="toggleMonochrome()">M</button>
+          <button
+            id="colorCombinationButton nav"
+            onclick="applyColorCombination()"
+          >
+            +
+          </button>
+          <button id="invertButton nav" onclick="toggleInvert()">I</button>
         </div>
-    </div>
+      </div>
     <div class="container">
         <div class="sidebar" id="side">
             <!--TODO fix uneven transform when hovering over link -->
-            <ul>
+            <ul class="text">
                 <!-- TODO: onclick handle set active and filter selection -->
                 <li><a href="#" onclick="filterSelection('fete'); return false" class="btn active">Fête</a></li>
                 <li><a href="javascript:filterSelection('portraits');" class="btn">Portraits</a></li>

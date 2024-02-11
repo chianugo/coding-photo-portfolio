@@ -1,42 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;900&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Poppins&family=Roboto:wght@400;500;900&family=Rubik:wght@300;400;500;600;700&family=Urbanist:wght@400;600;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/code-styles.css">
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;900&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Poppins&family=Roboto:wght@400;500;900&family=Rubik:wght@300;400;500;600;700&family=Urbanist:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/code-styles.css" />
     <title>Contact</title>
     <script src="/script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="navbar">
-        <div class="left">
-            <button id="colorButton hero_nav" onclick="applyRandomColor()">Color</button>
-            <button id="blackButton hero_nav" onclick="toggleMonochrome()">Mono</button>
-            <button id="colorCombinationButton hero_nav" onclick="applyColorCombination()">Combo</button>
-            <button id="invertButton hero_nav" onclick="toggleInvert()">Invert</button>
-        </div>
-        <div class="right">
-            <button class='page_nav' onClick="location.href='/index.html'">Home</button>
-            <button class='page_nav' onClick="location.href='/pages/code.html'">Code</button>
-        </div>
+      <div class="header">CHIANUGO</div>
+      <div class="">
+        <button class="nav" onClick="location.href='/index.html'">Home</button>
+        <button class="nav" onClick="location.href='/pages/photo.html'">
+          Photo
+        </button>
+        <button class="nav" onClick="location.href='/pages/code.html'">
+          Code
+        </button>
+        <button class="nav" onClick="location.href='/pages/about.html'">
+          About
+        </button>
+        <button
+          class="nav active"
+          onClick="location.href='/pages/contact.html'"
+        >
+          Contact
+        </button>
+      </div>
+      <div class="">
+        <button id="colorButton nav" onclick="applyRandomColor()">C</button>
+        <button id="blackButton nav" onclick="toggleMonochrome()">M</button>
+        <button
+          id="colorCombinationButton nav"
+          onclick="applyColorCombination()"
+        >
+          +
+        </button>
+        <button id="invertButton nav" onclick="toggleInvert()">I</button>
+      </div>
     </div>
-    <h2 class="colored-text">CONTACT ME</h2>
+    <div class="header extra-large">CONTACT ME</div>
 
     <form action="https://formsubmit.co/chianugononuju@gmail.com" method="POST">
-        <input type="email" name="email" placeholder="Email Address" required> 
-        <input type="text" name="name" required placeholder="message">
-        <input type="email" name="email" required>
-        <button type="submit">Send</button>
-   </form>
-    
-</body>
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="text" name="name" required placeholder="message" />
+      <input type="email" name="email" required />
+      <button type="submit">Send</button>
+    </form>
+  </body>
 </html>

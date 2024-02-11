@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Navigation bar function to hide if scrolling down and show if scrolling up
+/*
 let prevScrollPos = window.pageYOffset;
 
 window.addEventListener("scroll", () => {
@@ -64,6 +65,7 @@ window.addEventListener("scroll", () => {
 
   prevScrollPos = currentScrollPos;
 });
+*/
 
 function getRandomColor() {
   const colors = [
