@@ -1,5 +1,7 @@
 * {
   box-sizing: content-box;
+  font-family: "Roboto Mono", monospace;
+  font-size: var(--fs-body);
 }
 
 body {
@@ -45,7 +47,7 @@ body {
 .sidebar li:hover {
   opacity: 1;
   transform: scale(1.09);
-  transform-origin: center;
+  transform-origin: top;
   /* transform-origin: center top;  */
 }
 
