@@ -228,6 +228,13 @@ label {
   flex: 1 1 50%;
 }
 
+label {
+  font-family: "Clash Grotesk", "Rubik";
+  font-size: var(--fs-500);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
 input {
   width: 95%;
   min-height: var(--fs-900);
@@ -235,6 +242,7 @@ input {
   /* border: 3px dotted var(--accent-color); */
   border-radius: 8px;
   box-sizing: border-box;
+  background-color: var(--accent-color);
 }
 
 input[name="message"] {
@@ -243,6 +251,12 @@ input[name="message"] {
   height: 35vh;
   width: 97.5%;
   /* opacity: 0.8; */
+}
+
+::placeholder {
+  font-family: "Roboto Mono", monospace;
+  font-size: var(--fs-body);
+  color: var(--main-color);
 }
 
 #text:has(.fancy:hover) .word:not(.fancy:hover) {
