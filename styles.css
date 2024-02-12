@@ -215,6 +215,34 @@ label {
 
 .form * {
   display: flex;
+  flex-direction: column;
+}
+
+.form > .form-group {
+  margin-bottom: 20px;
+}
+
+.form > .form-group.label-above {
+  flex-direction: row;
+  align-items: center;
+}
+
+.form > .form-group.label-above label {
+  width: 50%;
+  margin-right: 10px;
+}
+
+.form > .form-group.label-above input {
+  width: 50%;
+}
+
+.form > label {
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
 }
 
 #text:has(.fancy:hover) .word:not(.fancy:hover) {
