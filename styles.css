@@ -172,15 +172,15 @@ label {
   margin: 10px;
 }
 
-#text {
-  /* max-width: 880px; */
-  /* padding: 200px; */
-  /* margin: 0 auto;
+/* #text { */
+/* max-width: 880px; */
+/* padding: 200px; */
+/* margin: 0 auto;
   display: block;
   align-items: center;
   justify-content: center;
   text-align: justify */
-}
+/* } */
 
 .home-container,
 .line > a {
@@ -191,9 +191,9 @@ label {
   text-align: justify;
 }
 
-.home-container * {
-  /* font-weight: 700; */
-}
+/* .home-container * { */
+/* font-weight: 700; */
+/* } */
 
 .header {
   font-family: "Clash Grotesk", "Rubik", sans-serif;
