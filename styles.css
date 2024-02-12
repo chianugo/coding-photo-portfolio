@@ -55,6 +55,7 @@ label {
 }
 button {
   padding: 8px 16px;
+  font-family: "Roboto Mono", monospace;
   font-size: var(--fs-body);
   color: var(--accent-color);
   background-color: var(--main-color);
@@ -213,36 +214,30 @@ label {
   /* border: 1px solid red; */
 }
 
-.form * {
+.form-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
 }
 
-.form > .form-group {
-  margin-bottom: 20px;
+/* .form-container > * {
+  flex-basis: 100%;
+} */
+
+.form-container > * {
+  flex: 1 1 50%;
 }
 
-.form > .form-group.label-above {
-  flex-direction: row;
-  align-items: center;
+input {
+  width: 95%;
+  min-height: var(--fs-900);
+  border-radius: 8px;
 }
 
-.form > .form-group.label-above label {
-  width: 50%;
-  margin-right: 10px;
-}
-
-.form > .form-group.label-above input {
-  width: 50%;
-}
-
-.form > label {
-  margin-top: 20px;
-}
-
-input[type="text"],
-input[type="email"] {
-  width: 100%;
+input[name="message"] {
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  /* opacity: 0.8; */
 }
 
 #text:has(.fancy:hover) .word:not(.fancy:hover) {
