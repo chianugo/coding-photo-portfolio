@@ -231,12 +231,17 @@ label {
 input {
   width: 95%;
   min-height: var(--fs-900);
+  border: 0;
+  /* border: 3px dotted var(--accent-color); */
   border-radius: 8px;
+  box-sizing: border-box;
 }
 
 input[name="message"] {
   background-color: var(--accent-color);
   color: var(--main-color);
+  height: 35vh;
+  width: 97.5%;
   /* opacity: 0.8; */
 }
 
