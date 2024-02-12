@@ -180,6 +180,7 @@ label {
   justify-content: center;
   text-align: justify */
 }
+
 .home-container,
 .line > a {
   margin: 10px;
@@ -210,6 +211,10 @@ label {
    place-items: center; */
   height: 100vh;
   /* border: 1px solid red; */
+}
+
+.form * {
+  display: flex;
 }
 
 #text:has(.fancy:hover) .word:not(.fancy:hover) {
