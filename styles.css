@@ -44,7 +44,8 @@
 
 p,
 h1,
-.text {
+.text,
+label {
   color: var(--accent-color);
 }
 
@@ -160,7 +161,8 @@ a {
 }
 
 .text,
-.grid.text span {
+.grid.text span,
+label {
   font-family: "Roboto Mono", monospace;
   font-size: var(--fs-body);
 }

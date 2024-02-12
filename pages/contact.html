@@ -57,10 +57,36 @@
     <div class="header extra-large">CONTACT ME</div>
 
     <form action="https://formsubmit.co/chianugononuju@gmail.com" method="POST">
-      <input type="email" name="email" placeholder="Email Address" required />
-      <input type="text" name="name" required placeholder="message" />
-      <input type="email" name="email" required />
-      <button type="submit">Send</button>
+      <label for="full-name">Your name</label>
+      <input
+        type="text"
+        id="full-name"
+        placeholder="Your name"
+        name="name"
+        required
+      />
+      <label for="return-address">Return Address</label>
+      <input
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        id="return-address"
+      />
+      <label for="contact-message">Message</label>
+      <input
+        type="text"
+        name="message"
+        required
+        placeholder="Message"
+        id="contact-message"
+      />
+      <!-- <input
+        type="hidden"
+        name="_next"
+        value="https://yourdomain.co/thanks.html"
+      /> -->
+      <input type="hidden" name="_captcha" value="false" />
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>
