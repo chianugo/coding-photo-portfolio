@@ -33,7 +33,7 @@ function filterSelection(c) {
   // if (c == "all") c = "";
   // hide elemetns that are not active
   for (i = 0; i < x.length; i++) {
-    console.log(x.length)
+    console.log(x.length);
     AddClass(x[i], "hidden");
     if (x[i].className.indexOf(c) > -1) RemoveClass(x[i], "hidden");
   }
@@ -77,4 +77,48 @@ for (var i = 0; i < btns.length; i++) {
 
 function logHello() {
   console.log("Hello World");
+}
+
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%"; // IE10
+    elements[i].style.flex = "100%";
+  }
+  showSlides(slideIndex);
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%"; // IE10
+    elements[i].style.flex = "50%";
+  }
+  showSlides(slideIndex);
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%"; // IE10
+    elements[i].style.flex = "25%";
+  }
+  showSlides(slideIndex);
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("photobtn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
 }
