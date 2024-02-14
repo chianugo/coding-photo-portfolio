@@ -64,7 +64,7 @@ function RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Add active class to the current button (underline it)
+// Add active class to the current (photo sidebar) button (underline it)
 var btnContainer = document.getElementById("side");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
@@ -88,7 +88,6 @@ var i;
 // Full-width images
 function one() {
   for (i = 0; i < elements.length; i++) {
-    elements[i].style.msFlex = "100%"; // IE10
     elements[i].style.flex = "100%";
   }
   showSlides(slideIndex);
@@ -97,7 +96,6 @@ function one() {
 // Two images side by side
 function two() {
   for (i = 0; i < elements.length; i++) {
-    elements[i].style.msFlex = "50%"; // IE10
     elements[i].style.flex = "50%";
   }
   showSlides(slideIndex);
@@ -106,17 +104,17 @@ function two() {
 // Four images side by side
 function four() {
   for (i = 0; i < elements.length; i++) {
-    elements[i].style.msFlex = "25%"; // IE10
     elements[i].style.flex = "25%";
   }
   showSlides(slideIndex);
 }
 
-// Add active class to the current button (highlight it)
+// Add active class to the current (grid) button (highlight it)
 var header = document.getElementById("myHeader");
-var btns = header.getElementsByClassName("photobtn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
+var photobtns = header.getElementsByClassName("photobtn");
+for (var i = 0; i < photobtns.length; i++) {
+  photobtns[i].addEventListener("click", function () {
+    // var current = document.getElementsByClassName("active");
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";

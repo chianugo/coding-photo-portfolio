@@ -64,6 +64,8 @@ body {
 }
 
 .picture_container {
+  display: flex;
+  justify-content: center;
   /* position: relative; */
   margin: auto;
   /* width: 1440px; */
@@ -107,8 +109,10 @@ img {
 }
 
 .head {
+  display: flex;
+  /* justify-content: center; */
   text-align: center;
-  padding: 32px;
+  /* padding: 32px; */
 }
 
 .row {
@@ -126,14 +130,14 @@ img {
 
 .column img {
   /* position: absolute; */
-  top: 50%;
-  left: 50%;
+  /* top: 50%;
+  left: 50%; */
   margin-top: 8px;
   vertical-align: middle;
   max-width: 100%;
   max-height: 100%;
-  width: auto;
   height: auto;
+  /* width: 30%; */
 }
 
 .caption {
@@ -148,7 +152,7 @@ img {
 
 .fade {
   animation-name: fade;
-  animation-duration: 1.3s;
+  animation-duration: 0.9s;
 }
 
 @keyframes fade {
@@ -167,10 +171,10 @@ img {
     -1px 1px 0 var(--main-color), 1px 1px 0 var(--main-color);
 }
 
-.btn.active {
+/* .btn.active {
   text-decoration: underline;
   text-underline-offset: 8px;
-}
+} */
 
 .hidden {
   display: none;
