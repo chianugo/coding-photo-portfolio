@@ -18,17 +18,20 @@ function showSlides(n) {
 
 filterSelection("fete"); // Begin by showing fete
 function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("slide");
+  // slides = document.getElementsByClassName("slide");
   // if (c == "all") c = "";
   // hide elemetns that are not active
-  for (i = 0; i < x.length; i++) {
-    console.log(x.length);
-    AddClass(x[i], "hidden");
-    if (x[i].className.indexOf(c) > -1) RemoveClass(x[i], "hidden");
+  for (let i = 0; i < slides.length; i++) {
+    console.log(slides.length);
+    slides[i].classList.add("hidden");
+    // AddClass(slides[i], "hidden");
+    if (slides[i].classList.contains(c)) {
+      // RemoveClass(slides[i], "hidden");
+      slides[i].classList.remove("hidden");
+    }
   }
 }
-
+/*
 // Show filtered elements
 function AddClass(element, name) {
   var i, arr1, arr2;
@@ -53,15 +56,19 @@ function RemoveClass(element, name) {
   }
   element.className = arr1.join(" ");
 }
-
+*/
 // Add active class to the current (photo sidebar) button (underline it)
-var btnContainer = document.getElementById("side");
-var btns = btnContainer.getElementsByClassName("btn");
+// const btnContainer = document.getElementById("side");
+const btns = document.getElementsByClassName("side-btn");
+// Loop through all buttons and add click event listeners
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("side-active");
-    current[0].className = current[0].className.replace(" side-active", "");
-    this.className += " side-active";
+    // Remove "active" class from all buttons
+    for (var j = 0; j < btns.length; j++) {
+      btns[j].classList.remove("side-active");
+    }
+    // Add "active" class to the clicked button
+    this.classList.add("side-active");
   });
 }
 
@@ -70,7 +77,7 @@ function logHello() {
 }
 
 // Get the elements with class="column"
-var elements = document.getElementsByClassName("column");
+const elements = document.getElementsByClassName("column");
 
 // Declare a loop variable
 var i;
