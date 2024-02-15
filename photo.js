@@ -16,7 +16,7 @@ function showSlides(n) {
   slides[slideIndex].style.display = "block";
 }
 
-filterSelection("fete"); // Begin by showing fete
+filterSelection("all"); // Begin by showing all
 function filterSelection(c) {
   // slides = document.getElementsByClassName("slide");
   // if (c == "all") c = "";

@@ -59,8 +59,13 @@
           <li>
             <a
               href="#"
-              onclick="filterSelection('fete'); return false"
+              onclick="filterSelection('all'); return false"
               class="side-btn side-active"
+              >All</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="filterSelection('fete');" class="side-btn"
               >Fête</a
             >
           </li>
@@ -116,38 +121,21 @@
         </div>
         <div class="row">
           <div class="column">
-            <img src="/assets/DSCF1099.jpg" class="slide fade fete" />
-            <img src="/assets/DSCF6027.jpg" class="slide fade" />
-            <img src="/assets/goz-and-giles-min.jpg" class="slide fade" />
-            <img src="/assets/jules-at-7th.jpg" class="slide fade" />
-            <img src="/assets/DSCF5402.jpg" class="slide fade" />
-            <img src="/assets/DSCF5400.jpg" class="slide fade" />
-            <img src="/assets/jules-at-7th.jpg" class="slide fade" />
+            <img src="/assets/DSCF1099.jpg" class="slide fade all" />
+            <img src="/assets/DSCF6027.jpg" class="slide fade fete all" />
           </div>
           <div class="column">
             <img src="/assets/DSCF5459.jpg" class="slide fade" />
             <img src="/assets/DSCF6488.jpg" class="slide fade" />
-            <img src="/assets/DSCF1099.jpg" class="slide fade" />
-            <img src="/assets/DSCF6432.jpg" class="slide fade" />
-            <img src="/assets/DSCF6027.jpg" class="slide fade" />
-            <img src="/assets/DSCF5459.jpg" class="slide fade" />
           </div>
           <div class="column">
-            <img src="/assets/DSCF1099.jpg" class="slide fade" />
-            <img src="/assets/DSCF6027.jpg" class="slide fade" />
             <img src="/assets/goz-and-giles-min.jpg" class="slide fade" />
             <img src="/assets/jules-at-7th.jpg" class="slide fade" />
-            <img src="/assets/DSCF5402.jpg" class="slide fade" />
-            <img src="/assets/DSCF5400.jpg" class="slide fade" />
-            <img src="/assets/jules-at-7th.jpg" class="slide fade" />
           </div>
           <div class="column">
-            <img src="/assets/DSCF5459.jpg" class="slide fade" />
-            <img src="/assets/DSCF6488.jpg" class="slide fade" />
-            <img src="/assets/DSCF1099.jpg" class="slide fade" />
+            <img src="/assets/DSCF5402.jpg" class="slide fade" />
+            <img src="/assets/DSCF5400.jpg" class="slide fade" />
             <img src="/assets/DSCF6432.jpg" class="slide fade" />
-            <img src="/assets/DSCF6027.jpg" class="slide fade" />
-            <img src="/assets/DSCF5459.jpg" class="slide fade" />
           </div>
         </div>
         <!--
@@ -166,8 +154,11 @@
                 </div>
             </div>
             -->
-        <a class="prev stroke" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next stroke" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="cycle-buttons">
+          <a class="prev stroke" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next stroke" onclick="plusSlides(1)">&#10095;</a>
+        </div>
       </div>
     </div>
 
