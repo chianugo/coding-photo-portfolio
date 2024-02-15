@@ -78,6 +78,7 @@ body {
 
 .container {
   display: flex;
+  flex-direction: row;
 }
 
 .container .picture_container {
@@ -90,6 +91,7 @@ body {
 
 .picture_container {
   display: block;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   /* position: relative; */
@@ -105,8 +107,8 @@ body {
 .prev,
 .next {
   cursor: pointer;
-  position: absolute;
-  top: 50%;
+  /* position: relative; */
+  /* top: 50%; */
   width: auto;
   /* margin-top: -22px; */
   padding: 16px;
@@ -136,10 +138,12 @@ body {
 
 .head {
   display: flex;
+  justify-content: center;
+  align-items: center;
   /* justify-content: flex-end; */
   text-align: center;
   /* padding: 32px; */
-  background-color: black;
+  /* background-color: black; */
 }
 
 .row {
@@ -155,15 +159,17 @@ body {
   /* position: relative; */
 }
 
-.column img {
+.column > img {
   /* position: absolute; */
   /* top: 50%;
   left: 50%; */
   margin-top: 8px;
   vertical-align: middle;
-  max-width: 100%;
-  max-height: 100%;
+  max-height: 100dvh;
+  max-width: 80%;
   height: auto;
+  justify-content: center;
+  align-items: center;
   /* width: 30%; */
 }
 
@@ -206,4 +212,10 @@ a.side-active {
 
 img.hidden {
   display: none;
+}
+
+.image-carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

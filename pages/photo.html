@@ -119,26 +119,28 @@
           <button class="photobtn active" onclick="two()">2</button>
           <button class="photobtn" onclick="four()">4</button>
         </div>
-        <div class="row">
-          <div class="column">
-            <img src="/assets/DSCF1099.jpg" class="slide fade all" />
-            <img src="/assets/DSCF6027.jpg" class="slide fade fete all" />
+        <div class="image-carousel">
+          <a class="prev stroke" onclick="plusSlides(-1)">&#10094;</a>
+          <div class="row">
+            <div class="column">
+              <img src="/assets/DSCF1099.jpg" class="slide fade all" />
+              <img src="/assets/DSCF6027.jpg" class="slide fade fete all" />
+            </div>
+            <div class="column">
+              <img src="/assets/DSCF5459.jpg" class="slide fade" />
+              <img src="/assets/DSCF6488.jpg" class="slide fade" />
+            </div>
+            <div class="column">
+              <img src="/assets/goz-and-giles-min.jpg" class="slide fade" />
+              <img src="/assets/jules-at-7th.jpg" class="slide fade" />
+            </div>
+            <div class="column">
+              <img src="/assets/DSCF5402.jpg" class="slide fade" />
+              <img src="/assets/DSCF5400.jpg" class="slide fade" />
+              <img src="/assets/DSCF6432.jpg" class="slide fade" />
+            </div>
           </div>
-          <div class="column">
-            <img src="/assets/DSCF5459.jpg" class="slide fade" />
-            <img src="/assets/DSCF6488.jpg" class="slide fade" />
-          </div>
-          <div class="column">
-            <img src="/assets/goz-and-giles-min.jpg" class="slide fade" />
-            <img src="/assets/jules-at-7th.jpg" class="slide fade" />
-          </div>
-          <div class="column">
-            <img src="/assets/DSCF5402.jpg" class="slide fade" />
-            <img src="/assets/DSCF5400.jpg" class="slide fade" />
-            <img src="/assets/DSCF6432.jpg" class="slide fade" />
-          </div>
-        </div>
-        <!--
+          <!--
           <div class="slide fade fete">
                 <img src="/assets/goz-and-giles-min.jpg" alt="Goziem and Giles at Seyna's">
                 <div class="caption">
@@ -154,10 +156,8 @@
                 </div>
             </div>
             -->
-
-        <div class="cycle-buttons">
-          <a class="prev stroke" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next stroke" onclick="plusSlides(1)">&#10095;</a>
+          <!-- <div class="cycle-buttons"></div> -->
         </div>
       </div>
     </div>

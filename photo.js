@@ -4,7 +4,7 @@ showSlides();
 
 // Next/previous controls
 function plusSlides(n) {
-  slideIndex = (slideIndex + 1 + slides.length) % slides.length;
+  slideIndex = (slideIndex + n + slides.length) % slides.length;
   showSlides();
 }
 
