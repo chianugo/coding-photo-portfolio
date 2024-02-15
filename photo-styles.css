@@ -71,7 +71,7 @@ body {
 
 .picture_container > .cycle-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: black;
 }
@@ -81,13 +81,17 @@ body {
 }
 
 .container .picture_container {
-  flex: 6 1 0%;
+  flex: 7 1 0%;
+}
+
+.picture_container .head {
+  /* flex: 1 1 0%; */
 }
 
 .picture_container {
-  display: flex;
+  display: block;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   /* position: relative; */
   margin: auto;
   /* width: 1440px; */
@@ -132,9 +136,10 @@ body {
 
 .head {
   display: flex;
-  /* justify-content: center; */
+  /* justify-content: flex-end; */
   text-align: center;
   /* padding: 32px; */
+  background-color: black;
 }
 
 .row {
