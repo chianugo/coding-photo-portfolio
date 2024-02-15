@@ -5,7 +5,8 @@
 }
 
 body {
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
+  overflow: auto;
 }
 
 .sidebar {
@@ -13,8 +14,8 @@ body {
   width: 160px;
   /* display: inline; */
   position: relative;
-  z-index: 1;
-  left: 0;
+  /* z-index: 1; */
+  /* left: 0; */
   background-color: var(--main-color);
   /* padding-top: 20px; */
   transition: all 0.3s ease;
@@ -67,13 +68,6 @@ body {
 
 .photobtn {
   margin-top: 0px;
-}
-
-.picture_container > .cycle-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
 }
 
 .container {

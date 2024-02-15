@@ -203,11 +203,11 @@ function toggleMonochrome() {
 function applyColorCombination() {
   // Define color combinations
   const colorCombinations = [
-    { main: "#FF0000", accent: "#000000" }, // Red and Black
-    { main: "#000000", accent: "#FFFF00" }, // Black and Yellow
-    { main: "#008000", accent: "#FFC0CB" }, // Green and Pink
-    { main: "#FFFFFF", accent: "#A52A2A" }, // White and Brown
-    { main: "#00539C", accent: "#EEA47F" }, // Royal Blue and Peach
+    { main: "#FF0000", accent: "#000000" },
+    { main: "#000000", accent: "#FFFF00" },
+    { main: "#008000", accent: "#FFC0CB" },
+    { main: "#FFFFFF", accent: "#A52A2A" },
+    { main: "#00539C", accent: "#EEA47F" },
     { main: "#E0FC5F", accent: "#8638CD" },
     { main: "#F44962", accent: "#0F050C" },
     { main: "#c8db79", accent: "#323D25" },

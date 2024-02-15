@@ -107,8 +107,8 @@ function four() {
 }
 
 // Add active class to the current (grid) button (highlight it)
-var header = document.getElementById("myHeader");
-var photobtns = header.getElementsByClassName("photobtn");
+// var header = document.getElementById("myHeader");
+var photobtns = document.getElementsByClassName("photobtn");
 for (var i = 0; i < photobtns.length; i++) {
   photobtns[i].addEventListener("click", function () {
     // var current = document.getElementsByClassName("active");
