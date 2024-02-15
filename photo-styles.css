@@ -171,10 +171,10 @@ img {
     -1px 1px 0 var(--main-color), 1px 1px 0 var(--main-color);
 }
 
-/* .btn.active {
+.side-active {
   text-decoration: underline;
   text-underline-offset: 8px;
-} */
+}
 
 .hidden {
   display: none;

@@ -1,29 +1,19 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideIndex = 0;
+const slides = document.getElementsByClassName("slide");
+showSlides();
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides((slideIndex += n));
+  slideIndex = (slideIndex + 1 + slides.length) % slides.length;
+  showSlides();
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
+// Sets a display of none to every slide except the current one
 function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("slide");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex].style.display = "block";
 }
 
 filterSelection("fete"); // Begin by showing fete
@@ -69,9 +59,9 @@ var btnContainer = document.getElementById("side");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    var current = document.getElementsByClassName("side-active");
+    current[0].className = current[0].className.replace(" side-active", "");
+    this.className += " side-active";
   });
 }
 
