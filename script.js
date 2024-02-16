@@ -139,14 +139,6 @@ let mainColor = localStorage.getItem("mainColor") || getRandomColor();
 let accentColor = localStorage.getItem("accentColor") || getRandomColor();
 
 function setButtonColors() {
-  button = document.getElementById("colorButton");
-  button.style.backgroundColor = mainColor;
-  button.style.borderColor = accentColor;
-
-  blackButton = document.getElementById("blackButton");
-  blackButton.style.backgroundColor = mainColor;
-  blackButton.style.borderColor = accentColor;
-
   buttons = document.getElementsById("button");
   buttons.forEach((button) => {
     button.style.backgroundColor = mainColor;
@@ -295,15 +287,6 @@ function toggleInvert() {
   localStorage.setItem("mainColor", mainColor);
   localStorage.setItem("accentColor", accentColor);
   setButtonColors();
-
-  // Update the text color of the buttons based on monochrome and invert state
-  // var thisElements = document.getElementsByClassName("button");
-  // for (var i = 0; i < thisElements.length; i++) {
-  //   thisElements[i].style.color =
-  //     invertState === "true" ? mainColor : accentColor;
-  //   thisElements[i].style.backgroundColor =
-  //     invertState === "true" ? accentColor : mainColor;
-  // }
 }
 
 // Initialize mainColor and accentColor from localStorage or generate random colors if not present
@@ -319,7 +302,6 @@ if (!mainColor || !accentColor) {
   document.documentElement.style.setProperty("--accent-color", accentColor);
 }
 
-var invertButton = document.getElementById("invertButton");
 invertButton.addEventListener("click", toggleInvert);
 
 document.documentElement.style.setProperty("--main-color", mainColor);
@@ -327,9 +309,15 @@ document.documentElement.style.setProperty("--accent-color", accentColor);
 
 setButtonColors();
 
+var colorButton = document.getElementById("colorButton");
+
+var blackButton = document.getElementById("blackButton");
+
 var colorCombinationButton = document.getElementById("colorCombinationButton");
 
-button.addEventListener("click", applyRandomColor);
+var invertButton = document.getElementById("invertButton");
+
+colorButton.addEventListener("click", applyRandomColor);
 blackButton.addEventListener("click", toggleMonochrome);
 colorCombinationButton.addEventListener("click", applyColorCombination);
 
@@ -338,7 +326,7 @@ function handleKeyPress(event) {
   const key = event.key.toLowerCase();
 
   if (key === "ArrowLeft" || key === "ArrowRight") {
-    button.click();
+    colorButton.click();
   } else if (key === "ArrowUp" || key === "ArrowDown") {
     blackButton.click();
   }
