@@ -108,12 +108,14 @@ function four() {
 
 // Add active class to the current (grid) button (highlight it)
 // var header = document.getElementById("myHeader");
-var photobtns = document.getElementsByClassName("photobtn");
+const photobtns = document.getElementsByClassName("photobtn");
 for (var i = 0; i < photobtns.length; i++) {
   photobtns[i].addEventListener("click", function () {
     // var current = document.getElementsByClassName("active");
-    var current = document.getElementsByClassName("grid-active");
-    current[0].className = current[0].classList.remove("grid-active");
-    this.className += " grid-active";
+    for (var j = 0; j < photobtns.length; j++) {
+      photobtns[j].classList.remove("grid-active");
+    }
+    // Add "active" class to the clicked button
+    this.classList.add("grid-active");
   });
 }
