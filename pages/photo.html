@@ -28,7 +28,7 @@
   <body>
     <div class="navbar">
       <div class="header">CHIANUGO</div>
-      <div class="">
+      <div class="home_row">
         <button class="nav" onClick="location.href='/index.html'">Home</button>
         <button class="nav active" onClick="location.href='/pages/photo.html'">
           Photo
@@ -36,14 +36,14 @@
         <button class="nav" onClick="location.href='/pages/code.html'">
           Code
         </button>
-        <button class="nav" onClick="location.href='/pages/about.html'">
-          About
-        </button>
         <button class="nav" onClick="location.href='/pages/contact.html'">
           Contact
         </button>
+        <button class="nav" onClick="location.href='/pages/about.html'">
+          About
+        </button>
       </div>
-      <div class="">
+      <div class="colorButtons">
         <button id="colorButton nav" onclick="applyRandomColor()">C</button>
         <button id="blackButton nav" onclick="toggleMonochrome()">
           <i class="fa-regular fa-moon"></i>
@@ -123,9 +123,12 @@
       <div class="picture_container">
         <div class="head" id="myHeader">
           <!-- <p>Click on the buttons to change the grid view.</p> -->
-          <button class="photobtn" onclick="one()">1</button>
-          <button class="photobtn grid-active" onclick="two()">2</button>
-          <button class="photobtn" onclick="four()">4</button>
+          <button class="photobtn grid-active" onclick="one()">
+            <i class="fa-regular fa-square"></i>
+          </button>
+          <button class="photobtn" onclick="four()">
+            <i class="fa-solid fa-table-cells-large"></i>
+          </button>
         </div>
         <div class="image-carousel">
           <a class="prev stroke" onclick="plusSlides(-1)">&#10094;</a>

@@ -204,6 +204,17 @@ a.side-active {
   /* font-size: 100px; */
 }
 
+button.grid-active {
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  border: 3px dotted var(--main-color);
+  border-radius: 20px;
+}
+
+#myHeader {
+  margin-right: 7px;
+}
+
 img.hidden {
   display: none;
 }

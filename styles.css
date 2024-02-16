@@ -69,17 +69,11 @@ button {
 
 button:hover {
   transform: scale(1.2);
-  margin: 0px 7px;
 }
 
-/* .increaseClick { */
-/* display: inline-block; */
-/* position: relative; */
-/* z-index: 1; */
-/* padding-right: 2em; */
-/* margin: -2em; */
-/* border: 1px solid; */
-/* } */
+.home_row button:hover {
+  margin: 0px 7px;
+}
 
 .navbar {
   margin: 20px;
@@ -93,7 +87,6 @@ button:hover {
 }
 
 .nav.active {
-  /* transform: scale(1.07); */
   background-color: var(--accent-color);
   color: var(--main-color);
   border: 3px dotted var(--main-color);

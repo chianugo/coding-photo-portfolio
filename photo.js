@@ -112,8 +112,8 @@ var photobtns = document.getElementsByClassName("photobtn");
 for (var i = 0; i < photobtns.length; i++) {
   photobtns[i].addEventListener("click", function () {
     // var current = document.getElementsByClassName("active");
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    var current = document.getElementsByClassName("grid-active");
+    current[0].className = current[0].classList.remove("grid-active");
+    this.className += " grid-active";
   });
 }
