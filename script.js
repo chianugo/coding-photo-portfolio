@@ -238,6 +238,9 @@ function applyColorCombination() {
     { main: "#2f2f2f", accent: "#fe6f27" },
     { main: "#7ad9c4", accent: "#230071" },
     { main: "#164058", accent: "#f5b51b" },
+    { main: "#f9848e", accent: "#f0355f" },
+    { main: "#514746", accent: "#edc8b2" },
+    { main: "#acdbe7", accent: "#7988de" },
   ];
 
   // Choose a random color combination
