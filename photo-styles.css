@@ -79,9 +79,9 @@ body {
   flex: 7 1 0%;
 }
 
-.picture_container .head {
-  /* flex: 1 1 0%; */
-}
+/* .picture_container .head {
+  flex: 1 1 0%;
+} */
 
 .picture_container {
   display: block;
