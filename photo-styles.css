@@ -33,7 +33,7 @@ body {
   text-decoration: none;
   font-size: 25px;
   color: var(--accent-color);
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
   padding-right: 20px;
   position: relative;
   display: inline-block;
@@ -48,7 +48,7 @@ body {
   padding: 6px 8px 6px 16px;
   /* color: var(--main-color); */
   overflow: hidden;
-  transition: width 0.3s ease;
+  /* transition: width 0.3s ease; */
   width: 0;
   white-space: nowrap;
 }
