@@ -17,6 +17,10 @@
 :root {
   --main-color: #000000;
   --accent-color: #ffffff;
+  --hover-color: var(--accent-color);
+
+  --lighten-factor: 20%;
+  --darken-factor: 20%;
 
   --fs-300: 0.75rem;
   --fs-400: 1rem;

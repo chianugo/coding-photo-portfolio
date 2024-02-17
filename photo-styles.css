@@ -35,34 +35,43 @@ body {
   color: var(--accent-color);
   transition: all 0.3s ease;
   padding-right: 20px;
+  position: relative;
   display: inline-block;
   overflow: hidden;
-  background: linear-gradient(
-    to right,
-    var(--main-color),
-    var(--main-color) 50%,
-    var(--accent-color) 50%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% 100%;
-  background-position: 100%;
-  /* float: left; */
 }
 
-.sidebar a:hover {
+.sidebar a::before {
+  position: absolute;
+  content: attr(data-content);
+  top: 0;
+  left: 0;
+  padding: 6px 8px 6px 16px;
+  /* color: var(--main-color); */
+  overflow: hidden;
+  transition: width 0.3s ease;
+  width: 0;
+  white-space: nowrap;
+}
+
+.sidebar a:hover::before {
+  /* width: 100%; */
+  color: midnightblue;
+  /* color: rgba(var(--accent-color), 1 - var(--lighten-factor)); */
   animation: color-change 2s ease infinite;
 }
+
+/* .sidebar a:hover {
+  animation: color-change 1s ease infinite;
+} */
 
 @keyframes color-change {
   from,
   to {
-    background-position: 100;
+    width: 0%;
   }
 
   50% {
-    background-position: 0;
+    width: 100%;
   }
 }
 

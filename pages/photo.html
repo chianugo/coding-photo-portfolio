@@ -69,36 +69,57 @@
               href="#"
               onclick="filterSelection('all'); return false"
               class="side-btn side-active"
+              data-content="All"
               >All</a
             >
           </li>
           <li>
-            <a href="#" onclick="filterSelection('fete');" class="side-btn"
+            <a
+              href="#"
+              onclick="filterSelection('fete');"
+              class="side-btn"
+              data-content="Fête"
               >Fête</a
             >
           </li>
           <li>
-            <a href="javascript:filterSelection('portraits');" class="side-btn"
+            <a
+              href="javascript:filterSelection('portraits');"
+              class="side-btn"
+              data-content="Portraits"
               >Portraits</a
             >
           </li>
           <li>
-            <a href="javascript:filterSelection('walk');" class="side-btn"
+            <a
+              href="javascript:filterSelection('walk');"
+              class="side-btn"
+              data-content="Photo Walks"
               >Photo Walks</a
             >
           </li>
           <li>
-            <a href="javascript:filterSelection('concerts');" class="side-btn"
+            <a
+              href="javascript:filterSelection('concerts');"
+              class="side-btn"
+              data-content="Concerts"
               >Concerts</a
             >
           </li>
           <li>
-            <a href="javascript:filterSelection('swarm');" class="side-btn"
+            <a
+              href="javascript:filterSelection('swarm');"
+              class="side-btn"
+              data-content="Swarm"
               >Swarm</a
             >
           </li>
           <li>
-            <a href="#" onclick="logHello(); return false" class="side-btn"
+            <a
+              href="#"
+              onclick="logHello(); return false"
+              class="side-btn"
+              data-content="You take one"
               >You take one</a
             >
           </li>
@@ -107,15 +128,26 @@
               href="#"
               onclick="filterSelection('polaroid'); return false"
               class="side-btn"
+              data-content="Polaroids"
               >Polaroids</a
             >
           </li>
           <!-- <li><a href="#" onclick="filterSelection('kiz'); return false" class="side-btn">You take one</a></li> -->
           <li>
+            <!-- <a
+              href="javascript:filterSelection('other');"
+              onclick="filterSelection('other');"
+              class="side-btn"
+              data-content="Fête"
+              >+‎‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎
+            </a> -->
             <a
               href="javascript:filterSelection('other');"
-              class="side-btn increaseClick"
-              >+‎‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎
+              onclick="filterSelection('other');"
+              class="side-btn"
+              data-content="+"
+              style="padding-right: 120px; margin-right: -30px"
+              >+
             </a>
           </li>
         </ul>
