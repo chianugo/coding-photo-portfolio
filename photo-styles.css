@@ -33,10 +33,37 @@ body {
   text-decoration: none;
   font-size: 25px;
   color: var(--accent-color);
-  display: block;
   transition: all 0.3s ease;
-  float: left;
   padding-right: 20px;
+  display: inline-block;
+  overflow: hidden;
+  background: linear-gradient(
+    to right,
+    var(--main-color),
+    var(--main-color) 50%,
+    var(--accent-color) 50%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  /* float: left; */
+}
+
+.sidebar a:hover {
+  animation: color-change 2s ease infinite;
+}
+
+@keyframes color-change {
+  from,
+  to {
+    background-position: 100;
+  }
+
+  50% {
+    background-position: 0;
+  }
 }
 
 .sidebar ul {
@@ -53,13 +80,13 @@ body {
 
 .sidebar li:hover {
   opacity: 1;
-  transform: scale(1.09);
-  transform-origin: top;
+  /* transform: scale(1.09); */
+  /* transform-origin: top; */
   /* transform-origin: center top;  */
 }
 
 .sidebar ul:hover li:not(:hover) {
-  opacity: 0.1;
+  opacity: 0.3;
 }
 
 .slide {
