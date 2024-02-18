@@ -40,7 +40,8 @@ body {
   overflow: hidden;
 }
 
-.sidebar a::before {
+.sidebar a::before,
+.sidebar a::after {
   position: absolute;
   content: attr(data-content);
   top: 0;
@@ -58,6 +59,12 @@ body {
   color: midnightblue;
   /* color: rgba(var(--accent-color), 1 - var(--lighten-factor)); */
   animation: color-change 2s ease infinite;
+}
+.sidebar a:hover::after {
+  /* width: 100%; */
+  color: yellow;
+  /* color: rgba(var(--accent-color), 1 - var(--lighten-factor)); */
+  animation: color-change 1.3s ease alternate infinite;
 }
 
 /* .sidebar a:hover {
