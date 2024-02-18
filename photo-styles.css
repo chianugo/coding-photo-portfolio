@@ -62,7 +62,8 @@ body {
 }
 .sidebar a:hover::after {
   /* width: 100%; */
-  color: yellow;
+  /* color: yellow; */
+  color: hsl(51, 100%, 50%);
   /* color: rgba(var(--accent-color), 1 - var(--lighten-factor)); */
   animation: color-change 1.3s ease alternate infinite;
 }
