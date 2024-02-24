@@ -93,8 +93,6 @@ body {
   transition: all 0.3s ease;
 }
 
-/* TODO  fix uneven transform*/
-
 .sidebar li:hover {
   opacity: 1;
   /* transform: scale(1.09); */
