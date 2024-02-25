@@ -1,6 +1,6 @@
 let slideIndex = 0;
 const slides = document.getElementsByClassName("slide");
-showSlides();
+// showSlides();
 
 // Next/previous controls
 function plusSlides(n) {
@@ -87,7 +87,7 @@ function one() {
   for (i = 0; i < elements.length; i++) {
     elements[i].style.flex = "100%";
   }
-  showSlides(slideIndex);
+  // showSlides(slideIndex);
 }
 
 // Two images side by side
@@ -95,7 +95,7 @@ function two() {
   for (i = 0; i < elements.length; i++) {
     elements[i].style.flex = "50%";
   }
-  showSlides(slideIndex);
+  // showSlides(slideIndex);
 }
 
 // Four images side by side
@@ -103,7 +103,7 @@ function four() {
   for (i = 0; i < elements.length; i++) {
     elements[i].style.flex = "25%";
   }
-  showSlides(slideIndex);
+  // showSlides(slideIndex);
 }
 
 // Add active class to the current (grid) button (highlight it)
