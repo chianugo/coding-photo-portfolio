@@ -8,6 +8,17 @@ function plusSlides(n) {
   showSlides();
 }
 
+document.addEventListener("keydown", function (e) {
+  var keyPressed = e.key;
+  if (keyPressed === "ArrowLeft") {
+    //Left Key Press
+    plusSlides(-1);
+  } else if (keyPressed === "ArrowRight") {
+    // Right Key Press
+    plusSlides(1);
+  }
+});
+
 // Sets a display of none to every slide except the current one
 function showSlides(n) {
   for (let i = 0; i < slides.length; i++) {
