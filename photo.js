@@ -1,6 +1,6 @@
 let slideIndex = 0;
 const slides = document.getElementsByClassName("slide");
-// showSlides();
+showSlides(0);
 
 // Next/previous controls
 function plusSlides(n) {

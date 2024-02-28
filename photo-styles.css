@@ -114,7 +114,7 @@ body {
 }
 
 .container .picture_container {
-  /* flex: 7 1 0%; */
+  flex: 7 1 0%;
 }
 
 /* .picture_container .head {
@@ -129,7 +129,7 @@ body {
   /* position: relative; */
   margin: auto;
   /* width: 1440px; */
-  /* height: 100%; */
+  height: 90vh;
   opacity: 0.95;
   /* flex-grow: 2; */
   flex-wrap: wrap;
@@ -261,4 +261,8 @@ img.hidden {
   flex-direction: row;
   /* justify-content: space-between; */
   align-items: center;
+}
+
+img {
+  max-height: 75vh;
 }
