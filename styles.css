@@ -227,7 +227,8 @@ label {
   align-items: center;
 }
 
-.header {
+.header,
+.header > a {
   font-family: "Clash Grotesk", "Rubik", sans-serif;
   font-size: var(--fs-primary-heading);
   font-weight: 800;
