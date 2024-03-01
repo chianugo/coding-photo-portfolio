@@ -203,12 +203,12 @@ img {
   align-items: center;
 }
 
-.caption {
+.slide {
   display: flex;
   flex-direction: row;
 }
 
-.caption p {
+.slide p {
   align-self: flex-end;
 }
 
