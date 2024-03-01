@@ -5,6 +5,10 @@ showSlides(0);
 // Next/previous controls
 function plusSlides(n) {
   slideIndex = (slideIndex + n + slides.length) % slides.length;
+  while (slides[slideIndex].classList.contains("hidden")) {
+    slideIndex = (slideIndex + n + slides.length) % slides.length;
+  }
+  console.log(slideIndex + " /" + slides.length);
   showSlides();
 }
 
@@ -20,7 +24,7 @@ document.addEventListener("keydown", function (e) {
 });
 
 // Sets a display of none to every slide except the current one
-function showSlides(n) {
+function showSlides() {
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -34,13 +38,16 @@ function filterSelection(c) {
   // hide elemetns that are not active
   for (let i = 0; i < slides.length; i++) {
     console.log(slides.length);
-    slides[i].classList.add("hidden");
+    if (!slides[i].classList.contains(c)) {
+      slides[i].classList.add("hidden");
+    }
     // AddClass(slides[i], "hidden");
     if (slides[i].classList.contains(c)) {
       // RemoveClass(slides[i], "hidden");
       slides[i].classList.remove("hidden");
     }
   }
+  showSlides();
 }
 /*
 // Show filtered elements
