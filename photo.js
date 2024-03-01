@@ -47,7 +47,9 @@ function filterSelection(c) {
       slides[i].classList.remove("hidden");
     }
   }
-  showSlides();
+  if (slides[slideIndex].classList.contains("hidden")) {
+    plusSlides(1);
+  }
 }
 
 // Add active class to the current (photo sidebar) button (underline it)
