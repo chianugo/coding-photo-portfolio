@@ -114,23 +114,13 @@ body {
   flex: 7 1 0%;
 }
 
-/* .picture_container .head {
-  flex: 1 1 0%;
-} */
-
 .picture_container {
   display: block;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
-  /* position: relative; */
   margin: auto;
-  /* width: 1440px; */
   height: 90vh;
-  /* opacity: 0.55; */
-  /* flex-grow: 2; */
   flex-wrap: wrap;
-  /* gap: 20px; */
   margin-top: 5px;
   padding: 6px 0px;
 }
