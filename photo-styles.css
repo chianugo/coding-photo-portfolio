@@ -138,10 +138,7 @@ body {
 .prev,
 .next {
   cursor: pointer;
-  /* position: relative; */
-  /* top: 50%; */
   width: auto;
-  /* margin-top: -22px; */
   padding: 16px;
   color: var(--accent-color);
   font-weight: bold;
@@ -170,7 +167,6 @@ body {
 
 .row {
   display: flex;
-  /* flex-wrap: wrap; */
   padding: 0 4px;
 }
 
@@ -180,7 +176,6 @@ body {
 }
 
 img {
-  /* max-height: auto; */
   width: auto;
 }
 
