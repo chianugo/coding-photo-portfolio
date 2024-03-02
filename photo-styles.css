@@ -21,13 +21,11 @@ body {
 
 .sidebar {
   /* height: 100%; */
-  /* width: 160px; */
   width: 210px;
   background-color: var(--main-color);
   transition: all 0.3s ease;
   white-space: nowrap;
   text-overflow: ellipsis;
-  /* padding-right: 50px; */
 }
 
 .sidebar a {
@@ -223,7 +221,6 @@ img {
 a.side-active {
   text-decoration: underline;
   text-underline-offset: 8px;
-  /* font-size: 100px; */
 }
 
 button.grid-active {
