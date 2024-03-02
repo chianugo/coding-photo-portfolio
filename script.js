@@ -1,7 +1,6 @@
 const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const enhance = (id) => {
-  //   alert("Hello");
   const element = document.getElementById(id),
     text = element.innerText.split("");
 
@@ -168,18 +167,6 @@ function toggleMonochrome() {
     mainColor = "hsl(0deg 0% 0%)";
     accentColor = "hsl(0deg 0% 100%)";
   }
-  // else if (mainColor === hsl(0deg 0% 100%)'){
-  //     mainColor = 'hsl(0deg 0% 0%)';
-  //     accentColor = 'hsl(0deg 0% 100%)';
-  // }
-  // Split into four conditions because I only want the 50/50 chance if coming from color, else, it should just cycle
-  // else if (probability < 0.5) {
-  //     mainColor = 'hsl(0deg 0% 100%)';
-  //     accentColor = 'hsl(0deg 0% 0%)';
-  // }
-  // else if (probability >= 0.5){
-  //     mainColor = 'hsl(0deg 0% 0%)';
-  //     accentColor = 'hsl(0deg 0% 100%)';
   document.documentElement.style.setProperty("--main-color", mainColor);
   document.documentElement.style.setProperty("--accent-color", accentColor);
   localStorage.setItem("mainColor", mainColor);
