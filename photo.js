@@ -1,6 +1,6 @@
 let slideIndex = 0;
 const slides = document.getElementsByClassName("slide");
-showSlides();
+plusSlides(0);
 
 // Next/previous controls
 function plusSlides(n) {
@@ -12,9 +12,13 @@ function plusSlides(n) {
   showSlides();
 
   const nextIndex = (slideIndex + 1) % slides.length;
+  const prevIndex = (slideIndex - 1) % slides.length;
   const nextImage = slides[nextIndex].querySelector("img");
-  if (nextImage) {
-    nextImage.loading = "eager"; // Change loading behavior to eager
+  const prevImage = slides[prevIndex].querySelector("img");
+  if (nextImage.loading === "lazy" || prevImage.loading === "lazy") {
+    // Change loading behavior to eager
+    nextImage.loading = "eager";
+    prevImage.loading = "eager";
   }
 }
 
