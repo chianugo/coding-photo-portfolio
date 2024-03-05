@@ -23,8 +23,9 @@ label {
 }
 
 input {
-  width: 95%;
+  /* width: 95%; */
   min-height: var(--fs-900);
+  min-width: 340px;
   border: 0;
   /* border: 3px dotted var(--accent-color); */
   border-radius: 8px;
