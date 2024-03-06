@@ -1,7 +1,7 @@
-// let slideIndex = 0;
-// let slides = document.getElementsByClassName("slide");
-let slideIndex;
-let slides;
+let slideIndex = 0;
+let slides = document.getElementsByClassName("slide");
+// let slideIndex;
+// let slides;
 filterSelection("slide"); // Begin by showing all
 // plusSlides(0);
 
@@ -60,17 +60,23 @@ function filterSelection(c) {
   // slides = document.getElementsByClassName("slide");
   // if (c == "all") c = "";
   // hide elemetns that are not active
-  slides = document.getElementsByClassName(c);
-  slideIndex = 0;
+  // slides[slideIndex].classList.add("hidden");
   for (let i = 0; i < slides.length; i++) {
     console.log(slides.length);
     if (!slides[i].classList.contains(c)) {
       slides[i].classList.add("hidden");
+      slides[i].style.display = "none";
     }
     // AddClass(slides[i], "hidden");
+  }
+  slides = document.getElementsByClassName(c);
+  slideIndex = 0;
+
+  for (let i = 0; i < slides.length; i++) {
     if (slides[i].classList.contains(c)) {
       // RemoveClass(slides[i], "hidden");
       slides[i].classList.remove("hidden");
+      // slides[i].style.display = "block";
     }
   }
   if (slides[slideIndex].classList.contains("hidden")) {

@@ -234,7 +234,7 @@ button.grid-active {
   margin-right: 7px;
 }
 
-img.hidden {
+.hidden {
   display: none;
 }
 
