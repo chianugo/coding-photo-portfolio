@@ -1,7 +1,9 @@
-let slideIndex = 0;
-let slides = document.getElementsByClassName("slide");
-filterSelection("all"); // Begin by showing all
-plusSlides(0);
+// let slideIndex = 0;
+// let slides = document.getElementsByClassName("slide");
+let slideIndex;
+let slides;
+filterSelection("slide"); // Begin by showing all
+// plusSlides(0);
 
 // Next/previous controls
 function plusSlides(n) {
@@ -58,7 +60,8 @@ function filterSelection(c) {
   // slides = document.getElementsByClassName("slide");
   // if (c == "all") c = "";
   // hide elemetns that are not active
-  // slides = document.getElementsByClassName(c);
+  slides = document.getElementsByClassName(c);
+  slideIndex = 0;
   for (let i = 0; i < slides.length; i++) {
     console.log(slides.length);
     if (!slides[i].classList.contains(c)) {
@@ -73,6 +76,8 @@ function filterSelection(c) {
   if (slides[slideIndex].classList.contains("hidden")) {
     plusSlides(1);
   }
+
+  showSlides();
 }
 
 // Add active class to the current (photo sidebar) button (underline it)
@@ -88,10 +93,6 @@ for (var i = 0; i < btns.length; i++) {
     // Add "active" class to the clicked button
     this.classList.add("side-active");
   });
-}
-
-function logHello() {
-  console.log("Hello World");
 }
 
 // Get the elements with class="column"
