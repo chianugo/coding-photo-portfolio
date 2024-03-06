@@ -40,8 +40,9 @@ function showSlides() {
     slides[i].style.display = "none";
   }
   slides[slideIndex].style.display = "block";
-  let currentSlideNumber =
-    slides[slideIndex].querySelector(":scope > .current");
+  let currentSlideNumber = slides[slideIndex].querySelector(
+    ":scope > .caption > .current-slide"
+  );
   currentSlideNumber.textContent = slideIndex + 1 + " /" + slides.length;
 }
 
