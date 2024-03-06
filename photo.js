@@ -8,12 +8,16 @@ function plusSlides(n) {
   while (slides[slideIndex].classList.contains("hidden")) {
     slideIndex = (slideIndex + n + slides.length) % slides.length;
   }
-  console.log(slideIndex + 1 + " /" + slides.length);
+  // console.log(slideIndex + 1 + " /" + slides.length);
   showSlides();
 
   // Load the next image when you go to the next slide
   const nextIndex = (slideIndex + 1) % slides.length;
-  const prevIndex = (slideIndex - 1) % slides.length;
+  if (slideIndex === 0) {
+    prevIndex = slides.length - 1;
+  } else {
+    const prevIndex = (slideIndex - 1) % slides.length;
+  }
   const nextImage = slides[nextIndex].querySelector("img");
   const prevImage = slides[prevIndex].querySelector("img");
   if (nextImage.loading === "lazy" || prevImage.loading === "lazy") {
@@ -27,9 +31,11 @@ document.addEventListener("keydown", function (e) {
   var keyPressed = e.key;
   if (keyPressed === "ArrowLeft") {
     //Left Key Press
+    console.log("left");
     plusSlides(-1);
   } else if (keyPressed === "ArrowRight") {
     // Right Key Press
+    console.log("right");
     plusSlides(1);
   }
 });
@@ -43,7 +49,7 @@ function showSlides() {
   let currentSlideNumber = slides[slideIndex].querySelector(
     ":scope > .caption > .current-slide"
   );
-  currentSlideNumber.textContent = slideIndex + 1 + " /" + slides.length;
+  currentSlideNumber.textContent = " " + (slideIndex + 1) + "/" + slides.length;
 }
 
 filterSelection("all"); // Begin by showing all
