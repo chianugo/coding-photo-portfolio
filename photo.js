@@ -11,6 +11,7 @@ function plusSlides(n) {
   console.log(slideIndex + 1 + " /" + slides.length);
   showSlides();
 
+  // Load the next image when you go to the next slide
   const nextIndex = (slideIndex + 1) % slides.length;
   const prevIndex = (slideIndex - 1) % slides.length;
   const nextImage = slides[nextIndex].querySelector("img");
@@ -39,6 +40,9 @@ function showSlides() {
     slides[i].style.display = "none";
   }
   slides[slideIndex].style.display = "block";
+  let currentSlideNumber =
+    slides[slideIndex].querySelector(":scope > .current");
+  currentSlideNumber.textContent = slideIndex + 1 + " /" + slides.length;
 }
 
 filterSelection("all"); // Begin by showing all
