@@ -1,5 +1,6 @@
 let slideIndex = 0;
-const slides = document.getElementsByClassName("slide");
+let slides = document.getElementsByClassName("slide");
+filterSelection("all"); // Begin by showing all
 plusSlides(0);
 
 // Next/previous controls
@@ -13,10 +14,11 @@ function plusSlides(n) {
 
   // Load the next image when you go to the next slide
   const nextIndex = (slideIndex + 1) % slides.length;
+  let prevIndex;
   if (slideIndex === 0) {
     prevIndex = slides.length - 1;
   } else {
-    const prevIndex = (slideIndex - 1) % slides.length;
+    prevIndex = (slideIndex - 1) % slides.length;
   }
   const nextImage = slides[nextIndex].querySelector("img");
   const prevImage = slides[prevIndex].querySelector("img");
@@ -52,11 +54,11 @@ function showSlides() {
   currentSlideNumber.textContent = " " + (slideIndex + 1) + "/" + slides.length;
 }
 
-filterSelection("all"); // Begin by showing all
 function filterSelection(c) {
   // slides = document.getElementsByClassName("slide");
   // if (c == "all") c = "";
   // hide elemetns that are not active
+  // slides = document.getElementsByClassName(c);
   for (let i = 0; i < slides.length; i++) {
     console.log(slides.length);
     if (!slides[i].classList.contains(c)) {
