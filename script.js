@@ -246,23 +246,7 @@ document.documentElement.style.setProperty("--accent-color", accentColor);
 setColors(mainColor, accentColor);
 
 function toggleInvert() {
-  // Toggle the invert state and save it to localStorage
-  let invertState = localStorage.getItem("invertState");
-  invertState = invertState === "true" ? "false" : "true";
-  localStorage.setItem("invertState", invertState);
-
-  // Swap mainColor and accentColor when the invertState is "true"
-  if (invertState === "true") {
-    [mainColor, accentColor] = [accentColor, mainColor];
-  } else {
-    [accentColor, mainColor] = [mainColor, accentColor];
-  }
-
-  // Update the CSS variables and button colors
-  // document.documentElement.style.setProperty("--main-color", mainColor);
-  // document.documentElement.style.setProperty("--accent-color", accentColor);
-  // localStorage.setItem("mainColor", mainColor);
-  // localStorage.setItem("accentColor", accentColor);
+  [mainColor, accentColor] = [accentColor, mainColor];
   setColors(mainColor, accentColor);
 }
 
