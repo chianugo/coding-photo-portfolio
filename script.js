@@ -138,7 +138,7 @@ let mainColor = localStorage.getItem("mainColor") || getRandomColor();
 let accentColor = localStorage.getItem("accentColor") || getRandomColor();
 
 function setButtonColors() {
-  buttons = document.getElementsById("button");
+  let buttons = document.getElementsByClassName("button");
   buttons.forEach((button) => {
     button.style.backgroundColor = mainColor;
     button.style.borderColor = accentColor;
@@ -152,14 +152,13 @@ function applyRandomColor() {
 
   setButtonColors();
 
-  var thisElements = document.getElementsByClassName("button");
-  for (var i = 0; i < thisElements.length; i++) {
+  let thisElements = document.getElementsByClassName("button");
+  for (let i = 0; i < thisElements.length; i++) {
     thisElements[i].style.color = accentColor;
   }
 }
 
 function toggleMonochrome() {
-  var probability = Math.random() < 0.5;
   if (mainColor === "hsl(0deg 0% 0%)") {
     mainColor = "hsl(0deg 0% 100%)";
     accentColor = "hsl(0deg 0% 0%)";
@@ -173,8 +172,8 @@ function toggleMonochrome() {
   localStorage.setItem("accentColor", accentColor);
   setButtonColors();
 
-  var thisElements = document.getElementsByClassName("button");
-  for (var i = 0; i < thisElements.length; i++) {
+  let thisElements = document.getElementsByClassName("button");
+  for (let i = 0; i < thisElements.length; i++) {
     thisElements[i].style.color = accentColor;
   }
 }
@@ -259,8 +258,8 @@ document.documentElement.style.setProperty("--accent-color", accentColor);
 
 setButtonColors();
 
-var thisElements = document.getElementsByClassName("button");
-for (var i = 0; i < thisElements.length; i++) {
+let thisElements = document.getElementsByClassName("button");
+for (let i = 0; i < thisElements.length; i++) {
   thisElements[i].style.color = accentColor;
 }
 
@@ -305,13 +304,13 @@ document.documentElement.style.setProperty("--accent-color", accentColor);
 
 setButtonColors();
 
-var colorButton = document.getElementById("colorButton");
+let colorButton = document.getElementById("colorButton");
 
-var blackButton = document.getElementById("blackButton");
+let blackButton = document.getElementById("blackButton");
 
-var colorCombinationButton = document.getElementById("colorCombinationButton");
+let colorCombinationButton = document.getElementById("colorCombinationButton");
 
-var invertButton = document.getElementById("invertButton");
+let invertButton = document.getElementById("invertButton");
 
 colorButton.addEventListener("click", applyRandomColor);
 blackButton.addEventListener("click", toggleMonochrome);
