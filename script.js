@@ -191,7 +191,7 @@ function applyColorCombination() {
     { main: "hsl(351deg 89% 62%)", accent: "hsl(317deg 51% 7%)" },
     { main: "hsl(72deg 58% 67%)", accent: "hsl(92deg 55% 13%)" },
     { main: "hsl(330deg 100% 71%)", accent: "hsl(248deg 81% 31%)" },
-    { main: "#hsl(240deg 100% 50%)", accent: "#hsl(151deg 94% 51%)" },
+    { main: "hsl(240deg 100% 50%)", accent: "hsl(151deg 94% 51%)" },
     { main: "hsl(16deg 100% 50%)", accent: "hsl(259deg 71% 20%)" },
     { main: "hsl(16deg 100% 50%)", accent: "hsl(254deg 93% 5%)" },
     { main: "hsl(16deg 100% 50%)", accent: "hsl(122deg 67% 7%)" },
@@ -211,10 +211,7 @@ function applyColorCombination() {
     { main: "hsl(240deg 100% 50%)", accent: "hsl(77deg 52% 63%)" },
     { main: "hsl(240deg 100% 50%)", accent: "hsl(44deg 83% 56%)" },
     { main: "hsl(323deg 24% 78%)", accent: "hsl(320deg 100% 15%)" },
-    {
-      main: "hsl(275deg 100% 25%)",
-      accent: "hsl(14deg 93% 66%)hsl(14deg 93% 66%)",
-    },
+    { main: "hsl(275deg 100% 25%)", accent: "hsl(14deg 93% 66%)" },
     { main: "hsl(300deg 100% 50%)", accent: "hsl(222deg 100% 18%)" },
     { main: "hsl(300deg 100% 50%)", accent: "hsl(203deg 74% 6%)" },
     { main: "hsl(360deg 100% 50%)", accent: "hsl(250deg 93% 5%)" },
@@ -228,10 +225,10 @@ function applyColorCombination() {
     { main: "hsl(0deg 0% 18%)", accent: "hsl(20deg 99% 57%)" },
     { main: "hsl(167deg 56% 66%)", accent: "hsl(259deg 100% 22%)" },
     { main: "hsl(202deg 60% 22%)", accent: "hsl(42deg 92% 53%)" },
-    { main: "hsl(355deg 91% 75%)", accent: "hsl(347deg 86% 57%)" },
+    { main: "hsl(355deg 91% 75%)", accent: "hsl(347deg 100% 19%)" },
     { main: "hsl(5deg 7% 30%)", accent: "hsl(22deg 62% 81%)" },
     { main: "hsl(192deg 55% 79%)", accent: "hsl(231deg 60% 67%)" },
-    { main: "hsl(0deg 0% 24%)", accent: "hsl(0deg 0% 47%)" },
+    { main: "hsl(0deg 0% 20%)", accent: "hsl(0deg 0% 57%)" },
   ];
 
   // Choose a random color combination
