@@ -88,7 +88,6 @@ function getRandomColor() {
     "hsl(300deg 100% 50%)",
     "hsl(348deg 83% 47%)",
     "hsl(271deg 76% 53%)",
-    "hsl(0deg 0% 0%)",
     "hsl(60deg 100% 50%)",
     "hsl(350deg 100% 88%)",
     "hsl(360deg 59% 41%)",
@@ -137,25 +136,22 @@ let mainColor = localStorage.getItem("mainColor") || getRandomColor();
 // look into if i need to set || to white or some getRaandomAccent
 let accentColor = localStorage.getItem("accentColor") || getRandomColor();
 
-function setButtonColors() {
+function setColors(main, accent) {
+  document.documentElement.style.setProperty("--main-color", main);
+  document.documentElement.style.setProperty("--accent-color", accent);
+  localStorage.setItem("mainColor", main);
+  localStorage.setItem("accentColor", accent);
+
   let buttons = document.getElementsByClassName("button");
-  buttons.forEach((button) => {
-    button.style.backgroundColor = mainColor;
-    button.style.borderColor = accentColor;
-  });
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].style.color = accent;
+    buttons[i].style.backgroundColor = main;
+  }
 }
 
 function applyRandomColor() {
   mainColor = getRandomColor();
-  localStorage.setItem("mainColor", mainColor);
-  document.documentElement.style.setProperty("--main-color", mainColor);
-
-  setButtonColors();
-
-  let thisElements = document.getElementsByClassName("button");
-  for (let i = 0; i < thisElements.length; i++) {
-    thisElements[i].style.color = accentColor;
-  }
+  setColors(mainColor, accentColor);
 }
 
 function toggleMonochrome() {
@@ -166,16 +162,7 @@ function toggleMonochrome() {
     mainColor = "hsl(0deg 0% 0%)";
     accentColor = "hsl(0deg 0% 100%)";
   }
-  document.documentElement.style.setProperty("--main-color", mainColor);
-  document.documentElement.style.setProperty("--accent-color", accentColor);
-  localStorage.setItem("mainColor", mainColor);
-  localStorage.setItem("accentColor", accentColor);
-  setButtonColors();
-
-  let thisElements = document.getElementsByClassName("button");
-  for (let i = 0; i < thisElements.length; i++) {
-    thisElements[i].style.color = accentColor;
-  }
+  setColors(mainColor, accentColor);
 }
 
 function applyColorCombination() {
@@ -240,14 +227,14 @@ function applyColorCombination() {
   accentColor = selectedCombination.accent;
 
   // Save the new colors to localStorage
-  localStorage.setItem("mainColor", mainColor);
-  localStorage.setItem("accentColor", accentColor);
+  // localStorage.setItem("mainColor", mainColor);
+  // localStorage.setItem("accentColor", accentColor);
 
-  document.documentElement.style.setProperty("--main-color", mainColor);
-  document.documentElement.style.setProperty("--accent-color", accentColor);
+  // document.documentElement.style.setProperty("--main-color", mainColor);
+  // document.documentElement.style.setProperty("--accent-color", accentColor);
 
   // Update the CSS variables and button colors
-  setButtonColors();
+  setColors(mainColor, accentColor);
 }
 
 localStorage.setItem("mainColor", mainColor);
@@ -256,12 +243,7 @@ localStorage.setItem("accentColor", accentColor);
 document.documentElement.style.setProperty("--main-color", mainColor);
 document.documentElement.style.setProperty("--accent-color", accentColor);
 
-setButtonColors();
-
-let thisElements = document.getElementsByClassName("button");
-for (let i = 0; i < thisElements.length; i++) {
-  thisElements[i].style.color = accentColor;
-}
+setColors(mainColor, accentColor);
 
 function toggleInvert() {
   // Toggle the invert state and save it to localStorage
@@ -277,11 +259,11 @@ function toggleInvert() {
   }
 
   // Update the CSS variables and button colors
-  document.documentElement.style.setProperty("--main-color", mainColor);
-  document.documentElement.style.setProperty("--accent-color", accentColor);
-  localStorage.setItem("mainColor", mainColor);
-  localStorage.setItem("accentColor", accentColor);
-  setButtonColors();
+  // document.documentElement.style.setProperty("--main-color", mainColor);
+  // document.documentElement.style.setProperty("--accent-color", accentColor);
+  // localStorage.setItem("mainColor", mainColor);
+  // localStorage.setItem("accentColor", accentColor);
+  setColors(mainColor, accentColor);
 }
 
 // Initialize mainColor and accentColor from localStorage or generate random colors if not present
@@ -302,7 +284,7 @@ invertButton.addEventListener("click", toggleInvert);
 document.documentElement.style.setProperty("--main-color", mainColor);
 document.documentElement.style.setProperty("--accent-color", accentColor);
 
-setButtonColors();
+setColors();
 
 let colorButton = document.getElementById("colorButton");
 
