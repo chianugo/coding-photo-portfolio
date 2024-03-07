@@ -70,6 +70,16 @@ let mainColor = localStorage.getItem("mainColor") || getRandomColor();
 let accentColor = localStorage.getItem("accentColor") || getRandomColor();
 setColors(mainColor, accentColor);
 
+let colorButton = document.getElementById("colorButton");
+let blackButton = document.getElementById("blackButton");
+let colorCombinationButton = document.getElementById("colorCombinationButton");
+let invertButton = document.getElementById("invertButton");
+
+colorButton.addEventListener("click", applyRandomColor);
+blackButton.addEventListener("click", toggleMonochrome);
+colorCombinationButton.addEventListener("click", applyColorCombination);
+invertButton.addEventListener("click", toggleInvert);
+
 function setColors(main, accent) {
   document.documentElement.style.setProperty("--main-color", main);
   document.documentElement.style.setProperty("--accent-color", accent);
@@ -232,20 +242,6 @@ function toggleInvert() {
   [mainColor, accentColor] = [accentColor, mainColor];
   setColors(mainColor, accentColor);
 }
-
-invertButton.addEventListener("click", toggleInvert);
-
-let colorButton = document.getElementById("colorButton");
-
-let blackButton = document.getElementById("blackButton");
-
-let colorCombinationButton = document.getElementById("colorCombinationButton");
-
-let invertButton = document.getElementById("invertButton");
-
-colorButton.addEventListener("click", applyRandomColor);
-blackButton.addEventListener("click", toggleMonochrome);
-colorCombinationButton.addEventListener("click", applyColorCombination);
 
 // Function to simulate button click when arrow keys are pressed
 function handleKeyPress(event) {
