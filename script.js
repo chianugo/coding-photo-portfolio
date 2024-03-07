@@ -66,6 +66,23 @@ window.addEventListener("scroll", () => {
 });
 */
 
+let mainColor = localStorage.getItem("mainColor") || getRandomColor();
+let accentColor = localStorage.getItem("accentColor") || getRandomColor();
+setColors(mainColor, accentColor);
+
+function setColors(main, accent) {
+  document.documentElement.style.setProperty("--main-color", main);
+  document.documentElement.style.setProperty("--accent-color", accent);
+  localStorage.setItem("mainColor", main);
+  localStorage.setItem("accentColor", accent);
+
+  let buttons = document.getElementsByClassName("button");
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].style.color = accent;
+    buttons[i].style.backgroundColor = main;
+  }
+}
+
 function getRandomColor() {
   const colors = [
     "hsl(360deg 100% 50%)",
@@ -130,23 +147,6 @@ function getRandomColor() {
   }
 
   return colors[Math.floor(Math.random() * colors.length)];
-}
-
-let mainColor = localStorage.getItem("mainColor") || getRandomColor();
-// look into if i need to set || to white or some getRaandomAccent
-let accentColor = localStorage.getItem("accentColor") || getRandomColor();
-
-function setColors(main, accent) {
-  document.documentElement.style.setProperty("--main-color", main);
-  document.documentElement.style.setProperty("--accent-color", accent);
-  localStorage.setItem("mainColor", main);
-  localStorage.setItem("accentColor", accent);
-
-  let buttons = document.getElementsByClassName("button");
-  for (let i = 0; i < buttons.length; i++) {
-    buttons[i].style.color = accent;
-    buttons[i].style.backgroundColor = main;
-  }
 }
 
 function applyRandomColor() {
@@ -223,52 +223,17 @@ function applyColorCombination() {
 
   // Update mainColor and accentColor with the selected combination
   mainColor = selectedCombination.main;
-  // alert(mainColor);
   accentColor = selectedCombination.accent;
 
-  // Save the new colors to localStorage
-  // localStorage.setItem("mainColor", mainColor);
-  // localStorage.setItem("accentColor", accentColor);
-
-  // document.documentElement.style.setProperty("--main-color", mainColor);
-  // document.documentElement.style.setProperty("--accent-color", accentColor);
-
-  // Update the CSS variables and button colors
   setColors(mainColor, accentColor);
 }
-
-localStorage.setItem("mainColor", mainColor);
-localStorage.setItem("accentColor", accentColor);
-
-document.documentElement.style.setProperty("--main-color", mainColor);
-document.documentElement.style.setProperty("--accent-color", accentColor);
-
-setColors(mainColor, accentColor);
 
 function toggleInvert() {
   [mainColor, accentColor] = [accentColor, mainColor];
   setColors(mainColor, accentColor);
 }
 
-// Initialize mainColor and accentColor from localStorage or generate random colors if not present
-mainColor = localStorage.getItem("mainColor");
-accentColor = localStorage.getItem("accentColor");
-
-if (!mainColor || !accentColor) {
-  mainColor = getRandomColor();
-  accentColor = getRandomColor();
-  localStorage.setItem("mainColor", mainColor);
-  localStorage.setItem("accentColor", accentColor);
-  document.documentElement.style.setProperty("--main-color", mainColor);
-  document.documentElement.style.setProperty("--accent-color", accentColor);
-}
-
 invertButton.addEventListener("click", toggleInvert);
-
-document.documentElement.style.setProperty("--main-color", mainColor);
-document.documentElement.style.setProperty("--accent-color", accentColor);
-
-setColors();
 
 let colorButton = document.getElementById("colorButton");
 
