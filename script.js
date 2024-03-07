@@ -33,7 +33,7 @@ const enhance = (id) => {
   });
 };
 
-// Issue #2 fix. Should wait for dom content to be loaded before splitting text to ensure that id exists
+// Wait for dom content to be loaded before splitting text to ensure that id exists
 document.addEventListener("DOMContentLoaded", function () {
   enhance("coding-portfolio-link");
 });
