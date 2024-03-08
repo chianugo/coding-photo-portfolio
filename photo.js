@@ -53,6 +53,7 @@ function showSlides() {
   let currentSlideNumber = slides[slideIndex].querySelector(
     ":scope > .caption > .current-slide"
   );
+  // pad strings with 0s until it equals slide length
   currentSlideNumber.textContent = `${String(slideIndex + 1).padStart(
     String(slides.length).length,
     "0"
