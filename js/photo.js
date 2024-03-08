@@ -3,7 +3,7 @@ let slides = document.getElementsByClassName("slide");
 // let slideIndex;
 // let slides;
 filterSelection("slide"); // Begin by showing all
-// plusSlides(0);
+plusSlides(0);
 
 // Next/previous controls
 function plusSlides(n) {
