@@ -54,7 +54,7 @@ function showSlides() {
     ":scope > .caption > .current-slide"
   );
   currentSlideNumber.textContent = `${String(slideIndex + 1).padStart(
-    2,
+    String(slides.length).length,
     "0"
   )}/${slides.length}`;
 }
