@@ -53,7 +53,10 @@ function showSlides() {
   let currentSlideNumber = slides[slideIndex].querySelector(
     ":scope > .caption > .current-slide"
   );
-  currentSlideNumber.textContent = `${slideIndex + 1}/${slides.length}`;
+  currentSlideNumber.textContent = `${String(slideIndex + 1).padStart(
+    2,
+    "0"
+  )}/${slides.length}`;
 }
 
 function filterSelection(c) {
