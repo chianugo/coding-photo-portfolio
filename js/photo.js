@@ -1,7 +1,5 @@
 let slideIndex = 0;
 let slides = document.getElementsByClassName("slide");
-// let slideIndex;
-// let slides;
 filterSelection("slide"); // Begin by showing all
 plusSlides(0);
 
@@ -11,7 +9,6 @@ function plusSlides(n) {
   while (slides[slideIndex].classList.contains("hidden")) {
     slideIndex = (slideIndex + n + slides.length) % slides.length;
   }
-  // console.log(slideIndex + 1 + " /" + slides.length);
   showSlides();
 
   // Load the next image when you go to the next slide
