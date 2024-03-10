@@ -14,11 +14,10 @@ function moveCursor(e) {
   // outerCursor.style.top = `${y}px`;
 }
 
+//items that should grow the cursor
 let hoverables = Array.from(document.querySelectorAll("a"));
 
 hoverables = hoverables.concat(Array.from(document.querySelectorAll("button")));
-
-console.log(hoverables);
 
 hoverables.forEach((hoverable) => {
   hoverable.addEventListener("mouseover", () => {
@@ -26,5 +25,24 @@ hoverables.forEach((hoverable) => {
   });
   hoverable.addEventListener("mouseleave", () => {
     innerCursor.classList.remove("grow");
+  });
+});
+
+//items that should not grow the cursor but show text underneath it
+let differentables = Array.from(document.querySelectorAll("p"));
+
+differentables = differentables.concat(
+  Array.from(document.querySelectorAll("form"))
+);
+differentables = differentables.concat(
+  Array.from(document.querySelectorAll(".header"))
+);
+
+differentables.forEach((differentable) => {
+  differentable.addEventListener("mouseover", () => {
+    innerCursor.classList.add("different");
+  });
+  differentable.addEventListener("mouseleave", () => {
+    innerCursor.classList.remove("different");
   });
 });
