@@ -37,6 +37,9 @@ differentables = differentables.concat(
 differentables = differentables.concat(
   Array.from(document.querySelectorAll(".header"))
 );
+differentables = differentables.concat(
+  Array.from(document.querySelectorAll(".grid"))
+);
 
 differentables.forEach((differentable) => {
   differentable.addEventListener("mouseover", () => {
