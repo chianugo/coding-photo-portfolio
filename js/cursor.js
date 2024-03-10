@@ -13,3 +13,18 @@ function moveCursor(e) {
   innerCursor.style.top = `${y}px`;
   // outerCursor.style.top = `${y}px`;
 }
+
+let hoverables = Array.from(document.querySelectorAll("a"));
+
+hoverables = hoverables.concat(Array.from(document.querySelectorAll("button")));
+
+console.log(hoverables);
+
+hoverables.forEach((hoverable) => {
+  hoverable.addEventListener("mouseover", () => {
+    innerCursor.classList.add("grow");
+  });
+  hoverable.addEventListener("mouseleave", () => {
+    innerCursor.classList.remove("grow");
+  });
+});
