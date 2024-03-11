@@ -99,7 +99,7 @@ body {
 
 .prev,
 .next {
-  cursor: pointer;
+  /* cursor: pointer; */
   width: auto;
   padding: 16px;
   color: var(--accent-color);

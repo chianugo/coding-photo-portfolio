@@ -12,17 +12,19 @@
   z-index: 1000;
 }
 
+.inner-cursor.different {
+  mix-blend-mode: difference;
+}
+
 .inner-cursor.grow {
   width: 60px;
   height: 60px;
   transition: width 0.3s ease, height 0.3s ease;
+  border: 1px dotted var(--main-color);
+  background-color: var(--accent-color);
   mix-blend-mode: difference;
   /* pointer-events: none; */
   /* filter: brightness(100%); */
-}
-
-.inner-cursor.different {
-  mix-blend-mode: difference;
 }
 
 .outer-cursor {
