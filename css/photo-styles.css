@@ -55,31 +55,55 @@ body {
 }
 
 .sidebar a:hover::before {
-  /* width: 100%; */
-  color: midnightblue;
-  /* color: rgba(var(--accent-color), 1 - var(--lighten-factor)); */
-  animation: color-change 2s ease infinite;
+  background: linear-gradient(0.25turn, var(--main-color), var(--accent-color));
+  background-repeat: no-repeat;
+  background-size: 80%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  animation: color-change 1.5s linear infinite;
 }
 .sidebar a:hover::after {
-  /* width: 100%; */
-  /* color: yellow; */
-  color: hsl(51, 100%, 50%);
-  /* color: rgba(var(--accent-color), 1 - var(--lighten-factor)); */
-  animation: color-change 1.3s ease alternate infinite;
+  background: linear-gradient(0.25turn, var(--main-color), var(--accent-color));
+  background-repeat: no-repeat;
+  background-size: 80%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  animation: color-change 1.5s linear infinite;
 }
+/* .sidebar a:hover::before {
+  color: midnightblue;
+  animation: color-change 1s ease infinite alternate;
+}
+.sidebar a:hover::after {
+  color: hsl(51, 100%, 50%);
+  animation: color-change 1s ease infinite alternate;
+} */
 
 /* .sidebar a:hover {
   animation: color-change 1s ease infinite;
 } */
 
-@keyframes color-change {
+/* @keyframes color-change {
   from,
   to {
     width: 0%;
   }
 
-  50% {
+  100% {
     width: 100%;
+  }
+} */
+
+@keyframes color-change {
+  from,
+  to {
+    width: 100%;
+    background-position: -500%;
+  }
+
+  100% {
+    width: 100%;
+    background-position: 500%;
   }
 }
 
