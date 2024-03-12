@@ -170,10 +170,14 @@ function toggleMonochrome() {
     mainColor = "hsl(0deg 0% 100%)";
     accentColor = "hsl(0deg 0% 0%)";
     blackButton.title = "Toggle Light Mode";
+    blackButton.children[0].classList.add("fa-moon");
+    blackButton.children[0].classList.remove("fa-sun");
   } else {
     mainColor = "hsl(0deg 0% 0%)";
     accentColor = "hsl(0deg 0% 100%)";
     blackButton.title = "Toggle Dark Mode";
+    blackButton.children[0].classList.remove("fa-moon");
+    blackButton.children[0].classList.add("fa-sun");
   }
   setColors(mainColor, accentColor);
 }
