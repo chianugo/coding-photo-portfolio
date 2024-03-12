@@ -221,4 +221,5 @@ button.grid-active {
 
 img {
   max-height: 75vh;
+  border-radius: 10px;
 }

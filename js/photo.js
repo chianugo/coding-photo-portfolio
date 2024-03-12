@@ -1,5 +1,6 @@
 let slideIndex = 0;
 let slides = document.getElementsByClassName("slide");
+const TOTAL_SLIDE_LENGTH = slides.length;
 filterSelection("slide"); // Begin by showing all
 plusSlides(0);
 
@@ -52,9 +53,9 @@ function showSlides() {
   );
   // pad strings with 0s until it equals slide length
   currentSlideNumber.textContent = `${String(slideIndex + 1).padStart(
-    String(slides.length).length,
+    String(TOTAL_SLIDE_LENGTH).length,
     "0"
-  )}/${slides.length}`;
+  )}/${String(slides.length).padStart(String(TOTAL_SLIDE_LENGTH).length, "0")}`;
 }
 
 function filterSelection(c) {
