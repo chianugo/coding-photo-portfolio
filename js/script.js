@@ -81,6 +81,17 @@ function setColors(main, accent) {
     buttons[i].style.color = accent;
     buttons[i].style.backgroundColor = main;
   }
+  updateCursor(main, accent);
+}
+
+function updateCursor(main, accent) {
+  let cursor = document.querySelector(".inner-cursor");
+
+  if (accent === "hsl(0deg 0% 0%)") {
+    cursor.classList.add("invert");
+  } else {
+    cursor.classList.remove("invert");
+  }
 }
 
 function getRandomColor() {

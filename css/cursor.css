@@ -12,31 +12,24 @@
   z-index: 1000;
 }
 
-.inner-cursor.different {
+.different {
   mix-blend-mode: difference;
   border: 1px dotted var(--main-color);
 }
 
-.inner-cursor.grow {
+.grow {
   width: 60px;
   height: 60px;
   transition: width 0.3s ease, height 0.3s ease;
   border: 1px dotted var(--main-color);
-  background-color: var(--accent-color);
+  /* background-color: var(--accent-color); */
   mix-blend-mode: difference;
   /* pointer-events: none; */
   /* filter: brightness(100%); */
 }
 
-.outer-cursor {
-  position: fixed;
-  left: 10px;
-  width: 25px;
-  height: 25px;
-  transform: translate(-50%, -50%);
-  border: 1px solid var(--accent-color);
-  /* mix-blend-mode: difference; */
-  border-radius: 50%;
-  pointer-events: none;
-  transition: 0.1s;
+.inner-cursor.invert {
+  /* background-color: red; */
+  background-color: var(--main-color) !important;
+  mix-blend-mode: difference;
 }
