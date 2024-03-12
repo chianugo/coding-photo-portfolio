@@ -169,9 +169,11 @@ function toggleMonochrome() {
   if (mainColor === "hsl(0deg 0% 0%)") {
     mainColor = "hsl(0deg 0% 100%)";
     accentColor = "hsl(0deg 0% 0%)";
+    blackButton.title = "Toggle Light Mode";
   } else {
     mainColor = "hsl(0deg 0% 0%)";
     accentColor = "hsl(0deg 0% 100%)";
+    blackButton.title = "Toggle Dark Mode";
   }
   setColors(mainColor, accentColor);
 }

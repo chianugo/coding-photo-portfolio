@@ -30,20 +30,36 @@
     <div class="home">
       <div class="navbar glass">
         <div class="right">
-          <button class="button" id="colorButton" onclick="applyRandomColor()">
+          <button
+            class="button"
+            id="colorButton"
+            onclick="applyRandomColor()"
+            title="Change Foreground Color"
+          >
             Color
           </button>
-          <button class="button" id="blackButton" onclick="toggleMonochrome()">
+          <button
+            class="button"
+            id="blackButton"
+            onclick="toggleMonochrome()"
+            title="Toggle Dark Mode"
+          >
             <i class="fa-regular fa-moon"></i>
           </button>
           <button
             class="button"
             id="colorCombinationButton"
             onclick="applyColorCombination()"
+            title="Randomize Colors"
           >
             <i class="fa-solid fa-shuffle"></i>
           </button>
-          <button class="button" id="invertButton" onclick="toggleInvert()">
+          <button
+            class="button"
+            id="invertButton"
+            onclick="toggleInvert()"
+            title="Invert Colors"
+          >
             <i class="fa-solid fa-rotate"></i>
           </button>
         </div>
