@@ -17,10 +17,6 @@
 :root {
   --main-color: #000000;
   --accent-color: #ffffff;
-  --hover-color: var(--accent-color);
-
-  --lighten-factor: 20%;
-  --darken-factor: 20%;
 
   --fs-300: 0.75rem;
   --fs-400: 1rem;
@@ -45,6 +41,7 @@
 * {
   font-family: "Mabry pro", "Rubik", sans-serif;
   cursor: none;
+  box-sizing: border-box;
   /* margin: 10px; */
   /* margin: 0; */
 }
@@ -55,15 +52,19 @@ body {
 
 p,
 h1,
+h2,
 .text,
 label {
   color: var(--accent-color);
+  margin-top: 0px;
+  max-width: 60ch;
 }
 
 .line > p,
 .line > a {
   padding: 0px 20px;
 }
+
 button {
   padding: 8px 16px;
   font-family: "Roboto Mono", monospace;
@@ -86,13 +87,16 @@ button:hover {
 }
 
 .navbar {
-  margin: 20px;
+  /* margin: 20px; */
+  /* width: 100vw; */
+  /* display: default; */
   position: sticky;
   top: 0;
   z-index: 999;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 0px;
   /* background-color: var(--accent-color); */
 }
 
@@ -104,9 +108,22 @@ button:hover {
 }
 
 .glass {
-  background-color: rgba(var(--accent-color), 0.4);
-  backdrop-filter: blur(10px);
+  background: rgba(var(--accent-color), 0.4);
+  backdrop-filter: blur(9px);
+  /* position: relative;
+  position: sticky;
+  overflow: hidden; */
 }
+/* 
+.glass::before {
+  position: absolute;
+  top: -20px;
+  bottom: -20px;
+  left: -20px;
+  right: -20px;
+  background: rgba(var(--accent-color), 0.4);
+  backdrop-filter: blur(20px);
+} */
 
 @keyframes float {
   from,

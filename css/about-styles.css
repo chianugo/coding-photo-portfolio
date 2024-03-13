@@ -1,3 +1,23 @@
+html {
+  /* font-size: 28px; */
+}
+
+body {
+  /* line-height: 1.5; */
+}
+
 .header {
   font-family: "General Sans", "Mabry pro", "Rubik", sans-serif;
+}
+
+h2 {
+  font-size: 3rem;
+  max-width: 18ch;
+  font-weight: 500 !important;
+  line-height: 1.1;
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
 }
