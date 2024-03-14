@@ -129,7 +129,6 @@ function four() {
 const photobtns = document.getElementsByClassName("photobtn");
 for (var i = 0; i < photobtns.length; i++) {
   photobtns[i].addEventListener("click", function () {
-    // var current = document.getElementsByClassName("active");
     for (var j = 0; j < photobtns.length; j++) {
       photobtns[j].classList.remove("grid-active");
     }

@@ -75,6 +75,7 @@ button {
   border-radius: 20px;
   cursor: none;
   transition: all 0.3s ease;
+  box-shadow: 4px 4px;
   /* display: inline; */
 }
 
@@ -105,6 +106,7 @@ button:hover {
   color: var(--main-color);
   border: 3px dotted var(--main-color);
   border-radius: 20px;
+  box-shadow: 4px 4px var(--accent-color);
 }
 
 .glass {
