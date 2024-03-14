@@ -1,5 +1,5 @@
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
   font-family: "Roboto Mono", monospace;
   font-size: var(--fs-body);
 }

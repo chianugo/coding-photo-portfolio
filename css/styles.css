@@ -83,6 +83,10 @@ button:hover {
   transform: scale(1.2);
 }
 
+.colorButtons > * {
+  margin: 3px;
+}
+
 .home_row button:hover {
   margin: 0px 7px;
 }
