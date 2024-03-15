@@ -5,7 +5,6 @@
   height: 20px;
   transform: translate(-50%, -50%);
   background-color: var(--accent-color);
-  /* mix-blend-mode: difference; */
   border-radius: 50%;
   pointer-events: none;
   transition: width 0.5s, height 0.5s;
@@ -14,50 +13,89 @@
 
 .different {
   mix-blend-mode: difference;
-  /* border: 1px dotted var(--main-color); */
 }
 
 .grow {
   width: 60px;
   height: 60px;
   transition: width 0.3s ease, height 0.3s ease;
-  /* border: 1px dotted var(--main-color); */
-  /* background-color: var(--accent-color); */
   mix-blend-mode: difference;
-  /* pointer-events: none; */
-  /* filter: brightness(100%); */
 }
 
-.inner-cursor.invert {
-  /* background-color: red; */
+.invert {
   background-color: var(--main-color) !important;
   mix-blend-mode: difference;
 }
 
-div.cursors div {
-  position: absolute;
-  top: 300px;
-  left: 300px;
-  width: 32px;
-  height: 32px;
-  background-color: red;
-  border-radius: 50%;
-  z-index: 9000;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-}
-
-div.cursors div span {
-  position: absolute;
+.inner-cursor span {
+  position: relative;
   top: 0;
-  left: 40px;
+  left: 30px;
   width: 50ch;
   color: var(--accent-color);
 
   opacity: 0;
-  /* transition:  */
+  transition: opacity 1s;
+}
+
+.inner-cursor span.visible {
+  opacity: 1;
+}
+
+/* .inner-cursor {
+  position: fixed;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: width 0.5s, height 0.5s;
+  z-index: 1000;
+} */
+
+/* div.cursors div {
+  position: fixed;
+  top: 300px;
+  left: 300px;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: width 0.5s, height 0.5s;
+  z-index: 9000;
+}
+
+div.cursors div span {
+  position: relative;
+  top: 0;
+  left: 30px;
+  width: 50ch;
+  color: var(--accent-color);
+
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 div.cursors div span.visible {
   opacity: 1;
 }
+
+.different {
+  mix-blend-mode: difference;
+}
+
+.grow {
+  width: 60px;
+  height: 60px;
+  transition: width 0.3s ease, height 0.3s ease;
+  mix-blend-mode: difference;
+}
+
+.invert {
+  background-color: var(--main-color) !important;
+  mix-blend-mode: difference;
+} */
