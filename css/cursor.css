@@ -1,6 +1,6 @@
 .inner-cursor {
   position: fixed;
-  left: 10px;
+  /* left: 10px; */
   width: 20px;
   height: 20px;
   transform: translate(-50%, -50%);
@@ -16,8 +16,8 @@
 }
 
 .grow {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   transition: width 0.3s ease, height 0.3s ease;
   mix-blend-mode: difference;
 }

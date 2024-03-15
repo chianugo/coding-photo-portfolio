@@ -33,11 +33,11 @@ document.addEventListener("keydown", function (e) {
   var keyPressed = e.key;
   if (keyPressed === "ArrowLeft") {
     //Left Key Press
-    console.log("left");
+    // console.log("left");
     plusSlides(-1);
   } else if (keyPressed === "ArrowRight") {
     // Right Key Press
-    console.log("right");
+    // console.log("right");
     plusSlides(1);
   }
 });

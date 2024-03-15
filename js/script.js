@@ -32,10 +32,10 @@ function setColors(main, accent) {
     buttons[i].style.color = accent;
     buttons[i].style.backgroundColor = main;
   }
-  updateCursor(main, accent);
+  updateCursor(accent);
 }
 
-function updateCursor(main, accent) {
+function updateCursor(accent) {
   let cursor = document.querySelector(".inner-cursor");
 
   if (accent === "hsl(0deg 0% 0%)") {
@@ -200,29 +200,23 @@ function toggleInvert() {
   setColors(mainColor, accentColor);
 }
 
-let colorButton = document.getElementById("colorButton");
+// let colorButton = document.getElementById("colorButton");
 
-let blackButton = document.getElementById("blackButton");
+// let blackButton = document.getElementById("blackButton");
 
 let colorCombinationButton = document.getElementById("colorCombinationButton");
 
 invertButton.addEventListener("click", toggleInvert);
 let invertButton = document.getElementById("invertButton");
 
-colorButton.addEventListener("click", applyRandomColor);
-blackButton.addEventListener("click", toggleMonochrome);
+// colorButton.addEventListener("click", applyRandomColor);
+// blackButton.addEventListener("click", toggleMonochrome);
 colorCombinationButton.addEventListener("click", applyColorCombination);
 
-// Function to simulate button click when arrow keys are pressed
-function handleKeyPress(event) {
-  const key = event.key.toLowerCase();
-
-  if (key === "ArrowLeft" || key === "ArrowRight") {
-    colorButton.click();
-  } else if (key === "ArrowUp" || key === "ArrowDown") {
-    blackButton.click();
+document.addEventListener("keydown", function (e) {
+  let keyPressed = e.key;
+  if (keyPressed === "x") {
+    console.log("x pressed");
+    toggleInvert();
   }
-}
-
-// Listen for the 'keydown' event on the document
-document.addEventListener("keydown", handleKeyPress);
+});

@@ -16,7 +16,7 @@ let mouseY = 0;
 
 let x = 0;
 let y = 0;
-const SPEED = 0.2;
+const SPEED = 0.5;
 
 function animate() {
   let distX = mouseX - x;
@@ -78,8 +78,6 @@ const images = document.querySelectorAll("img[data-hover]");
 
 images.forEach((image) => {
   image.addEventListener("mouseover", () => {
-    // alert("no invert");
-    // innerCursor.classList.remove("invert");
     if (innerCursor.classList.contains("invert")) {
       innerCursor.classList.remove("invert");
     }
@@ -96,47 +94,3 @@ images.forEach((image) => {
     cursorHover.classList.remove("visible");
   });
 });
-
-// let cursorTag = document.querySelector("div.cursors");
-// let balls = cursorTag.querySelectorAll("div");
-// let ballMessage = cursorTag.querySelector("div span");
-// const images = document.querySelectorAll("img[data-hover]");
-
-// let aimX = 0;
-// let aimY = 0;
-
-// balls.forEach((ball, index) => {
-//   let currentX = 0;
-//   let currentY = 0;
-
-//   let SPEED = 0.25 - index * 0.015;
-//   console.log(SPEED);
-
-//   function animate() {
-//     currentX += (aimX - currentX) * SPEED;
-//     currentY += (aimY - currentY) * SPEED;
-
-//     ball.style.left = `${currentX}px`;
-//     ball.style.top = `${currentY}px`;
-
-//     requestAnimationFrame(animate);
-//   }
-
-//   animate();
-// });
-
-// document.addEventListener("mousemove", function (e) {
-//   aimX = e.pageX;
-//   aimY = e.pageY;
-// });
-
-// images.forEach((image) => {
-//   image.addEventListener("mouseover", () => {
-//     ballMessage.classList.add("visible");
-//     ballMessage.innerHTML = image.getAttribute("data-hover");
-//   });
-//   image.addEventListener("mouseout", () => {
-//     ballMessage.classList.remove("visible");
-//     // ballMessage.innerHTML = "";
-//   });
-// });
