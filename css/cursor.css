@@ -33,3 +33,16 @@
   background-color: var(--main-color) !important;
   mix-blend-mode: difference;
 }
+
+div.cursors div {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  width: 32px;
+  height: 32px;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 9000;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
