@@ -1,15 +1,42 @@
 let innerCursor = document.querySelector(".inner-cursor");
 let cursorHover = innerCursor.querySelector("span");
 
-document.addEventListener("mousemove", moveCursor);
+// document.addEventListener("mousemove", moveCursor);
 
-function moveCursor(e) {
-  let x = e.clientX;
-  let y = e.clientY;
+// function moveCursor(e) {
+//   let x = e.clientX;
+//   let y = e.clientY;
+
+//   innerCursor.style.left = `${x}px`;
+//   innerCursor.style.top = `${y}px`;
+// }
+
+let mouseX = 0;
+let mouseY = 0;
+
+let x = 0;
+let y = 0;
+const SPEED = 0.2;
+
+function animate() {
+  let distX = mouseX - x;
+  let distY = mouseY - y;
+
+  x += distX * SPEED;
+  y += distY * SPEED;
 
   innerCursor.style.left = `${x}px`;
   innerCursor.style.top = `${y}px`;
+
+  requestAnimationFrame(animate);
 }
+
+animate();
+
+document.addEventListener("mousemove", function (e) {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
 
 //items that should grow the cursor
 let hoverables = Array.from(document.querySelectorAll("a"));
@@ -66,7 +93,6 @@ images.forEach((image) => {
     ) {
       innerCursor.classList.add("invert");
     }
-    // innerCursor.classList.add("invert");
     cursorHover.classList.remove("visible");
   });
 });
