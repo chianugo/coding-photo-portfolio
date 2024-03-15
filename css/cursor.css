@@ -46,3 +46,18 @@ div.cursors div {
   pointer-events: none;
   transform: translate(-50%, -50%);
 }
+
+div.cursors div span {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 50ch;
+  color: var(--accent-color);
+
+  opacity: 0;
+  /* transition:  */
+}
+
+div.cursors div span.visible {
+  opacity: 1;
+}
