@@ -50,28 +50,25 @@ differentables.forEach((differentable) => {
 const images = document.querySelectorAll("img[data-hover]");
 
 images.forEach((image) => {
-  if (innerCursor.classList.contains("invert")) {
-    image.addEventListener("mouseover", () => {
+  image.addEventListener("mouseover", () => {
+    // alert("no invert");
+    // innerCursor.classList.remove("invert");
+    if (innerCursor.classList.contains("invert")) {
       innerCursor.classList.remove("invert");
-      cursorHover.classList.add("visible");
-      cursorHover.innerHTML = image.getAttribute("data-hover");
-    });
-    image.addEventListener("mouseout", () => {
+    }
+    cursorHover.classList.add("visible");
+    cursorHover.innerHTML = image.getAttribute("data-hover");
+  });
+  image.addEventListener("mouseout", () => {
+    if (
+      localStorage.getItem("accentColor") === "hsl(0deg 0% 0%)" &&
+      !innerCursor.classList.contains("invert")
+    ) {
       innerCursor.classList.add("invert");
-      cursorHover.classList.remove("visible");
-    });
-  } else {
-    image.addEventListener("mouseover", () => {
-      alert("no invert");
-      // innerCursor.classList.remove("invert");
-      cursorHover.classList.add("visible");
-      cursorHover.innerHTML = image.getAttribute("data-hover");
-    });
-    image.addEventListener("mouseout", () => {
-      // innerCursor.classList.add("invert");
-      cursorHover.classList.remove("visible");
-    });
-  }
+    }
+    // innerCursor.classList.add("invert");
+    cursorHover.classList.remove("visible");
+  });
 });
 
 // let cursorTag = document.querySelector("div.cursors");
