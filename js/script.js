@@ -200,17 +200,17 @@ function toggleInvert() {
   setColors(mainColor, accentColor);
 }
 
-// let colorButton = document.getElementById("colorButton");
+let colorButton = document.getElementById("colorButton");
 
-// let blackButton = document.getElementById("blackButton");
+let blackButton = document.getElementById("blackButton");
 
 let colorCombinationButton = document.getElementById("colorCombinationButton");
 
 let invertButton = document.getElementById("invertButton");
 invertButton.addEventListener("click", toggleInvert);
 
-// colorButton.addEventListener("click", applyRandomColor);
-// blackButton.addEventListener("click", toggleMonochrome);
+colorButton.addEventListener("click", applyRandomColor);
+blackButton.addEventListener("click", toggleMonochrome);
 colorCombinationButton.addEventListener("click", applyColorCombination);
 
 document.addEventListener("keydown", function (e) {
