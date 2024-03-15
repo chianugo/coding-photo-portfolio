@@ -206,8 +206,8 @@ function toggleInvert() {
 
 let colorCombinationButton = document.getElementById("colorCombinationButton");
 
-invertButton.addEventListener("click", toggleInvert);
 let invertButton = document.getElementById("invertButton");
+invertButton.addEventListener("click", toggleInvert);
 
 // colorButton.addEventListener("click", applyRandomColor);
 // blackButton.addEventListener("click", toggleMonochrome);
