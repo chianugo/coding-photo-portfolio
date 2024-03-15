@@ -114,6 +114,8 @@ button:hover {
 }
 
 .glass {
+  border-bottom: 3px dotted var(--accent-color);
+  /* border-top: 3px dotted var(--accent-color); */
   background: rgba(var(--accent-color), 0.4);
   backdrop-filter: blur(9px);
   /* position: relative;
