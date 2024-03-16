@@ -127,11 +127,6 @@ body {
   text-align: center;
 }
 
-.row {
-  display: flex;
-  padding: 0 4px;
-}
-
 .column > * {
   justify-content: center;
   align-items: center;
@@ -142,6 +137,7 @@ img {
 }
 
 .column {
+  display: flex;
   padding: 0 4px;
 }
 
@@ -212,14 +208,27 @@ button.grid-active {
   display: none;
 }
 
-.image-carousel {
+/* .image_carousel {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
 img {
   max-height: 75vh;
   border-radius: 10px;
+}
+
+.prev,
+.next {
+  display: none;
+}
+
+.image_carousel {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: end;
+  gap: 1rem;
+  padding: 1rem;
 }
