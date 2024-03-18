@@ -263,33 +263,6 @@ img {
   padding: 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-primary: #000000;
-    --color-secondary: #222222;
-    --color-text: #ffffff;
-  }
-}
-
-@media (prefers-contrast: more) {
-  header {
-    background-color: var(--color-text);
-    color: var(--color-primary);
-  }
-
-  .column .caption {
-    background-color: color-mix(in srgb, transparent, var(--color-primary) 80%);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  header h1,
-  header nav,
-  .column .slide {
-    animation: none;
-  }
-}
-
 @media (min-aspect-ratio: 2 / 1) {
   .column {
     grid-template-columns: repeat(4, 1fr);

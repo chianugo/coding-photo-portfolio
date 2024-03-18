@@ -236,7 +236,7 @@ label {
 }
 
 .header,
-.header > a {
+.nav_header > a {
   font-family: "Clash Grotesk", "Rubik", sans-serif;
   font-size: var(--fs-primary-heading);
   font-weight: 800;
@@ -395,7 +395,7 @@ label {
     font-size: var(--fs-300);
   }
 
-  .header > a {
+  .nav_header > a {
     font-size: var(--fs-secondary-heading);
     font-weight: 700;
   }
