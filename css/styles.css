@@ -75,7 +75,7 @@ button {
   border-radius: 20px;
   cursor: none;
   transition: all 0.3s ease;
-  box-shadow: 4px 4px;
+  box-shadow: 3px 3px;
   /* display: inline; */
 }
 
@@ -110,7 +110,7 @@ button:hover {
   color: var(--main-color);
   border: 3px dotted var(--main-color);
   border-radius: 20px;
-  box-shadow: 4px 4px var(--accent-color);
+  box-shadow: 3px 3px var(--accent-color);
 }
 
 .glass {
@@ -213,7 +213,7 @@ label {
 .home {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 95vh;
 }
 
 .home .navbar {
