@@ -389,3 +389,14 @@ label {
 .fancy:hover > .outer:nth-child(25) {
   transform: translate(6%, -40%) rotate(-5deg) scale(1.21);
 }
+
+@media (max-width: 1000px) {
+  button {
+    font-size: var(--fs-300);
+  }
+
+  .header > a {
+    font-size: var(--fs-secondary-heading);
+    font-weight: 700;
+  }
+}
