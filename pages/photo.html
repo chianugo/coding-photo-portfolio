@@ -170,16 +170,12 @@
           </li>
         </ul>
       </div>
-      <div class="picture_container">
-        <!-- <div class="head" id="myHeader">
-          <button class="photobtn grid-active" onclick="one()">
-            <i class="fa-regular fa-square"></i>
-          </button>
-          <button class="photobtn" onclick="four()">
-            <i class="fa-solid fa-table-cells-large"></i>
-          </button>
-        </div> -->
 
+      <div class="picture_container">
+        <div class="grid-buttons">
+          <button onclick="gridify()">1</button>
+          <button onclick="degridify()">2</button>
+        </div>
         <div class="image_carousel">
           <a class="prev stroke" onclick="plusSlides(-1)" title="Previous Image"
             >&#10094;</a
@@ -193,7 +189,7 @@
               <div class="years"></div>
             </div>
           </div> -->
-          <div class="column">
+          <div class="column" id="column">
             <div class="slide all fade walk small">
               <img
                 src="https://raw.githubusercontent.com/chianugo/gaac-cdn-test/main/uploads/BUP00019-1.jpg"

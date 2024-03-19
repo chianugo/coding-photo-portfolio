@@ -16,7 +16,7 @@ body {
 .container .sidebar {
   display: flex;
   flex: 1 1 0%;
-  position: fixed;
+  /* position: fixed; */
 }
 
 .sidebar {
@@ -133,15 +133,15 @@ body {
 }
 
 img {
-  /* width: auto; */
+  width: auto;
 }
 
 .column {
-  /* display: flex; */
+  display: flex;
   padding: 0 4px;
 }
 
-/* .column > img {
+.column > img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
@@ -149,7 +149,7 @@ img {
   object-fit: contain;
   justify-content: center;
   align-items: center;
-} */
+}
 
 .caption {
   display: flex;
@@ -208,24 +208,24 @@ button.grid-active {
   display: none;
 }
 
-/* .image_carousel {
+.image_carousel {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-} */
+}
 
 img {
-  /* max-height: 75vh; */
+  max-height: 75vh;
   border-radius: 10px;
 }
 
 .prev,
 .next {
-  display: none;
+  /* display: none; */
 }
 
-.column {
+.column.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: end;
@@ -235,12 +235,12 @@ img {
   /* grid-auto-flow: column; */
 }
 
-.column * {
+.column.grid * {
   /* gap: 1rem; */
   /* display: grid; */
 }
 
-.column img {
+.column.grid img {
   max-width: 100%;
   height: auto;
   vertical-align: bottom;
@@ -261,7 +261,7 @@ img {
   }
 }
 
-.column .slide {
+.column.grid .slide {
   text-decoration: none;
 
   display: block;
@@ -269,7 +269,7 @@ img {
   position: relative;
 }
 
-.column .caption {
+.column.grid .caption {
   /* position: absolute; */
   bottom: 0;
   left: 0;
@@ -294,6 +294,10 @@ img {
   font-size: clamp(5vw, 5em, 5.5rem);
 }
 
+.grid-buttons {
+  /* z-index: 10000; */
+}
+
 /* @media (min-aspect-ratio: 2 / 1) {
   .column {
     grid-template-columns: repeat(4, 1fr);
@@ -308,13 +312,13 @@ img {
 } */
 
 @media (max-aspect-ratio: 1 / 1) {
-  .column {
+  .column.grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 1200px) {
-  .column {
+  .column.grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -325,12 +329,12 @@ img {
     display: none;
   }
 
-  .column {
+  .column.grid {
     grid-template-columns: repeat(1, 1fr);
     margin-left: 0px;
   }
 
-  .column img {
+  .column.grid img {
     animation-timeline: view(95vh 0.25vh);
   }
 

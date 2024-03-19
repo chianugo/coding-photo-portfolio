@@ -103,25 +103,23 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-// Get the elements with class="column"
-const elements = document.getElementsByClassName("column");
+function gridify() {
+  const column = document.getElementsByClassName("column");
+  const cycleButtons = document.getElementsByClassName("stroke");
 
-// Declare a loop variable
-
-// Full-width images
-function one() {
-  for (let i = 0; i < elements.length; i++) {
-    elements[i].style.flex = "100%";
-  }
-  // showSlides(slideIndex);
+  column[0].classList.add("grid");
+  console.log("gridify");
+  cycleButtons[0].style.display = "none";
+  cycleButtons[1].style.display = "none";
 }
 
-// Four images side by side
-function four() {
-  for (let i = 0; i < elements.length; i++) {
-    elements[i].style.flex = "25%";
-  }
-  // showSlides(slideIndex);
+function degridify() {
+  const column = document.getElementsByClassName("column");
+  const cycleButtons = document.getElementsByClassName("stroke");
+  column[0].classList.remove("grid");
+  console.log("degridify");
+  cycleButtons[0].style.display = "inline-block";
+  cycleButtons[1].style.display = "inline-block";
 }
 
 // Add active class to the current (grid) button (highlight it)
