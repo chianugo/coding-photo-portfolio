@@ -294,11 +294,18 @@ img {
   font-size: clamp(5vw, 5em, 5.5rem);
 }
 
-@media (min-aspect-ratio: 2 / 1) {
+/* @media (min-aspect-ratio: 2 / 1) {
   .column {
-    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 0;
   }
-}
+
+  .home_row,
+  .colorButtons,
+  .container .sidebar {
+    display: none;
+  }
+} */
 
 @media (max-aspect-ratio: 1 / 1) {
   .column {
@@ -313,10 +320,7 @@ img {
 }
 
 @media (max-width: 600px) {
-  .home_row {
-    display: none;
-  }
-
+  .home_row,
   .colorButtons {
     display: none;
   }
