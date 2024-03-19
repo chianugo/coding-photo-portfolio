@@ -55,6 +55,14 @@ function showSlides() {
   } else {
     for (let i = 0; i < slides.length; i++) {
       slides[i].style.display = "block";
+      const currentSlideNumber = slides[i].querySelector(".current-slide");
+      currentSlideNumber.textContent = `${String(i + 1).padStart(
+        String(TOTAL_SLIDE_LENGTH).length,
+        "0"
+      )}/${String(slides.length).padStart(
+        String(TOTAL_SLIDE_LENGTH).length,
+        "0"
+      )}`;
     }
   }
   let currentSlideNumber = slides[slideIndex].querySelector(
