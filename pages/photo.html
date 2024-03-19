@@ -49,39 +49,41 @@
           About
         </button>
       </div>
-      <div class="colorButtons">
-        <button
-          id="colorButton"
-          class="button"
-          onclick=""
-          title="Change Foreground Color"
-        >
-          <i class="fa-solid fa-clone"></i>
-        </button>
-        <button
-          id="blackButton"
-          class="button"
-          onclick=""
-          title="Toggle Dark Mode"
-        >
-          <i class="fa-regular fa-moon"></i>
-        </button>
-        <button
-          id="colorCombinationButton"
-          class="button"
-          onclick=""
-          title="Randomize Colors"
-        >
-          <i class="fa-solid fa-shuffle"></i>
-        </button>
-        <button
-          id="invertButton"
-          class="button"
-          onclick=""
-          title="Invert Colors"
-        >
-          <i class="fa-solid fa-rotate"></i>
-        </button>
+      <div class="colorButtons dropdown">
+        <div class="dropdown-content">
+          <button
+            id="colorButton"
+            class="button"
+            onclick=""
+            title="Change Foreground Color"
+          >
+            <i class="fa-solid fa-clone"></i>
+          </button>
+          <button
+            id="blackButton"
+            class="button"
+            onclick=""
+            title="Toggle Dark Mode"
+          >
+            <i class="fa-regular fa-moon"></i>
+          </button>
+          <button
+            id="colorCombinationButton"
+            class="button"
+            onclick=""
+            title="Randomize Colors"
+          >
+            <i class="fa-solid fa-shuffle"></i>
+          </button>
+          <button
+            id="invertButton"
+            class="button"
+            onclick=""
+            title="Invert Colors"
+          >
+            <i class="fa-solid fa-rotate"></i>
+          </button>
+        </div>
       </div>
     </div>
 
@@ -181,10 +183,20 @@
             <i class="fa-solid fa-table-cells-large"></i>
           </button>
         </div> -->
+
         <div class="image_carousel">
           <a class="prev stroke" onclick="plusSlides(-1)" title="Previous Image"
             >&#10094;</a
           >
+          <!-- <div class="project-description-wrapper">
+            <div class="project-title">
+              <h1>Fête</h1>
+            </div>
+            <div>
+              <div class="project-description"></div>
+              <div class="years"></div>
+            </div>
+          </div> -->
           <div class="column">
             <div class="slide all fade walk small">
               <img
