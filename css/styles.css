@@ -235,7 +235,6 @@ label {
   align-items: center;
 }
 
-.header,
 .nav_header > a {
   font-family: "Clash Grotesk", "Rubik", sans-serif;
   font-size: var(--fs-primary-heading);
