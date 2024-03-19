@@ -42,17 +42,24 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-// Sets a display of none to every slide except the current one
+/*
+Displays slides based on the current state (grid or non-grid).
+If in non-grid mode, hides all slides except the current one.
+If in grid mode, displays all slides and updates their slide numbers.
+*/
 function showSlides() {
+  // Select the column element and check if it's in grid mode
   let column = document.querySelector(".column");
   let isGrid = column.classList.contains("grid");
+  // Non-grid mode: Show only the current slide
   if (!isGrid) {
     for (let i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
     slides[slideIndex].style.display = "block";
-    console.log("reached in grid");
-  } else {
+  }
+  // Grid mode: Show all slides and update slide numbers
+  else {
     for (let i = 0; i < slides.length; i++) {
       slides[i].style.display = "block";
       const currentSlideNumber = slides[i].querySelector(".current-slide");

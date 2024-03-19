@@ -30,7 +30,7 @@
   position: relative;
   top: 0;
   left: 30px;
-  width: 60ch;
+
   color: var(--accent-color);
 
   opacity: 0;
@@ -38,5 +38,6 @@
 }
 
 .inner-cursor span.visible {
+  width: 60ch;
   opacity: 1;
 }

@@ -227,11 +227,12 @@ img {
   border-radius: 10px;
 }
 
-.prev,
+/* .prev,
 .next {
-  /* display: none; */
-}
+  display: none;
+} */
 
+/* Dynamic Grid Styles */
 .column.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
