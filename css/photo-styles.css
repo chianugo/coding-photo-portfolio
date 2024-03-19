@@ -16,6 +16,9 @@ body {
 .container .sidebar {
   display: flex;
   flex: 1 1 0%;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 80vh;
   /* position: fixed; */
 }
 
@@ -170,6 +173,10 @@ img {
 .fade {
   animation-name: fade;
   animation-duration: 0.9s;
+}
+
+.sidebar.grid {
+  position: fixed;
 }
 
 @keyframes fade {

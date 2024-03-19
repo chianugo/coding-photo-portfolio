@@ -44,10 +44,19 @@ document.addEventListener("keydown", function (e) {
 
 // Sets a display of none to every slide except the current one
 function showSlides() {
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  let column = document.querySelector(".column");
+  let isGrid = column.classList.contains("grid");
+  if (!isGrid) {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+    console.log("reached in grid");
+  } else {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "block";
+    }
   }
-  slides[slideIndex].style.display = "block";
   let currentSlideNumber = slides[slideIndex].querySelector(
     ":scope > .caption > .current-slide"
   );
@@ -104,22 +113,31 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 function gridify() {
-  const column = document.getElementsByClassName("column");
+  // const column = document.getElementsByClassName("column");
+  column = document.querySelector(".column");
   const cycleButtons = document.getElementsByClassName("stroke");
-
-  column[0].classList.add("grid");
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.classList.add("grid");
+  column.classList.add("grid");
   console.log("gridify");
-  cycleButtons[0].style.display = "none";
-  cycleButtons[1].style.display = "none";
+  for (let i = 0; i < cycleButtons.length; i++) {
+    cycleButtons[i].style.display = "none";
+  }
+  showSlides();
 }
 
 function degridify() {
-  const column = document.getElementsByClassName("column");
+  // const column = document.getElementsByClassName("column");
+  const column = document.querySelector(".column");
   const cycleButtons = document.getElementsByClassName("stroke");
-  column[0].classList.remove("grid");
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.classList.remove("grid");
+  column.classList.remove("grid");
   console.log("degridify");
-  cycleButtons[0].style.display = "inline-block";
-  cycleButtons[1].style.display = "inline-block";
+  for (let i = 0; i < cycleButtons.length; i++) {
+    cycleButtons[i].style.display = "inline-block";
+  }
+  showSlides();
 }
 
 // Add active class to the current (grid) button (highlight it)
@@ -145,7 +163,9 @@ let youButton = document.getElementById("youButton");
 let polaroidButton = document.getElementById("polaroidButton");
 let otherButton = document.getElementById("otherButton");
 
-allButton.addEventListener("click", filterSelection("slide"));
+allButton.addEventListener("click", () => {
+  filterSelection("slide");
+});
 feteButton.addEventListener("click", () => {
   filterSelection("fete");
 });
