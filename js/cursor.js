@@ -1,18 +1,11 @@
 let innerCursor = document.querySelector(".inner-cursor");
 let cursorHover = innerCursor.querySelector("span");
 
-// document.addEventListener("mousemove", moveCursor);
+let mouseX = sessionStorage.getItem("mouseX") || 0;
+let mouseY = sessionStorage.getItem("mouseY") || 0;
 
-// function moveCursor(e) {
-//   let x = e.clientX;
-//   let y = e.clientY;
-
-//   innerCursor.style.left = `${x}px`;
-//   innerCursor.style.top = `${y}px`;
-// }
-
-let mouseX = 0;
-let mouseY = 0;
+// innerCursor.style.left = `${mouseX}px`;
+// innerCursor.style.top = `${mouseY}px`;
 
 let x = 0;
 let y = 0;
@@ -36,6 +29,8 @@ animate();
 document.addEventListener("mousemove", function (e) {
   mouseX = e.clientX;
   mouseY = e.clientY;
+  sessionStorage.setItem("mouseX", mouseX);
+  sessionStorage.setItem("mouseY", mouseY);
 });
 
 //items that should grow the cursor
