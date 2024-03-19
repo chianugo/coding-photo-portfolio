@@ -44,11 +44,23 @@
   box-sizing: border-box;
   /* margin: 10px; */
   /* margin: 0; */
+  /* padding: 0; */
 }
 
+/* html,
 body {
+  height: 100%;
+} */
+
+body {
+  /* display: flex;
+  flex-direction: column; */
   padding: 0px 15px;
 }
+/* 
+body > * {
+  width: 100%;
+} */
 
 p,
 h1,
@@ -252,6 +264,14 @@ label {
    place-items: center; */
   height: 100vh;
   /* border: 1px solid red; */
+}
+
+footer {
+  display: grid;
+  margin-top: auto;
+  color: var(--main-color);
+  background-color: var(--accent-color);
+  padding: 2em;
 }
 
 #text:has(.fancy:hover) .word:not(.fancy:hover) {

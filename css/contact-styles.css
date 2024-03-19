@@ -2,6 +2,38 @@ h2.header {
   font-family: "General Sans", "Mabry pro", "Rubik", sans-serif;
 }
 
-form {
-  /* display: grid; */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-items: stretch; */
+}
+
+input {
+  border-right: 0px solid;
+  border-left: 0px solid;
+  border-bottom: 0px solid;
+}
+
+.form-group > * {
+  max-width: max(15rem, 50vh);
+  min-height: min(3rem, 50vh);
+  width: 100%;
+}
+
+input[name="Message"] {
+  background-color: blue;
+  min-height: min(6rem, 30vw);
+  flex: 3 1 0;
+  resize: both;
+  margin-bottom: 1rem;
+  /* min-height: min(200px, 400px); */
+}
+
+input::placeholder {
+  align-self: baseline;
+  font-family: "Courier New", Courier, monospace;
+}
+
+form > button {
+  width: 10rem;
 }
