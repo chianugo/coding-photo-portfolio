@@ -87,7 +87,7 @@ button {
   border-radius: 20px;
   cursor: none;
   transition: all 0.3s ease;
-  box-shadow: 3px 3px;
+  box-shadow: 3px 3px 0px;
   /* display: inline; */
 }
 
