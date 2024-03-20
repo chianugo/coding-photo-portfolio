@@ -28,11 +28,10 @@
 
 .inner-cursor span {
   position: relative;
+  display: block;
   top: 0;
   left: 30px;
-
   color: var(--accent-color);
-
   opacity: 0;
   transition: opacity 1s;
 }

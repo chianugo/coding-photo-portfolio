@@ -224,6 +224,7 @@ button.grid-active {
 
 img {
   max-height: 75vh;
+  /* max-width: 80vw; */
   border-radius: 10px;
 }
 
@@ -261,11 +262,13 @@ img {
 @keyframes fade-in {
   from {
     scale: 0.85;
+    transform: translateY(40px);
     opacity: 0.1;
   }
   to {
     scale: 1;
     opacity: 1;
+    transform: translateY(-7px);
   }
 }
 
