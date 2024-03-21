@@ -268,7 +268,7 @@ img {
   to {
     scale: 1;
     opacity: 1;
-    transform: translateY(-7px);
+    transform: translateY(-3px);
   }
 }
 

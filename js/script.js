@@ -178,7 +178,7 @@ function applyColorCombination() {
     { main: "hsl(0deg 0% 18%)", accent: "hsl(20deg 99% 57%)" },
     { main: "hsl(167deg 56% 66%)", accent: "hsl(259deg 100% 22%)" },
     { main: "hsl(202deg 60% 22%)", accent: "hsl(42deg 92% 53%)" },
-    { main: "hsl(355deg 91% 75%)", accent: "hsl(347deg 100% 19%)" },
+    { main: "hsl(355deg 91% 75%)", accent: "hsl(347deg 100% 13%)" },
     { main: "hsl(5deg 7% 30%)", accent: "hsl(22deg 62% 81%)" },
     { main: "hsl(192deg 55% 79%)", accent: "hsl(231deg 60% 67%)" },
     { main: "hsl(0deg 0% 20%)", accent: "hsl(0deg 0% 57%)" },
@@ -218,5 +218,8 @@ document.addEventListener("keydown", function (e) {
   if (keyPressed === "x") {
     // console.log("x pressed");
     toggleInvert();
+  }
+  if (keyPressed === "a") {
+    applyColorCombination();
   }
 });
