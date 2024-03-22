@@ -335,11 +335,6 @@ img {
 }
 
 @media (max-width: 600px) {
-  .home_row,
-  .colorButtons {
-    display: none;
-  }
-
   .column.grid {
     grid-template-columns: repeat(1, 1fr);
     margin-left: 0px;
