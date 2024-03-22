@@ -101,9 +101,8 @@ button[data-tooltip]::after {
   display: block;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: -50%;
   /* transform: translateX(-20px); */
-  transform: scale(0);
   background-color: var(--accent-color);
   color: var(--main-color);
   white-space: nowrap;
@@ -111,10 +110,21 @@ button[data-tooltip]::after {
   margin-top: 1em;
   padding: 0.5em;
   border-radius: 5%;
+  transform: scale(0);
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  transition-duration: 350ms;
 }
 
 button[data-tooltip]:hover::after {
   transform: scale(1);
+  transition-delay: 4s;
+  transition-duration: 350ms;
+}
+
+button[data-tooltip]:not(:hover)::after {
+  transition-delay: 150ms;
+  transition-duration: 150ms;
 }
 .colorButtons > * {
   margin: 3px;
