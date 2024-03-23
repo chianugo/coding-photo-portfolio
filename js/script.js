@@ -138,8 +138,8 @@ function applyColorCombination() {
   // Define color combinations
   const colorCombinations = [
     { main: "255, 153, 153", accent: "0, 0, 0" },
-    { main: "hsl(0deg 0% 0%)", accent: "hsl(60deg 100% 50%)" },
-    { main: "hsl(120deg 100% 25%)", accent: "hsl(350deg 100% 88%)" },
+    { main: "0, 0, 0", accent: "255, 255, 0" },
+    { main: "0, 71, 0", accent: "255, 194, 204" },
     { main: "hsl(0deg 0% 100%)", accent: "hsl(360deg 59% 41%)" },
     { main: "hsl(208deg 100% 31%)", accent: "hsl(20deg 77% 72%)" },
     { main: "hsl(71deg 96% 68%)", accent: "hsl(271deg 60% 51%)" },
