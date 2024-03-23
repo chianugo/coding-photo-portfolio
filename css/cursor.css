@@ -3,7 +3,7 @@
   width: 20px;
   height: 20px;
   transform: translate(-50%, -50%);
-  background-color: var(--accent-color);
+  background-color: rgba(var(--accent-color), 1);
   border-radius: 50%;
   pointer-events: none;
   transition: width 0.5s, height 0.5s;
@@ -22,7 +22,7 @@
 }
 
 .invert {
-  background-color: var(--main-color) !important;
+  background-color: rgba(var(--main-color), 1) !important;
   mix-blend-mode: difference;
 }
 
