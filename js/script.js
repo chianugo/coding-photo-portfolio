@@ -140,7 +140,7 @@ function applyColorCombination() {
     { main: "255, 153, 153", accent: "0, 0, 0" },
     { main: "0, 0, 0", accent: "255, 255, 0" },
     { main: "0, 71, 0", accent: "255, 194, 204" },
-    { main: "hsl(0deg 0% 100%)", accent: "hsl(360deg 59% 41%)" },
+    { main: "255, 255, 255", accent: "122, 31, 31" },
     { main: "hsl(208deg 100% 31%)", accent: "hsl(20deg 77% 72%)" },
     { main: "hsl(71deg 96% 68%)", accent: "hsl(271deg 60% 51%)" },
     { main: "hsl(351deg 89% 62%)", accent: "hsl(317deg 51% 7%)" },
