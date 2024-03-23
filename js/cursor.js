@@ -81,7 +81,7 @@ images.forEach((image) => {
   });
   image.addEventListener("mouseout", () => {
     if (
-      localStorage.getItem("accentColor") === "hsl(0deg 0% 0%)" &&
+      localStorage.getItem("accentColor") === "0, 0, 0" &&
       !innerCursor.classList.contains("invert")
     ) {
       innerCursor.classList.add("invert");
