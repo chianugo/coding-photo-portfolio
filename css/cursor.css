@@ -34,6 +34,7 @@
   color: rgba(var(--accent-color), 1);
   opacity: 0;
   transition: opacity 1s;
+  width: 60ch;
 }
 
 .inner-cursor span.visible {

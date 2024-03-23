@@ -119,14 +119,12 @@ function toggleMonochrome() {
   if (mainColor === "0, 0, 0") {
     mainColor = "255, 255, 255";
     accentColor = "0, 0, 0";
-    blackButton.title = "Toggle Light Mode";
     blackButton.children[0].classList.add("fa-moon");
     blackButton.children[0].classList.remove("fa-sun");
     blackButton.setAttribute("data-tooltip", "Toggle Dark Mode");
   } else {
     mainColor = "0, 0, 0";
     accentColor = "255, 255, 255";
-    blackButton.title = "Toggle Dark Mode";
     blackButton.children[0].classList.remove("fa-moon");
     blackButton.children[0].classList.add("fa-sun");
     blackButton.setAttribute("data-tooltip", "Toggle Light Mode");

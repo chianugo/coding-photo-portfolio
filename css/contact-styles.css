@@ -47,5 +47,25 @@ input::placeholder {
 }
 
 form > button {
-  width: 10rem;
+  /* width: 10rem; */
+}
+
+/* img {
+  max-width: 100%;
+  width: min(600px, 100%);
+  height: auto;
+} */
+
+.form-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* justify-content: center; */
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  /* flex-wrap: wrap; */
+}
+
+.form-wrapper > * {
+  /* width: 100%; */
 }
