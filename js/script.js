@@ -137,7 +137,7 @@ function toggleMonochrome() {
 function applyColorCombination() {
   // Define color combinations
   const colorCombinations = [
-    { main: "hsl(360deg 100% 50%)", accent: "hsl(0deg 0% 0%)" },
+    { main: "255, 153, 153", accent: "0, 0, 0" },
     { main: "hsl(0deg 0% 0%)", accent: "hsl(60deg 100% 50%)" },
     { main: "hsl(120deg 100% 25%)", accent: "hsl(350deg 100% 88%)" },
     { main: "hsl(0deg 0% 100%)", accent: "hsl(360deg 59% 41%)" },
@@ -182,8 +182,8 @@ function applyColorCombination() {
     { main: "hsl(202deg 60% 22%)", accent: "hsl(42deg 92% 53%)" },
     { main: "hsl(355deg 91% 75%)", accent: "hsl(347deg 100% 13%)" },
     { main: "hsl(5deg 7% 30%)", accent: "hsl(22deg 62% 81%)" },
-    { main: "hsl(192deg 55% 79%)", accent: "hsl(231deg 60% 67%)" },
-    { main: "hsl(0deg 0% 20%)", accent: "hsl(0deg 0% 57%)" },
+    { main: "172, 219, 231", accent: "120, 136, 221" },
+    { main: "51, 51, 51", accent: "145, 145, 145" },
   ];
 
   // Choose a random color combination
