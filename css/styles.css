@@ -466,6 +466,18 @@ footer {
   }
 }
 
+@media (max-width: 900px) {
+  .nav_header > a {
+    font-size: var(--fs-600);
+    font-weight: 600;
+  }
+
+  button {
+    font-size: 0.75rem;
+    padding: 0.5em 1em;
+  }
+}
+
 @media (max-width: 600px) {
   .home_row,
   .colorButtons {

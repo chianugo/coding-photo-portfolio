@@ -31,8 +31,11 @@ input {
   width: 100%;
 }
 
+input {
+  background-color: rgba(var(--accent-color), 0.9);
+}
+
 input[name="Message"] {
-  background-color: blue;
   min-height: min(6rem, 30vw);
   flex: 3 1 0;
   resize: both;
@@ -44,6 +47,9 @@ input::placeholder {
   align-self: baseline;
   text-align: start;
   font-family: "Courier New", Courier, monospace;
+  color: rgba(var(--main-color), 1);
+  font-size: 1.5em;
+  font-weight: 500;
 }
 
 form > button {
@@ -56,16 +62,24 @@ form > button {
   height: auto;
 } */
 
-.form-wrapper {
+/* .form-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* justify-content: center; */
   align-items: center;
   gap: 1rem;
   padding-bottom: 1rem;
-  /* flex-wrap: wrap; */
+} */
+
+.form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0 min(30rem, 3vw);
 }
 
 .form-wrapper > * {
-  /* width: 100%; */
+  flex: 1 1 20em;
 }
