@@ -38,7 +38,7 @@ function setColors(main, accent) {
 function updateCursor(accent) {
   let cursor = document.querySelector(".inner-cursor");
 
-  if (accent === "hsl(0deg 0% 0%)") {
+  if (accent === "0, 0, 0") {
     cursor.classList.add("invert");
   } else {
     cursor.classList.remove("invert");
@@ -50,15 +50,15 @@ function getRandomColor() {
     "hsl(360deg 100% 50%)",
     "hsl(30deg 100% 50%)",
     "hsl(120deg 100% 50%)",
-    "hsl(240deg 100% 50%)",
+    "0, 0, 168",
     "hsl(275deg 100% 25%)",
     "hsl(282deg 100% 51%)",
     "hsl(328deg 100% 54%)",
     "hsl(181deg 100% 51%)",
-    "hsl(16deg 100% 50%)",
+    "255, 154, 117",
     "hsl(280deg 61% 50%)",
     "hsl(300deg 100% 25%)",
-    "hsl(330deg 100% 71%)",
+    "255, 107, 181",
     "hsl(210deg 100% 56%)",
     "hsl(51deg 100% 50%)",
     "hsl(120deg 61% 50%)",
@@ -73,15 +73,15 @@ function getRandomColor() {
     "247, 213, 196",
     "83, 33, 131",
     "hsl(88deg 24% 19%)",
-    "hsl(248deg 81% 31%)",
-    "hsl(151deg 94% 51%)",
-    "hsl(259deg 71% 20%)",
+    "19, 9, 83",
+    "97, 250, 176",
+    "38, 15, 87",
     "hsl(122deg 67% 70%)",
-    "hsl(351deg 72% 52%)",
-    "hsl(353deg 87% 19%)",
-    "hsl(206deg 94% 41%)",
-    "hsl(321deg 84% 68%)",
-    "hsl(195deg 99% 52%)",
+    "221, 44, 71",
+    "91, 6, 16",
+    "0, 87, 151",
+    "242, 105, 194",
+    "11, 193, 254",
     "hsl(328deg 74% 52%)",
     "hsl(60deg 97% 54%)",
     "hsl(106deg 88% 38%)",
@@ -116,16 +116,16 @@ function applyRandomColor() {
 }
 
 function toggleMonochrome() {
-  if (mainColor === "hsl(0deg 0% 0%)") {
-    mainColor = "hsl(0deg 0% 100%)";
-    accentColor = "hsl(0deg 0% 0%)";
+  if (mainColor === "0, 0, 0") {
+    mainColor = "255, 255, 255";
+    accentColor = "0, 0, 0";
     blackButton.title = "Toggle Light Mode";
     blackButton.children[0].classList.add("fa-moon");
     blackButton.children[0].classList.remove("fa-sun");
     blackButton.setAttribute("data-tooltip", "Toggle Dark Mode");
   } else {
-    mainColor = "hsl(0deg 0% 0%)";
-    accentColor = "hsl(0deg 0% 100%)";
+    mainColor = "0, 0, 0";
+    accentColor = "255, 255, 255";
     blackButton.title = "Toggle Dark Mode";
     blackButton.children[0].classList.remove("fa-moon");
     blackButton.children[0].classList.add("fa-sun");
@@ -144,27 +144,25 @@ function applyColorCombination() {
     { main: "0, 44, 82", accent: "247, 213, 196" },
     { main: "223, 252, 95", accent: "83, 33, 131" },
     { main: "249, 154, 168", accent: "27, 9, 22" },
-    { main: "hsl(72deg 58% 67%)", accent: "hsl(92deg 55% 13%)" },
-    { main: "hsl(330deg 100% 71%)", accent: "hsl(248deg 81% 31%)" },
-    { main: "hsl(240deg 100% 50%)", accent: "hsl(151deg 94% 51%)" },
-    { main: "hsl(16deg 100% 50%)", accent: "hsl(259deg 71% 20%)" },
-    { main: "hsl(16deg 100% 50%)", accent: "hsl(254deg 93% 5%)" },
-    { main: "hsl(16deg 100% 50%)", accent: "hsl(122deg 67% 7%)" },
-    { main: "hsl(0deg 0% 100%)", accent: "hsl(351deg 72% 52%)" },
-    { main: "hsl(0deg 0% 100%)", accent: "hsl(353deg 87% 19%)" },
-    { main: "hsl(0deg 0% 100%)", accent: "hsl(206deg 94% 41%)" },
-    { main: "hsl(0deg 0% 0%)", accent: "hsl(321deg 84% 68%)" },
-    { main: "hsl(0deg 0% 0%)", accent: "hsl(195deg 99% 52%)" },
-    { main: "hsl(0deg 0% 0%)", accent: "hsl(328deg 74% 52%)" },
-    { main: "hsl(0deg 0% 0%)", accent: "hsl(60deg 97% 54%)" },
-    { main: "hsl(0deg 0% 0%)", accent: "hsl(106deg 88% 38%)" },
-    { main: "hsl(0deg 0% 0%)", accent: "hsl(344deg 61% 65%)" },
+    { main: "200, 220, 122", accent: "32, 51, 15" },
+    { main: "255, 107, 181", accent: "19, 9, 83" },
+    { main: "0, 0, 168", accent: "97, 250, 176" },
+    { main: "255, 154, 117", accent: "38, 15, 87" },
+    { main: "255, 255, 255", accent: "221, 44, 71" },
+    { main: "255, 255, 255", accent: "91, 6, 16" },
+    { main: "255, 255, 255", accent: "0, 87, 151" },
+    { main: "0, 0, 0", accent: "242, 105, 194" },
+    { main: "0, 0, 0", accent: "11, 193, 254" },
+    { main: "0, 0, 0", accent: "hsl(328deg 74% 52%)" },
+    { main: "0, 0, 0", accent: "hsl(60deg 97% 54%)" },
+    { main: "0, 0, 0", accent: "hsl(106deg 88% 38%)" },
+    { main: "0, 0, 0", accent: "hsl(344deg 61% 65%)" },
     { main: "hsl(94deg 4% 34%)", accent: "hsl(62deg 84% 52%)" },
     { main: "hsl(199deg 100% 36%)", accent: "hsl(60deg 40% 2%)" },
     { main: "hsl(281deg 96% 42%)", accent: "hsl(72deg 89% 48%)" },
     { main: "hsl(223deg 71% 27%)", accent: "hsl(302deg 79% 70%)" },
-    { main: "hsl(240deg 100% 50%)", accent: "hsl(77deg 52% 63%)" },
-    { main: "hsl(240deg 100% 50%)", accent: "hsl(44deg 83% 56%)" },
+    { main: "0, 0, 168", accent: "hsl(77deg 52% 63%)" },
+    { main: "0, 0, 168", accent: "hsl(44deg 83% 56%)" },
     { main: "hsl(323deg 24% 78%)", accent: "hsl(320deg 100% 15%)" },
     { main: "hsl(275deg 100% 25%)", accent: "hsl(14deg 93% 66%)" },
     { main: "hsl(300deg 100% 50%)", accent: "hsl(222deg 100% 18%)" },
