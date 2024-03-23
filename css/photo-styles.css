@@ -190,9 +190,10 @@ img {
 }
 
 .stroke {
-  color: var(--accent-color);
-  text-shadow: -1px -1px 0 var(--main-color), 1px -1px 0 var(--main-color),
-    -1px 1px 0 var(--main-color), 1px 1px 0 var(--main-color);
+  color: rgba(var(--accent-color), 1);
+  text-shadow: -1px -1px 0 rgba(var(--main-color), 1),
+    1px -1px 0 rgba(var(--main-color), 1), -1px 1px 0 rgba(var(--main-color), 1),
+    1px 1px 0 rgba(var(--main-color), 1);
 }
 
 a.side-active {

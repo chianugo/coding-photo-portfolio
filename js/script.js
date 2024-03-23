@@ -27,11 +27,11 @@ function setColors(main, accent) {
   localStorage.setItem("mainColor", main);
   localStorage.setItem("accentColor", accent);
 
-  let buttons = document.getElementsByClassName("button");
-  for (let i = 0; i < buttons.length; i++) {
-    buttons[i].style.color = accent;
-    buttons[i].style.backgroundColor = main;
-  }
+  // let buttons = document.getElementsByClassName("button");
+  // for (let i = 0; i < buttons.length; i++) {
+  //   buttons[i].style.color = accent;
+  //   buttons[i].style.backgroundColor = main;
+  // }
   updateCursor(accent);
 }
 
@@ -48,20 +48,20 @@ function updateCursor(accent) {
 function getRandomColor() {
   const colors = [
     "255, 0, 0",
-    "hsl(30deg 100% 50%)",
-    "hsl(120deg 100% 50%)",
+    "255, 128, 0",
+    "0, 255, 0",
     "0, 0, 168",
     "74, 0, 128",
-    "hsl(282deg 100% 51%)",
-    "hsl(328deg 100% 54%)",
-    "hsl(181deg 100% 51%)",
+    "180, 5, 255",
+    "255, 20, 146",
+    "5, 251, 255",
     "255, 154, 117",
-    "hsl(280deg 61% 50%)",
-    "hsl(300deg 100% 25%)",
+    "153, 50, 205",
+    "128, 0, 128",
     "255, 107, 181",
-    "hsl(210deg 100% 56%)",
+    "31, 143, 255",
     "255, 217, 0",
-    "hsl(120deg 61% 50%)",
+    "50, 205, 50",
     "hsl(9deg 100% 64%)",
     "hsl(248deg 53% 58%)",
     "255, 0, 255",

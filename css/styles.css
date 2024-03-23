@@ -167,7 +167,7 @@ button[data-tooltip]:not(:hover)::after {
 .glass {
   border-bottom: 3px dotted rgba(var(--accent-color), 1);
   /* border-top: 3px dotted rgba(var(--accent-color), 1); */
-  background: rgba(var(--accent-color), 0.4);
+  /* background: rgba(var(--accent-color), 1); */
   backdrop-filter: blur(9px);
   /* position: relative;
   position: sticky;
