@@ -135,10 +135,6 @@ body {
   align-items: center;
 }
 
-img {
-  width: auto;
-}
-
 .column {
   display: flex;
   padding: 0 4px;
@@ -225,7 +221,9 @@ button.grid-active {
 
 img {
   max-height: 75vh;
-  /* max-width: 80vw; */
+  /* width: auto; */
+  height: 100%;
+  width: auto;
   border-radius: 10px;
 }
 
@@ -323,6 +321,9 @@ img {
   }
 } */
 
+.cycle-small {
+  display: none;
+}
 @media (max-aspect-ratio: 1 / 1) {
   .column.grid {
     grid-template-columns: repeat(2, 1fr);
@@ -347,5 +348,15 @@ img {
 
   .container .sidebar {
     display: none;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cycle-small {
+    display: flex;
+    justify-content: space-between;
   }
 }
