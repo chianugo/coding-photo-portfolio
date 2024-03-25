@@ -98,3 +98,7 @@ form > button {
 button[type="submit"] {
   margin-top: 1rem;
 }
+
+.form-wrapper a {
+  text-decoration: underline;
+}

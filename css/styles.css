@@ -96,7 +96,7 @@ button {
 
 a.button:hover,
 button:hover {
-  transform: scale(1.2);
+  transform: scale(1.2) !important;
 }
 
 a.button[data-tooltip]::after,
@@ -138,10 +138,11 @@ button[data-tooltip]:not(:hover)::after {
   margin: 3px;
 }
 
-.home_row button:hover,
+/* .home_row button:hover,
 .home_row a.button:hover {
   margin: 0px 7px;
-}
+  transform: scale(1.2);
+} */
 
 .navbar {
   /* margin: 20px; */
