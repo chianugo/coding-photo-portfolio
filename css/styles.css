@@ -94,7 +94,7 @@ button {
   /* display: inline; */
 }
 
-a.button,
+a.button:hover,
 button:hover {
   transform: scale(1.2);
 }
