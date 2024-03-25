@@ -94,6 +94,10 @@ button {
   /* display: inline; */
 }
 
+a.button {
+  display: inline-block;
+}
+
 a.button:hover,
 button:hover {
   transform: scale(1.2) !important;
@@ -138,11 +142,10 @@ button[data-tooltip]:not(:hover)::after {
   margin: 3px;
 }
 
-/* .home_row button:hover,
+.home_row button:hover,
 .home_row a.button:hover {
   margin: 0px 7px;
-  transform: scale(1.2);
-} */
+}
 
 .navbar {
   /* margin: 20px; */
