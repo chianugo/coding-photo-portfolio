@@ -17,15 +17,15 @@ window.addEventListener("scroll", () => {
 });
 */
 
-let mainColor = localStorage.getItem("mainColor") || getRandomColor();
-let accentColor = localStorage.getItem("accentColor") || getRandomColor();
+let mainColor = sessionStorage.getItem("mainColor") || getRandomColor();
+let accentColor = sessionStorage.getItem("accentColor") || getRandomColor();
 setColors(mainColor, accentColor);
 
 function setColors(main, accent) {
   document.documentElement.style.setProperty("--main-color", main);
   document.documentElement.style.setProperty("--accent-color", accent);
-  localStorage.setItem("mainColor", main);
-  localStorage.setItem("accentColor", accent);
+  sessionStorage.setItem("mainColor", main);
+  sessionStorage.setItem("accentColor", accent);
 
   // let buttons = document.getElementsByClassName("button");
   // for (let i = 0; i < buttons.length; i++) {
