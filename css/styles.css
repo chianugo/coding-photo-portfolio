@@ -152,7 +152,7 @@ button[data-tooltip]:not(:hover)::after {
   gap: var(--gap, 0.5rem);
 }
 
-.primary .navbar {
+.navbar {
   /* margin: 20px; */
   /* width: 100vw; */
   /* display: default; */
