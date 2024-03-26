@@ -163,7 +163,6 @@ function applyColorCombination() {
     { main: "74, 0, 128", accent: "249, 125, 88" },
     { main: "255, 0, 255", accent: "0, 28, 92" },
     { main: "255, 0, 0", accent: "5, 1, 25" },
-    { main: "255, 217, 0", accent: "5, 1, 25" },
     { main: "255, 217, 0", accent: "29, 58, 42" },
     { main: "255, 217, 0", accent: "177, 11, 108" },
     { main: "255, 217, 0", accent: "37, 98, 136" },

@@ -142,12 +142,17 @@ button[data-tooltip]:not(:hover)::after {
   margin: 3px;
 }
 
-.home_row button:hover,
-.home_row a.button:hover {
+.home-row button:hover,
+.home-row a.button:hover {
   margin: 0px 7px;
 }
 
-.navbar {
+.flex {
+  display: flex;
+  gap: var(--gap, 0.5rem);
+}
+
+.primary .navbar {
   /* margin: 20px; */
   /* width: 100vw; */
   /* display: default; */
@@ -296,7 +301,7 @@ label {
   align-items: center;
 }
 
-.nav_header > a {
+.nav-header > a {
   font-family: "Clash Grotesk", "Rubik", sans-serif;
   font-size: var(--fs-primary-heading);
   font-weight: 800;
@@ -464,7 +469,7 @@ footer {
     font-size: var(--fs-300);
   }
 
-  .nav_header > a {
+  .nav-header > a {
     font-size: var(--fs-secondary-heading);
     font-weight: 700;
   }
@@ -478,7 +483,7 @@ footer {
 }
 
 @media (max-width: 900px) {
-  .nav_header > a {
+  .nav-header > a {
     font-size: var(--fs-600);
     font-weight: 600;
   }
@@ -491,7 +496,7 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .home_row,
+  .home-row,
   .colorButtons {
     display: none;
   }

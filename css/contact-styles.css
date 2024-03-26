@@ -1,6 +1,6 @@
-* {
-  /* font-family: "General Sans", "Mabry pro", "Rubik", sans-serif; */
-}
+/* * {
+  font-family: "General Sans", "Mabry pro", "Rubik", sans-serif;
+} */
 
 h2.header {
   font-family: "General Sans", "Mabry pro", "Rubik", sans-serif;
@@ -63,9 +63,9 @@ input {
   font-weight: 500;
 }
 
-form > button {
-  /* width: 10rem; */
-}
+/* form > button {
+  width: 10rem;
+} */
 
 /* img {
   max-width: 100%;
