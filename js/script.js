@@ -18,7 +18,8 @@ window.addEventListener("scroll", () => {
 */
 
 let mainColor = sessionStorage.getItem("mainColor") || getRandomColor();
-let accentColor = sessionStorage.getItem("accentColor") || getRandomColor();
+let accentColor = sessionStorage.getItem("accentColor") || "0, 0, 0";
+// let accentColor = sessionStorage.getItem("accentColor") || getRandomColor();
 setColors(mainColor, accentColor);
 
 function setColors(main, accent) {

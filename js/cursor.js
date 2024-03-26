@@ -37,6 +37,9 @@ document.addEventListener("mousemove", function (e) {
 let hoverables = Array.from(document.querySelectorAll("a"));
 
 hoverables = hoverables.concat(Array.from(document.querySelectorAll("button")));
+hoverables = hoverables.concat(
+  Array.from(document.querySelectorAll(".button"))
+);
 
 hoverables.forEach((hoverable) => {
   hoverable.addEventListener("mouseover", () => {
@@ -81,7 +84,7 @@ images.forEach((image) => {
   });
   image.addEventListener("mouseout", () => {
     if (
-      localStorage.getItem("accentColor") === "0, 0, 0" &&
+      sessionStorage.getItem("accentColor") === "0, 0, 0" &&
       !innerCursor.classList.contains("invert")
     ) {
       innerCursor.classList.add("invert");
