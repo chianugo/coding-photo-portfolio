@@ -33,11 +33,6 @@
   --fs-button: var(--fs-300);
 }
 
-/* * {
-  font-family: "Roboto Mono", monospace;
-  font-size: var(--fs-body);
-} */
-
 * {
   font-family: "Mabry pro", "Rubik", sans-serif;
   cursor: none;
@@ -45,14 +40,7 @@
   /* margin: 0; */
   /* padding: 0; */
   /* margin: 10px; */
-  /* margin: 0; */
-  /* padding: 0; */
 }
-
-/* html,
-body {
-  height: 100%;
-} */
 
 body:not(.navbar) {
   /* display: flex;
@@ -92,7 +80,6 @@ button {
   font-family: "Roboto Mono", monospace;
   font-size: var(--fs-button);
   color: rgba(var(--accent-color), 1);
-  /* background-color: rgba(var(--main-color), 1); */
   background-color: rgba(var(--main-color), 1);
   border: 3px dotted rgba(var(--accent-color), 1);
   border-radius: 20px;
@@ -120,8 +107,6 @@ button[data-tooltip]::after {
   top: 100%;
   left: -50%;
   transform: translateX(-50%);
-  /* background-color: rgba(var(--accent-color), 1);
-  color: rgba(var(--main-color), 1); */
   background-color: rgba(var(--accent-color), 1);
   color: rgba(var(--main-color), 1);
   white-space: nowrap;
@@ -169,18 +154,14 @@ button[data-tooltip]:not(:hover)::after {
 }
 
 .navbar {
-  /* margin: 20px; */
-  /* width: 100vw; */
-  /* display: default; */
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 9;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 15px;
   margin: 0px -15px;
-  /* background-color: rgba(var(--accent-color), 1); */
 }
 
 .nav.active {
@@ -189,32 +170,12 @@ button[data-tooltip]:not(:hover)::after {
   border: 3px dotted rgba(var(--main-color), 1);
   border-radius: 20px;
   box-shadow: 3px 3px rgba(var(--accent-color), 1);
-  /* background-color: rgba(var(--accent-color), 1);
-  color: rgba(var(--main-color), 1);
-  border: 3px dotted rgba(var(--main-color), 1);
-  border-radius: 20px;
-  box-shadow: 3px 3px rgba(var(--accent-color), 1); */
 }
 
 .glass {
   border-bottom: 3px dotted rgba(var(--accent-color), 1);
-  /* border-top: 3px dotted rgba(var(--accent-color), 1); */
-  /* background: rgba(var(--accent-color), 1); */
   backdrop-filter: blur(9px);
-  /* position: relative;
-  position: sticky;
-  overflow: hidden; */
 }
-/* 
-.glass::before {
-  position: absolute;
-  top: -20px;
-  bottom: -20px;
-  left: -20px;
-  right: -20px;
-  background: rgba(rgba(var(--accent-color), 1), 0.4);
-  backdrop-filter: blur(20px);
-} */
 
 @keyframes float {
   from,
@@ -246,9 +207,6 @@ button[data-tooltip]:not(:hover)::after {
 
 .word {
   color: rgba(var(--accent-color), 1);
-  /* font-size: clamp(2rem, 6.5vw, 3.8rem); */
-  /* font-size: 4.25vw; */
-  /* font-size: 3.3vw; */
   font-size: clamp(3.3vw, 4.25vw, 4.25vw);
   font-family: "Mabry pro", "Rubik", sans-serif;
   margin: 0rem;
@@ -319,10 +277,7 @@ label {
 
 .container {
   position: relative;
-  /* display: grid;
-   place-items: center; */
   height: 100vh;
-  /* border: 1px solid red; */
 }
 
 footer {
@@ -512,7 +467,7 @@ footer {
     background-color: black;
     /* height: 100vh; */
     flex-direction: column;
-    padding: min(30vh, 10rem) 2em;
+    /* padding: min(30vh, 10rem) 2em; */
   }
 
   .secondary-navigation {
