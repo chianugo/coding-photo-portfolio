@@ -495,7 +495,7 @@ footer {
     z-index: 500;
 
     transform: translateX(100%);
-    transition: transform ease 1s;
+    transition: transform ease-out 550ms;
     /* background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(1rem); */
   }
@@ -512,12 +512,23 @@ footer {
     position: absolute;
     z-index: 9999;
     color: rgba(var(--accent-color), 1);
-    background: rgba(var(--main-color), 1);
+    /* background: rgba(var(--main-color), 1); */
     background-repeat: no-repeat;
     width: 2rem;
     aspect-ratio: 1;
     top: 2rem;
     right: 2rem;
     border: 0;
+  }
+
+  .mobile-nav-toggle[aria-expanded="false"]::before {
+    content: "\f0c9";
+    font-family: "FontAwesome";
+  }
+  .mobile-nav-toggle[aria-expanded="true"]::before {
+    background-color: transparent;
+    content: "\58";
+    font-family: "FontAwesome";
+    /* background-image: ; */
   }
 }
