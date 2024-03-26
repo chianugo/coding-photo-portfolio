@@ -42,6 +42,8 @@
   font-family: "Mabry pro", "Rubik", sans-serif;
   cursor: none;
   box-sizing: border-box;
+  /* margin: 0; */
+  /* padding: 0; */
   /* margin: 10px; */
   /* margin: 0; */
   /* padding: 0; */
@@ -52,15 +54,22 @@ body {
   height: 100%;
 } */
 
-body {
+body:not(.navbar) {
   /* display: flex;
   flex-direction: column; */
+  /* padding: 0px 15px; */
+  margin: 0;
   padding: 0px 15px;
 }
-/* 
-body > * {
-  width: 100%;
-} */
+
+body {
+  height: 100%;
+  position: relative;
+  overflow: scroll;
+  place-items: center;
+  background-color: rgba(var(--main-color), 1);
+  transition: background-color 0.3s ease;
+}
 
 p,
 h1,
@@ -152,6 +161,13 @@ button[data-tooltip]:not(:hover)::after {
   gap: var(--gap, 0.5rem);
 }
 
+.primary-navigation,
+.secondary-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .navbar {
   /* margin: 20px; */
   /* width: 100vw; */
@@ -162,7 +178,8 @@ button[data-tooltip]:not(:hover)::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0px;
+  padding: 10px 15px;
+  margin: 0px -15px;
   /* background-color: rgba(var(--accent-color), 1); */
 }
 
@@ -218,18 +235,6 @@ button[data-tooltip]:not(:hover)::after {
   to {
     background-position: 0% center;
   }
-}
-
-body {
-  height: 100%;
-  /* width: 100vw; */
-  position: relative;
-  /* margin: 3.125rem; */
-  overflow: scroll;
-  /* display: grid; */
-  place-items: center;
-  background-color: rgba(var(--main-color), 1);
-  transition: background-color 0.3s ease;
 }
 
 .line {
@@ -498,6 +503,19 @@ footer {
 @media (max-width: 600px) {
   .home-row,
   .colorButtons {
+    /* display: none; */
+  }
+
+  .primary-navigation {
+    position: fixed;
+    inset: 0 0 0 30%;
+    background-color: black;
+    /* height: 100vh; */
+    flex-direction: column;
+    padding: min(30vh, 10rem) 2em;
+  }
+
+  .secondary-navigation {
     display: none;
   }
 }
