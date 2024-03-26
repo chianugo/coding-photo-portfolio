@@ -457,7 +457,7 @@ footer {
   }
 }
 
-@media (hover: none) and (pointer: coarse) {
+@media (hover: none), (pointer: coarse) {
   body {
     cursor: auto;
   }
