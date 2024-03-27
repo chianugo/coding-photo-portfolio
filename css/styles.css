@@ -491,7 +491,7 @@ footer {
     inset: 0 0 0 30%;
     /* height: 100vh; */
     flex-direction: column;
-    padding: min(30vh, 10rem) 2em;
+    padding: min(20vh, 6rem) 2em;
     z-index: 500;
 
     transform: translateX(100%);
@@ -515,8 +515,8 @@ footer {
     /* background: rgba(var(--main-color), 1); */
     background-repeat: no-repeat;
     width: 2rem;
-    aspect-ratio: 1;
-    top: 2rem;
+    /* aspect-ratio: 1; */
+    top: 0.25rem;
     right: 2rem;
     border: 0;
   }
