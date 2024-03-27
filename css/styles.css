@@ -71,11 +71,6 @@ label {
   max-width: 60ch;
 }
 
-.line > p,
-.line > a {
-  padding: 0px 20px;
-}
-
 a.button,
 button {
   padding: 8px 16px;
@@ -185,37 +180,25 @@ button[data-tooltip]:not(:hover)::after {
   /* backdrop-filter: blur(9px); */
 }
 
-@keyframes float {
-  from,
-  to {
-    transform: translateY(-0%);
-  }
-
-  50% {
-    transform: translateY(-3%);
-  }
-}
-
-@keyframes background-pan {
-  from {
-    background-position: 1000% center;
-  }
-
-  to {
-    background-position: 0% center;
-  }
+.line > p,
+.line > a {
+  /* padding: 0px 20px; */
 }
 
 .line {
   display: flex;
+  flex: 1 1 1;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: min(2vh, 0.9em);
   font-weight: 600;
+  flex-direction: row;
+  height: auto;
+  width: 100%;
 }
 
 .word {
   color: rgba(var(--accent-color), 1);
-  font-size: clamp(3.3vw, 4.25vw, 4.25vw);
+  font-size: clamp(1rem, 4.25vw, 5vw);
   font-family: "Mabry pro", "Rubik", sans-serif;
   margin: 0rem;
   text-transform: uppercase;
@@ -239,8 +222,9 @@ label {
 }
 
 .home-container,
-.line > a {
-  margin: 10px;
+.line > a,
+.line > a > p {
+  /* margin: 10px; */
   display: block;
   align-items: center;
   justify-content: center;
@@ -263,11 +247,13 @@ label {
   flex-direction: column;
   justify-self: center;
   align-self: center;
+  max-width: 100%;
+  padding: 1em;
 }
 
 .home-container > .line {
   width: 100%;
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
 }
@@ -294,6 +280,27 @@ footer {
   color: rgba(var(--main-color), 1);
   background-color: rgba(var(--accent-color), 1);
   padding: 2em;
+}
+
+@keyframes float {
+  from,
+  to {
+    transform: translateY(-0%);
+  }
+
+  50% {
+    transform: translateY(-3%);
+  }
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 1000% center;
+  }
+
+  to {
+    background-position: 0% center;
+  }
 }
 
 #text:has(.fancy:hover) .word:not(.fancy:hover) {
@@ -480,6 +487,10 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .line {
+    font-weight: 800;
+  }
+
   .home-row,
   .colorButtons {
     /* display: none; */
