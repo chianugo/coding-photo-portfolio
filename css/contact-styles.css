@@ -27,7 +27,8 @@ input {
 .form-group > * {
   max-width: max(15rem, 50vh);
   min-height: min(3rem, 50vh);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(var(--main-color), 1);
+  border-radius: 0.25rem;
   width: 100%;
 }
 

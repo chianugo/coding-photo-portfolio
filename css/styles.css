@@ -524,7 +524,7 @@ footer {
   .mobile-nav-toggle {
     display: block;
     position: absolute;
-    z-index: 9999;
+    z-index: 999;
     color: rgba(var(--accent-color), 1);
     /* background: rgba(var(--main-color), 1); */
     background-repeat: no-repeat;
