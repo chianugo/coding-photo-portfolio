@@ -207,7 +207,8 @@ colorCombinationButton.addEventListener("click", applyColorCombination);
 
 document.addEventListener("keydown", function (e) {
   let keyPressed = e.key;
-  if (e.target.tagName === "INPUT") {
+  // console.log(e);
+  if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") {
     return;
   }
   if (keyPressed === "x") {
