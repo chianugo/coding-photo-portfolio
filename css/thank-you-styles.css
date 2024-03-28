@@ -1,3 +1,7 @@
+:root {
+  --typewriter-speed: 6s;
+}
+
 * {
   font-family: "Roboto Mono", "Source Code Pro", monospace;
 }
@@ -12,8 +16,9 @@ body {
 }
 
 h1 {
-  font-size: clamp(1rem, 3vw + 4rem, 8rem);
+  font-size: clamp(1rem, 2vw + 1rem, 8rem);
   position: relative;
+  width: max-content;
 }
 
 h1::before,
@@ -27,8 +32,16 @@ h1::after {
 }
 
 h1::before {
-  background: rebeccapurple;
-  animation: typewriter 5s steps(9) forwards;
+  background: rgba(var(--main-color), 1);
+  animation: typewriter var(--typewriter-speed) steps(10) 1s forwards;
+}
+
+h1::after {
+  width: 0.125em;
+  opacity: 1;
+  background: rgba(var(--accent-color), 1);
+  animation: typewriter var(--typewriter-speed) steps(10) 1s forwards,
+    blink 1.3s linear infinite;
 }
 
 @keyframes typewriter {
@@ -37,6 +50,18 @@ h1::before {
   }
 }
 
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .subtitle {
-  font-size: 2rem;
+  font-size: clamp(0.75rem, 1.5vw + 0.5rem, 8rem);
 }
