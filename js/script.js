@@ -207,6 +207,9 @@ colorCombinationButton.addEventListener("click", applyColorCombination);
 
 document.addEventListener("keydown", function (e) {
   let keyPressed = e.key;
+  if (e.target.tagName === "INPUT") {
+    return;
+  }
   if (keyPressed === "x") {
     // console.log("x pressed");
     toggleInvert();
