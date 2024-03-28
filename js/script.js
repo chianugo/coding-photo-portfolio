@@ -207,7 +207,6 @@ colorCombinationButton.addEventListener("click", applyColorCombination);
 
 document.addEventListener("keydown", function (e) {
   let keyPressed = e.key;
-  // console.log(e);
   if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") {
     return;
   }
@@ -217,5 +216,11 @@ document.addEventListener("keydown", function (e) {
   }
   if (keyPressed === "a") {
     applyColorCombination();
+  }
+  if (keyPressed === "m") {
+    toggleMonochrome();
+  }
+  if (keyPressed === "f") {
+    applyRandomColor();
   }
 });
