@@ -18,7 +18,7 @@ h2 {
 }
 
 p {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Mono", "Source Code Pro", monospace;
   font-size: min(10vw + 0.5rem, var(--fs-body));
   text-wrap: balance;
 }

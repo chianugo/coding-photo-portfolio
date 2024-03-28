@@ -4,10 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/cursor.css" />
+    <link rel="stylesheet" href="/css/thank-you-styles.css" />
     <title>Form Submitted!</title>
   </head>
   <body>
+    <nav class="navbar glass" style="display: none">
+      <div class="colorButtons">
+        <button
+          class="button"
+          id="colorButton"
+          onclick="applyRandomColor()"
+          title="Change Foreground Color"
+        >
+          <i class="fa-solid fa-clone"></i>
+        </button>
+        <button
+          class="button"
+          id="blackButton"
+          onclick="toggleMonochrome()"
+          title="Toggle Dark Mode"
+        >
+          <i class="fa-regular fa-moon"></i>
+        </button>
+        <button
+          class="button"
+          id="colorCombinationButton"
+          onclick="applyColorCombination()"
+          title="Randomize Colors"
+        >
+          <i class="fa-solid fa-shuffle"></i>
+        </button>
+        <button
+          class="button"
+          id="invertButton"
+          onclick="toggleInvert()"
+          title="Invert Colors"
+        >
+          <i class="fa-solid fa-rotate"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="inner-cursor"></div>
     <h1>Thank you</h1>
+    <p class="subtitle">Your Message Has Been Sent</p>
     <script src="/js/script.js"></script>
+    <script src="/js/cursor.js"></script>
   </body>
 </html>
