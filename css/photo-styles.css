@@ -173,6 +173,11 @@ body {
 
 .sidebar.grid {
   position: fixed;
+  height: 100vh;
+}
+
+.sidebar.grid > * {
+  justify-content: space-between;
 }
 
 @keyframes fade {
