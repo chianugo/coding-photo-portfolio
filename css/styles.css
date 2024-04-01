@@ -216,7 +216,7 @@ a {
 .grid.text span,
 label {
   font-family: "Roboto Mono", "Source Code Pro", monospace;
-  font-size: var(--fs-body);
+  /* font-size: var(--fs-body); */
 }
 
 .grid.text {

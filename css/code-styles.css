@@ -35,6 +35,14 @@ a.no-link::after {
   content: "";
 }
 
+h3 {
+  /* font-size: 3em; */
+}
+
+.text {
+  font-size: min(10vw + 0.5rem, var(--fs-body));
+}
+
 .grid {
   display: grid;
   grid-template-columns: 2fr 3fr 7fr 3fr;
