@@ -36,7 +36,7 @@ a.no-link::after {
 }
 
 h3 {
-  /* font-size: 3em; */
+  font-weight: 900;
 }
 
 .text {
