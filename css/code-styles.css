@@ -10,6 +10,15 @@
   font-style: normal;
 }
 
+* {
+  font-family: "Roboto Mono", "Source Code Pro", monospace;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 2fr 3fr 7fr 3fr;
