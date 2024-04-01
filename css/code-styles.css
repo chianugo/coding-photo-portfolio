@@ -17,13 +17,13 @@
 ul > li {
   list-style: decimal;
 }
-a,
-a:visited {
+ul a,
+ul a:visited {
   text-decoration: underline;
   color: rgba(var(--accent-color), 1);
 }
 
-a::after {
+ul a::after {
   content: "↗";
 }
 
