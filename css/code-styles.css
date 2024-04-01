@@ -14,9 +14,17 @@
   font-family: "Roboto Mono", "Source Code Pro", monospace;
 }
 
+ul > li {
+  list-style: decimal;
+}
 a,
 a:visited {
-  text-decoration: none;
+  text-decoration: underline;
+  color: rgba(var(--accent-color), 1);
+}
+
+a::after {
+  content: "↗";
 }
 
 .grid {
