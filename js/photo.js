@@ -205,3 +205,13 @@ polaroidButton.addEventListener("click", () => {
 otherButton.addEventListener("click", () => {
   filterSelection("other");
 });
+
+window.addEventListener("load", checkViewPortWidth);
+
+function checkViewPortWidth() {
+  if (window.innerWidth <= 600) {
+    gridify();
+  }
+}
+
+window.addEventListener("resize", checkViewPortWidth);
