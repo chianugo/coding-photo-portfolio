@@ -1,14 +1,14 @@
 # Portfolio Website
 
-Welcome to my portfolio website! This site showcases both my coding and photography portfolios. Here's a brief overview of what you'll find:
+Welcome to my portfolio website! This is the easiest way to view both my coding and photography portfolios. Here's a brief overview of what you'll find:
 
 ## Coding Portfolio
 
-In the coding portfolio section, you'll find a selection of projects I've worked on, both indepently and in teams. From web development to mobile development to data analysis. Each project comes with a brief description, links to the live demo or repository where permissible, as well as any other relevant information, such as programming languages used and size of current user base.
+In this section, you'll find a selection of projects I've worked on, both indepently and in teams. From web development to mobile development to data analysis. Each project comes with a brief description, links to the live demo or repository where permissible, as well as any other relevant information, such as programming languages used and size of current user base.
 
 ## Photography Portfolio
 
-In the photography portfolio section, you'll discover my passion for capturing moments through the lens. From landscapes to portraits, my photography portfolio features a selection of my best work. Each photo is accompanied by a description, providing insight into the story behind the image and the techniques used.
+In this section, you'll discover my passion for capturing candid portraits of friends and family, and my street photos taken on the move. A personally curated selection of my favorite photos is featured. Each photo contains metadata - name, date, location.
 
 ## About Me
 
@@ -26,7 +26,7 @@ Interested in collaborating on a project or hiring me for freelance work? Feel f
 
 ## Deployment
 
-The website is deployed using [Github Pages](https://www.netlify.com/) for the front-end and [Github](https://www.heroku.com/) for the Content Delivery Network. Continuous integration and deployment pipelines ensure seamless updates and maintenance.
+The website is deployed using [Github Pages](https://pages.github.com/) for the front-end and [Github](https://gaac.vercel.app/) for the Content Delivery Network. Github's automated build and deployment pipelines ensure seamless updates and maintenance.
 
 ## How to Run Locally
 
@@ -36,3 +36,7 @@ To run the website locally, follow these steps:
 2. Navigate to the project directory.
 3. Start the development server.
 4. Access the website in your web browser at localhost:3000.
+
+## How to View Live
+
+Visit [Chianugo's Portfolio](https://chianugo.com) in your web browser of choice
