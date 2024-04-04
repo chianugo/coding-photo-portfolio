@@ -19,6 +19,7 @@ ul > li {
 }
 ul.sub > li {
   list-style: circle;
+  margin-bottom: 1em;
 }
 ul a,
 ul a:visited {
