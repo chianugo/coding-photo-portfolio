@@ -17,6 +17,9 @@
 ul > li {
   list-style: decimal;
 }
+ul.sub > li {
+  list-style: circle;
+}
 ul a,
 ul a:visited {
   text-decoration: underline;
