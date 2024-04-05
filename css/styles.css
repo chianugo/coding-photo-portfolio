@@ -525,7 +525,8 @@ footer {
 
     transform: translateX(100%);
     transition: transform ease-out 550ms;
-    background: rgba(255, 255, 255, 0.1);
+    /* background: rgba(255, 255, 255, 0.1); */
+    -webkit-backdrop-filter: blur(1rem);
     backdrop-filter: blur(1rem);
   }
 
