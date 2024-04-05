@@ -14,20 +14,20 @@
   font-family: "Roboto Mono", "Source Code Pro", monospace;
 }
 
-ul > li {
+.project > li {
   list-style: decimal;
 }
 ul.sub > li {
   list-style: circle;
   margin-bottom: 1em;
 }
-ul a,
-ul a:visited {
+.project a,
+.project a:visited {
   text-decoration: underline;
   color: rgba(var(--accent-color), 1);
 }
 
-ul a::after {
+.project a::after {
   /* content: "↗"; */
   content: " \2197";
   font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",
