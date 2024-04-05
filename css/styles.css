@@ -130,7 +130,7 @@ button[data-tooltip]:not(:hover)::after {
   transition-duration: 150ms;
 }
 .colorButtons > * {
-  margin: 3px;
+  /* margin: 3px; */
 }
 
 .home-row button:hover,
@@ -148,9 +148,9 @@ button[data-tooltip]:not(:hover)::after {
   list-style: none;
   padding: 0;
   margin: 0;
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(1rem);
-  backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem); */
 }
 
 .mobile-nav-toggle {
@@ -466,11 +466,11 @@ footer {
 }
 
 @supports (backdrop-filter: blur(1rem)) {
-  .primary-navigation {
+  /* .primary-navigation {
     background: rgba(255, 255, 255, 0.1);
     -webkit-backdrop-filter: blur(1rem);
     backdrop-filter: blur(1rem);
-  }
+  } */
 }
 
 @media (hover: none), (pointer: coarse) {
