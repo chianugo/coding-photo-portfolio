@@ -508,6 +508,12 @@ footer {
     /* display: none; */
   }
 
+  .glass {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background-color: rgba(var(--main-color), 1);
+  }
+
   .primary-navigation {
     --gap: 2em;
     position: fixed;
