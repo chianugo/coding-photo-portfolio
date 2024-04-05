@@ -40,49 +40,66 @@
   </head>
   <body>
     <div class="inner-cursor"></div>
+    <button
+      class="mobile-nav-toggle"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+    ></button>
     <nav class="navbar glass">
       <div class="nav-header"><a href="/index.html">CHIANUGO</a></div>
-      <div class="home-row">
-        <a class="nav button" href="photo.html">Photo</a>
-        <a class="nav button" href="code.html">Code</a>
-        <a class="nav button active" href="about.html">About</a>
-        <a class="nav button" href="contact.html">Contact</a>
-      </div>
-      <div class="colorButtons">
-        <button
-          id="colorButton"
-          class="button"
-          onclick=""
-          data-tooltip="Change Foreground Color"
-        >
-          <i class="fa-solid fa-clone"></i>
-        </button>
-        <button
-          id="blackButton"
-          class="button"
-          onclick=""
-          title=""
-          data-tooltip="Toggle Dark Mode"
-        >
-          <i class="fa-regular fa-moon"></i>
-        </button>
-        <button
-          id="colorCombinationButton"
-          class="button"
-          onclick=""
-          data-tooltip="Randomize Colors"
-        >
-          <i class="fa-solid fa-shuffle"></i>
-        </button>
-        <button
-          id="invertButton"
-          class="button"
-          onclick=""
-          data-tooltip="Invert Colors"
-        >
-          <i class="fa-solid fa-rotate"></i>
-        </button>
-      </div>
+      <ul
+        class="home-row primary-navigation flex"
+        id="primary-navigation"
+        data-visible="false"
+      >
+        <li><a class="nav button" href="photo.html">Photo</a></li>
+        <li><a class="nav button" href="code.html">Code</a></li>
+        <li><a class="nav button active" href="about.html">About</a></li>
+        <li><a class="nav button" href="contact.html">Contact</a></li>
+        <div class="dropdown"></div>
+      </ul>
+      <ul class="colorButtons secondary-navigation flex">
+        <li>
+          <button
+            id="colorButton"
+            class="button"
+            onclick=""
+            data-tooltip="Change Foreground Color"
+          >
+            <i class="fa-solid fa-clone"></i>
+          </button>
+        </li>
+        <li>
+          <button
+            id="blackButton"
+            class="button"
+            onclick=""
+            data-tooltip="Toggle Dark Mode"
+          >
+            <i class="fa-regular fa-moon"></i>
+          </button>
+        </li>
+        <li>
+          <button
+            id="colorCombinationButton"
+            class="button"
+            onclick=""
+            data-tooltip="Randomize Colors"
+          >
+            <i class="fa-solid fa-shuffle"></i>
+          </button>
+        </li>
+        <li>
+          <button
+            id="invertButton"
+            class="button"
+            onclick=""
+            data-tooltip="Invert Colors"
+          >
+            <i class="fa-solid fa-rotate"></i>
+          </button>
+        </li>
+      </ul>
     </nav>
     <h2 class="header extra-large">
       Full-Stack Engineer, Photographer based in Philadelphia, PA / Lagos, NG.
@@ -124,6 +141,7 @@
     </div>
     <!-- <footer id="footer">Chianugo Ononuju 2023</footer> -->
     <script src="/js/cursor.js"></script>
+    <script src="/js/nav.js"></script>
     <script src="/js/script.js"></script>
   </body>
 </html>
