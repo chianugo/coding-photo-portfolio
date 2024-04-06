@@ -554,11 +554,13 @@ footer {
   .mobile-nav-toggle[aria-expanded="false"]::before {
     content: "\f0c9";
     font-family: "FontAwesome";
+    font-size: 1.5rem;
   }
   .mobile-nav-toggle[aria-expanded="true"]::before {
     background-color: transparent;
     content: "\58";
     font-family: "FontAwesome";
+    font-size: 1.5rem;
     /* background-image: ; */
   }
 }
