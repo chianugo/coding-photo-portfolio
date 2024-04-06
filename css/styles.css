@@ -544,7 +544,7 @@ footer {
     color: rgba(var(--accent-color), 1);
     /* background: rgba(var(--main-color), 1); */
     background-repeat: no-repeat;
-    width: 2.5rem;
+    width: 2rem;
     /* aspect-ratio: 1; */
     top: 0.25rem;
     right: 2rem;
