@@ -520,7 +520,7 @@ footer {
     inset: 0 0 0 30%;
     /* height: 100vh; */
     flex-direction: column;
-    padding: min(20vh, 6rem) 2em;
+    padding: min(20vh, 3.5rem) 2em;
     z-index: 500;
 
     transform: translateX(100%);
