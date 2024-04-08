@@ -21,6 +21,7 @@ let mainColor = sessionStorage.getItem("mainColor") || getRandomColor();
 let accentColor = sessionStorage.getItem("accentColor") || "0, 0, 0";
 // let accentColor = sessionStorage.getItem("accentColor") || getRandomColor();
 setColors(mainColor, accentColor);
+// window.addEventListener("load", applyColorCombination);
 
 function setColors(main, accent) {
   document.documentElement.style.setProperty("--main-color", main);
