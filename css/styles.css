@@ -267,9 +267,10 @@ label {
 }
 
 .nav-header > a {
-  font-family: "Clash Grotesk", "Rubik", sans-serif;
+  font-family: "Neco", serif, "Clash Grotesk", "Rubik", sans-serif;
+  text-transform: lowercase;
   font-size: var(--fs-primary-heading);
-  font-weight: 800;
+  font-weight: 900;
   color: rgba(var(--accent-color), 1);
 }
 
