@@ -13,7 +13,7 @@ body {
 h2 {
   font-size: 3rem;
   max-width: 18ch;
-  font-weight: 500 !important;
+  font-weight: 500;
   line-height: 1.1;
 }
 
@@ -46,4 +46,10 @@ img {
   justify-content: center;
   align-items: center;
   padding-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-weight: 300;
+  }
 }
