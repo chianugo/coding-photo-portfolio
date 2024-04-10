@@ -73,3 +73,7 @@ p {
   font-size: 20px;
   font-family: "Helvetica";
 }
+
+span.bold {
+  font-size: 1em;
+}
