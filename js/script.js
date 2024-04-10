@@ -123,13 +123,13 @@ function toggleMonochrome() {
     accentColor = "0, 0, 0";
     blackButton.children[0].classList.add("fa-moon");
     blackButton.children[0].classList.remove("fa-sun");
-    blackButton.setAttribute("data-tooltip", "Toggle Dark Mode");
+    blackButton.setAttribute("data-tooltip", "Toggle Dark Mode (M)");
   } else {
     mainColor = "0, 0, 0";
     accentColor = "255, 255, 255";
     blackButton.children[0].classList.remove("fa-moon");
     blackButton.children[0].classList.add("fa-sun");
-    blackButton.setAttribute("data-tooltip", "Toggle Light Mode");
+    blackButton.setAttribute("data-tooltip", "Toggle Light Mode (M)");
   }
   setColors(mainColor, accentColor);
 }
