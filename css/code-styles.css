@@ -37,8 +37,9 @@ a.no-link::after {
   content: "";
 }
 
-h3 {
+h3.text {
   font-weight: 900;
+  font-size: 2rem;
 }
 
 .text {
@@ -75,4 +76,9 @@ p {
 span.bold {
   font-size: 1em;
   font-weight: 700;
+}
+
+ul.text {
+  max-width: 80ch;
+  text-wrap: balance;
 }
