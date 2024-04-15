@@ -140,6 +140,13 @@ nav.glass button.button-three {
   border-radius: 1rem;
 }
 
+nav.glass button.button-one {
+}
+
+.hamburger {
+  fill: rgba(var(--accent-color), 1);
+}
+
 .flex {
   display: flex;
   gap: var(--gap, 0.5rem);
