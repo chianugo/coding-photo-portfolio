@@ -132,13 +132,12 @@ button[data-tooltip]:not(:hover)::after {
   margin: 0px 7px;
 }
 
-div.glass button.button-one {
-  /* background: transparent; */
-  font-size: 0.5em;
-}
-
-div.glass > button.button-one::before {
-  content: "uo";
+nav.glass button.button-one,
+nav.glass button.button-two,
+nav.glass button.button-three {
+  background: transparent;
+  border: 10px solid;
+  border-radius: 1rem;
 }
 
 .flex {
