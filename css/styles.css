@@ -135,8 +135,9 @@ button[data-tooltip]:not(:hover)::after {
 nav.glass button.button-one,
 nav.glass button.button-two,
 nav.glass button.button-three {
+  padding: 0;
   background: transparent;
-  border: 10px solid;
+  border: 1px solid;
   border-radius: 1rem;
 }
 
