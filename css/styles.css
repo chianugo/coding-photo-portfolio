@@ -534,6 +534,9 @@ footer {
   body.home {
     overflow-y: hidden;
   }
+  h2 {
+    font-weight: 300 !important;
+  }
   .line {
     font-weight: 700;
   }

@@ -102,4 +102,6 @@ button[type="submit"] {
 
 .form-wrapper a {
   text-decoration: underline;
+  font-size: 1.1em;
+  /* font-weight: 300; */
 }
