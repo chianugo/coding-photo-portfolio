@@ -147,6 +147,7 @@ nav.glass button.button-one {
 
 nav.glass button.button-one .burgerline {
   transition: y 0.2s ease-in 0.2s, rotate 0.2s ease-in, opacity 0ms 0.2s;
+  -webkit-transform-origin: center;
   transform-origin: center;
 }
 nav.glass button.button-one[aria-expanded="true"] .burgerline {
