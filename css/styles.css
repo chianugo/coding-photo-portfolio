@@ -141,7 +141,7 @@ button[data-tooltip]:not(:hover)::after {
 nav.glass button.button-one {
   padding: 0;
   background: transparent;
-  border: 1px solid;
+  /* border: 1px solid; */
   border-radius: 1rem;
 }
 
@@ -578,7 +578,7 @@ footer {
   }
 
   .mobile-nav-toggle {
-    /* all: initial; */
+    all: initial;
     display: block;
     position: absolute;
     z-index: 999;
