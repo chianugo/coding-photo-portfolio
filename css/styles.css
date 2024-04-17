@@ -577,7 +577,7 @@ footer {
   }
 
   .mobile-nav-toggle {
-    all: initial;
+    /* all: initial; */
     display: block;
     position: absolute;
     z-index: 999;
