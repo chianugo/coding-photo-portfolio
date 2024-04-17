@@ -169,6 +169,7 @@ nav.glass button.button-one[aria-expanded="true"] .top {
 
 .hamburger {
   fill: rgba(var(--accent-color), 1);
+  stroke: rgba(var(--accent-color), 1);
 }
 
 .flex {
