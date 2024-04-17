@@ -140,18 +140,18 @@ nav.glass button.button-one {
 }
 
 nav.glass button.button-one .burgerline {
-  transition: y 0.2s ease-in 0.2s, rotate 0.2s ease-in, opacity 0ms 0.2s;
+  transition: y 0.2s ease-in 0.2s, transform 0.2s ease-in, opacity 0ms 0.2s;
   -webkit-transform-origin: center;
   transform-origin: center;
 }
 nav.glass button.button-one[aria-expanded="true"] .burgerline {
-  transition: y 0.2s ease-in, rotate 0.2s ease-in 0.2s, opacity 0ms 0.2s;
+  transition: y 0.2s ease-in, transform 0.2s ease-in 0.2s, opacity 0ms 0.2s;
 }
 nav.glass button.button-one[aria-expanded="true"] :is(.top, .bottom) {
   y: 45;
 }
 nav.glass button.button-one[aria-expanded="true"] .top {
-  rotate: 45deg;
+  transform: rotate(45deg);
 }
 
 nav.glass button.button-one[aria-expanded="true"] .middle {
@@ -159,7 +159,7 @@ nav.glass button.button-one[aria-expanded="true"] .middle {
 }
 
 nav.glass button.button-one[aria-expanded="true"] .bottom {
-  rotate: -45deg;
+  transform: rotate(-45deg);
 }
 
 .hamburger {
@@ -577,7 +577,7 @@ footer {
   }
 
   .mobile-nav-toggle {
-    /* all: initial; */
+    all: initial;
     display: block;
     position: absolute;
     z-index: 999;
@@ -591,18 +591,6 @@ footer {
   .hamburger {
     width: 2.1rem;
     height: 2.1rem;
-  }
-
-  nav.glass button.button-one .burgerline {
-    transition: y 0.2s ease-in 0.2s, rotate 0.2s ease-in, opacity 0ms 0.2s;
-    -webkit-transform-origin: center;
-    transform-origin: center;
-  }
-  nav.glass button.button-one[aria-expanded="true"] .burgerline {
-    transition: y 0.2s ease-in, rotate 0.2s ease-in 0.2s, opacity 0ms 0.2s;
-  }
-  nav.glass button.button-one[aria-expanded="true"] :is(.top, .bottom) {
-    y: 45;
   }
 }
 
