@@ -50,6 +50,7 @@ body {
   overflow: scroll;
   place-items: center;
   background-color: rgba(var(--main-color), 1);
+  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 
   overflow-x: hidden;
@@ -75,6 +76,7 @@ button {
   border: 3px dotted rgba(var(--accent-color), 1);
   border-radius: 20px;
   cursor: none;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   box-shadow: 3px 3px 0px;
   position: relative;
@@ -106,6 +108,9 @@ button[data-tooltip]::after {
   padding: 0.35em 0.45em;
   border-radius: 15px;
   transform: scale(0);
+  -webkit-transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 220ms;
   transition-property: transform;
   transition-timing-function: ease-out;
   transition-duration: 220ms;
@@ -114,12 +119,16 @@ button[data-tooltip]::after {
 a.button[data-tooltip]:hover::after,
 button[data-tooltip]:hover::after {
   transform: scale(1);
+  -webkit-transition-delay: 2.5s;
+  -webkit-transition-duration: 220ms;
   transition-delay: 2.5s;
   transition-duration: 220ms;
 }
 
 a.button[data-tooltip]:not(:hover)::after,
 button[data-tooltip]:not(:hover)::after {
+  -webkit-transition-delay: 150ms;
+  -webkit-transition-duration: 150ms;
   transition-delay: 150ms;
   transition-duration: 150ms;
 }
@@ -140,10 +149,12 @@ nav.glass button.button-one {
 }
 
 nav.glass button.button-one .burgerline {
+  -webkit-transition: y 0.2s ease-in 0.2s, rotate 0.2s ease-in, opacity 0ms 0.2s;
   transition: y 0.2s ease-in 0.2s, rotate 0.2s ease-in, opacity 0ms 0.2s;
   transform-origin: center;
 }
 nav.glass button.button-one[aria-expanded="true"] .burgerline {
+  -webkit-transition: y 0.2s ease-in, rotate 0.2s ease-in 0.2s, opacity 0ms 0.2s;
   transition: y 0.2s ease-in, rotate 0.2s ease-in 0.2s, opacity 0ms 0.2s;
 }
 nav.glass button.button-one[aria-expanded="true"] :is(.top, .bottom) {
@@ -237,6 +248,7 @@ nav.glass button.button-one[aria-expanded="true"] .bottom {
   font-family: "Mabry pro", "Helvetica", sans-serif;
   margin: 0rem;
   text-transform: uppercase;
+  -webkit-transition: opacity 250ms ease;
   transition: opacity 250ms ease;
 }
 
@@ -348,10 +360,12 @@ footer {
 }
 
 .fancy > .outer {
+  -webkit-transition: transform 350ms ease;
   transition: transform 350ms ease;
 }
 
 .fancy:hover > .outer {
+  -webkit-transition-duration: 800ms;
   transition-duration: 800ms;
 }
 
@@ -558,6 +572,7 @@ footer {
     z-index: 500;
 
     transform: translateX(100%);
+    -webkit-transition: transform ease-out 550ms;
     transition: transform ease-out 550ms;
     /* background: rgba(255, 255, 255, 0.1); */
     -webkit-backdrop-filter: blur(1rem);
@@ -572,13 +587,14 @@ footer {
   }
 
   .mobile-nav-toggle {
+    /* all: initial; */
     display: block;
     position: absolute;
     z-index: 999;
     color: rgba(var(--accent-color), 1);
     /* background: rgba(var(--main-color), 1); */
     background-repeat: no-repeat;
-    width: 2rem;
+    /* width: 2rem; */
     /* aspect-ratio: 1; */
     top: 0.25rem;
     right: 2rem;
@@ -586,11 +602,11 @@ footer {
   }
 
   .hamburger {
-    width: 2rem;
-    height: 2rem;
+    width: 2.25rem;
+    height: 2.25rem;
   }
 
-  .mobile-nav-toggle[aria-expanded="false"]::before {
+  /* .mobile-nav-toggle[aria-expanded="false"]::before {
     content: "\f0c9";
     font-family: "FontAwesome";
     font-size: 1.5rem;
@@ -600,6 +616,5 @@ footer {
     content: "\58";
     font-family: "FontAwesome";
     font-size: 1.5rem;
-    /* background-image: ; */
-  }
+  } */
 }
