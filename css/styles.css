@@ -142,11 +142,26 @@ nav.glass button.button-three {
 }
 
 nav.glass button.button-one .burgerline {
-  transition: 0.5s;
+  transition: y 0.3s ease-in 0.3s, rotate 0.3s ease-in, opacity 0ms 0.3s;
   transform-origin: center;
+}
+nav.glass button.button-one:hover .burgerline {
+  transition: y 0.3s ease-in, rotate 0.3s ease-in 0.3s, opacity 0ms 0.3s;
 }
 nav.glass button.button-one:hover :is(.top, .bottom) {
   y: 45;
+}
+nav.glass button.button-one:hover .top {
+  rotate: 45deg;
+}
+
+nav.glass button.button-one:hover .middle {
+  /* rotate: 45deg; */
+  opacity: 0;
+}
+
+nav.glass button.button-one:hover .bottom {
+  rotate: -45deg;
 }
 
 nav.glass button.button-one[aria-expanded="true"] .top {
