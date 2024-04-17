@@ -27,12 +27,6 @@
   --fs-button: var(--fs-300);
 }
 
-@supports (transition: initial) {
-  * {
-    transition: all 0.3s ease;
-  }
-}
-
 * {
   font-family: "Mabry pro", "Helvetica", sans-serif;
   cursor: none;
@@ -594,5 +588,13 @@ footer {
   .hamburger {
     width: 2.1rem;
     height: 2.1rem;
+  }
+}
+
+@supports (transition: initial) {
+  @media (max-width: 600px) {
+    * {
+      transition: all 0.3s ease;
+    }
   }
 }
