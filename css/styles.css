@@ -141,7 +141,15 @@ nav.glass button.button-three {
   border-radius: 1rem;
 }
 
-nav.glass button.button-one {
+nav.glass button.button-one .burgerline {
+  transition: 0.5s;
+  transform-origin: center;
+}
+nav.glass button.button-one:hover :is(.top, .bottom) {
+  y: 45;
+}
+
+nav.glass button.button-one[aria-expanded="true"] .top {
 }
 
 .hamburger {
