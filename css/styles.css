@@ -137,14 +137,12 @@ nav.glass button.button-one {
   background: transparent;
   /* border: 1px solid; */
   border-radius: 1rem;
-  -webkit-transform-origin: center;
-  transform-origin: center;
 }
 
 nav.glass button.button-one .burgerline {
   transition: y 0.2s ease-in 0.2s, rotate 0.2s ease-in, opacity 0ms 0.2s;
-  /* -webkit-transform-origin: center;
-  transform-origin: center; */
+  -webkit-transform-origin: center;
+  transform-origin: center;
 }
 nav.glass button.button-one[aria-expanded="true"] .burgerline {
   transition: y 0.2s ease-in, rotate 0.2s ease-in 0.2s, opacity 0ms 0.2s;
@@ -153,6 +151,8 @@ nav.glass button.button-one[aria-expanded="true"] :is(.top, .bottom) {
   y: 45;
 }
 nav.glass button.button-one[aria-expanded="true"] .top {
+  -webkit-transform-origin: center;
+  transform-origin: center;
   rotate: 45deg;
 }
 
@@ -161,6 +161,8 @@ nav.glass button.button-one[aria-expanded="true"] .middle {
 }
 
 nav.glass button.button-one[aria-expanded="true"] .bottom {
+  -webkit-transform-origin: center;
+  transform-origin: center;
   rotate: -45deg;
 }
 
