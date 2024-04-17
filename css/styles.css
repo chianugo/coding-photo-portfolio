@@ -595,9 +595,6 @@ footer {
     width: 2rem;
     height: 2rem;
   }
-  .burgerline {
-    rx: 1;
-  }
 
   .mobile-nav-toggle[aria-expanded="false"]::before {
     content: "\f0c9";
