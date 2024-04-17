@@ -591,6 +591,14 @@ footer {
     border: 0;
   }
 
+  .hamburger {
+    width: 2rem;
+    height: 2rem;
+  }
+  .burgerline {
+    rx: 1;
+  }
+
   .mobile-nav-toggle[aria-expanded="false"]::before {
     content: "\f0c9";
     font-family: "FontAwesome";
