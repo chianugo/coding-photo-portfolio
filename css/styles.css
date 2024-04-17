@@ -164,9 +164,6 @@ nav.glass button.button-one:hover .bottom {
   rotate: -45deg;
 }
 
-nav.glass button.button-one[aria-expanded="true"] .top {
-}
-
 .hamburger {
   fill: rgba(var(--accent-color), 1);
   stroke: rgba(var(--accent-color), 1);
