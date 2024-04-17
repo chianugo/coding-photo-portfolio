@@ -543,9 +543,9 @@ footer {
     font-weight: 700;
   }
 
-  .home-row,
-  .colorButtons {
-    /* display: none; */
+  .dropdown {
+    display: unset;
+    display: inline-block;
   }
 
   .glass {
@@ -558,16 +558,17 @@ footer {
     --gap: 2em;
     position: fixed;
     inset: 0 0 0 30%;
-    /* height: 100vh; */
     flex-direction: column;
     padding: min(20vh, 3.5rem) 2em;
     z-index: 500;
-
     transform: translateX(100%);
     transition: transform ease-out 550ms;
-    /* background: rgba(255, 255, 255, 0.1); */
     -webkit-backdrop-filter: blur(1rem);
     backdrop-filter: blur(1rem);
+  }
+
+  a.nav.button {
+    font-size: 1em;
   }
 
   .primary-navigation[data-visible="true"] {
@@ -583,7 +584,6 @@ footer {
     position: absolute;
     z-index: 999;
     color: rgba(var(--accent-color), 1);
-    /* background: rgba(var(--main-color), 1); */
     background-repeat: no-repeat;
     /* top: 0.25rem; */
     right: 2rem;
@@ -594,16 +594,4 @@ footer {
     width: 2.1rem;
     height: 2.1rem;
   }
-
-  /* .mobile-nav-toggle[aria-expanded="false"]::before {
-    content: "\f0c9";
-    font-family: "FontAwesome";
-    font-size: 1.5rem;
-  }
-  .mobile-nav-toggle[aria-expanded="true"]::before {
-    background-color: transparent;
-    content: "\58";
-    font-family: "FontAwesome";
-    font-size: 1.5rem;
-  } */
 }
