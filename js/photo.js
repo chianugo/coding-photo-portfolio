@@ -206,6 +206,14 @@ otherButton.addEventListener("click", () => {
   filterSelection("other");
 });
 
+const filterSelect = document.getElementById("filterSelect");
+filterSelect.addEventListener("change", () => {
+  const selectedCategory = filterSelect.value;
+
+  // Filter images based on the selected category
+  filterSelection(selectedCategory);
+});
+
 window.addEventListener("load", checkViewPortWidth);
 
 function checkViewPortWidth() {
