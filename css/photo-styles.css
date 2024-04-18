@@ -265,6 +265,10 @@ img {
   animation-range: 0vh 30vh;
 }
 
+.custom-select {
+  display: none;
+}
+
 @keyframes fade-in {
   from {
     scale: 0.85;
@@ -344,6 +348,9 @@ img {
 }
 
 @media (max-width: 600px) {
+  .custom-select {
+    display: block;
+  }
   .column.grid {
     grid-template-columns: repeat(1, 1fr);
     margin-left: 0px;
