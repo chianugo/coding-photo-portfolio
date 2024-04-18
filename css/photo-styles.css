@@ -24,6 +24,7 @@ body {
 
 .sidebar {
   /* height: 100%; */
+  font-size: 1em;
   width: 210px;
   background-color: var(--main-color);
   transition: all 0.3s ease;
@@ -296,9 +297,7 @@ select {
 
 .column.grid .slide {
   text-decoration: none;
-
   display: block;
-
   position: relative;
 }
 
