@@ -269,6 +269,16 @@ img {
   display: none;
 }
 
+select {
+  font-size: 1rem;
+  padding: 1em 1.5em;
+  background-color: rgba(var(--main-color), 1);
+  color: rgba(var(--accent-color), 1);
+  /* float: left;
+  clear: left; */
+  font-weight: 500;
+}
+
 @keyframes fade-in {
   from {
     scale: 0.85;
@@ -351,7 +361,8 @@ img {
   .custom-select {
     display: block;
   }
-  .column.grid {
+  .column.grid,
+  select {
     grid-template-columns: repeat(1, 1fr);
     margin-left: 0px;
   }
