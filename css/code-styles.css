@@ -17,6 +17,10 @@
 }
 ul.sub > li {
   list-style: circle;
+  margin-top: 1em;
+}
+ul.sub > li:last-child {
+  /* list-style: circle */
   margin-bottom: 1em;
 }
 .project a,
