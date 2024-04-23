@@ -33,11 +33,9 @@ document.addEventListener("keydown", function (e) {
   var keyPressed = e.key;
   if (keyPressed === "ArrowLeft") {
     //Left Key Press
-    // console.log("left");
     plusSlides(-1);
   } else if (keyPressed === "ArrowRight") {
     // Right Key Press
-    // console.log("right");
     plusSlides(1);
   }
 });
@@ -83,26 +81,18 @@ function showSlides() {
 }
 
 function filterSelection(c) {
-  // slides = document.getElementsByClassName("slide");
-  // if (c == "all") c = "";
-  // hide elemetns that are not active
-  // slides[slideIndex].classList.add("hidden");
-
   for (let i = 0; i < slides.length; i++) {
     if (!slides[i].classList.contains(c)) {
       slides[i].classList.add("hidden");
       slides[i].style.display = "none";
     }
-    // AddClass(slides[i], "hidden");
   }
   slides = document.getElementsByClassName(c);
   slideIndex = 0;
 
   for (let i = 0; i < slides.length; i++) {
     if (slides[i].classList.contains(c)) {
-      // RemoveClass(slides[i], "hidden");
       slides[i].classList.remove("hidden");
-      // slides[i].style.display = "block";
     }
   }
   if (slides[slideIndex].classList.contains("hidden")) {
@@ -113,7 +103,6 @@ function filterSelection(c) {
 }
 
 // Add active class to the current (photo sidebar) button (underline it)
-// const btnContainer = document.getElementById("side");
 const btns = document.getElementsByClassName("side-btn");
 // Loop through all buttons and add click event listeners
 for (var i = 0; i < btns.length; i++) {
@@ -142,7 +131,6 @@ function gridify() {
 }
 
 function degridify() {
-  // const column = document.getElementsByClassName("column");
   const column = document.querySelector(".column");
   const cycleButtons = document.getElementsByClassName("stroke");
   const sidebar = document.querySelector(".sidebar");
@@ -156,7 +144,6 @@ function degridify() {
 }
 
 // Add active class to the current (grid) button (highlight it)
-// var header = document.getElementById("myHeader");
 const photobtns = document.getElementsByClassName("photobtn");
 for (var i = 0; i < photobtns.length; i++) {
   photobtns[i].addEventListener("click", function () {
@@ -168,6 +155,7 @@ for (var i = 0; i < photobtns.length; i++) {
   });
 }
 
+// Add event listeners to buttons for filtering image categories
 let allButton = document.getElementById("allButton");
 let feteButton = document.getElementById("feteButton");
 let portraitButton = document.getElementById("portraitButton");
