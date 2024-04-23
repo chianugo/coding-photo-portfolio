@@ -12,16 +12,3 @@ navToggle.addEventListener("click", () => {
     navToggle.setAttribute("aria-expanded", "false");
   }
 });
-
-// const button = document.querySelector(".button-one");
-
-// button.addEventListener("click", () => {
-//   const isOpened = button.getAttribute("aria-expanded");
-//   if (isOpened === "false") {
-//     button.setAttribute("aria-expanded", "true");
-//     console.log(`set to true`);
-//   } else {
-//     button.setAttribute("aria-expanded", "false");
-//     console.log(`set to false`);
-//   }
-// });
