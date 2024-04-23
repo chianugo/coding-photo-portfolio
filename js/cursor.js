@@ -4,9 +4,6 @@ let cursorHover = innerCursor.querySelector("span");
 let mouseX = sessionStorage.getItem("mouseX") || 0;
 let mouseY = sessionStorage.getItem("mouseY") || 0;
 
-// innerCursor.style.left = `${mouseX}px`;
-// innerCursor.style.top = `${mouseY}px`;
-
 let x = 0;
 let y = 0;
 const SPEED = 0.5;
