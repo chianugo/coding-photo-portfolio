@@ -123,9 +123,9 @@ button[data-tooltip]:not(:hover)::after {
   transition-delay: 150ms;
   transition-duration: 150ms;
 }
-.colorButtons > * {
-  /* margin: 3px; */
-}
+/* .colorButtons > * {
+  margin: 3px;
+} */
 
 .home-row button:hover,
 .home-row a.button:hover {
@@ -201,10 +201,10 @@ nav.glass button.button-one[aria-expanded="true"] .bottom {
   margin: 0px -15px;
 }
 
-.navbar > * {
-  /* position: sticky;
-  top: 0; */
-}
+/* .navbar > * {
+  position: sticky;
+  top: 0;
+} */
 
 .nav.active {
   background-color: rgba(var(--accent-color), 1);
@@ -220,10 +220,10 @@ nav.glass button.button-one[aria-expanded="true"] .bottom {
   backdrop-filter: blur(9px);
 }
 
-.line > p,
+/* .line > p,
 .line > a {
-  /* padding: 0px 20px; */
-}
+  padding: 0px 20px;
+} */
 
 .line {
   display: flex;
