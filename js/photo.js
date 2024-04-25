@@ -105,32 +105,37 @@ function filterSelection(c) {
 
 function handleProjectDescription(c) {
   projectName = document.getElementById("project-title");
+  projectDescription = document.getElementById("project-description");
   if (c == "slide") {
-    return;
+    projectDescription.textContent = "";
   }
   if (c == "fete") {
-    return;
+    projectDescription.textContent =
+      "Photos of family, friends and strangers taken at parties";
   }
   if (c == "portrait") {
-    return;
+    projectDescription.textContent = "Portraits of friends";
   }
   if (c == "walk") {
-    return;
+    projectDescription.textContent = "Photos taken out and about on the street";
   }
   if (c == "concert") {
-    return;
+    projectDescription.textContent = "Pro bono concert photos";
   }
   if (c == "small") {
-    return;
+    projectDescription.textContent =
+      "Photos spanning the small prison/college town of Lewisburg";
   }
   if (c == "you") {
-    return;
+    projectDescription.textContent =
+      "Self portratis and photos of myself shot by friends";
   }
   if (c == "polaroid") {
-    return;
+    projectDescription.textContent =
+      "Photos taken on polaroid 600 or i-type film";
   }
   if (c == "other") {
-    return;
+    projectDescription.textContent = "All other photos";
   }
 }
 
