@@ -104,8 +104,8 @@ function filterSelection(c) {
 }
 
 function handleProjectDescription(c) {
-  projectName = document.getElementById("project-title");
-  projectDescription = document.getElementById("project-description");
+  let projectName = document.getElementById("project-title");
+  let projectDescription = document.getElementById("project-description");
   if (c == "slide") {
     projectDescription.textContent = "";
   }
