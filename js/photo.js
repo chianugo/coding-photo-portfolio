@@ -106,12 +106,14 @@ function filterSelection(c) {
 function handleProjectDescription(c) {
   let projectName = document.getElementById("project-title");
   let projectDescription = document.getElementById("project-description");
+  let projectYears = document.getElementById("years");
   if (c == "slide") {
     projectDescription.textContent = "";
   }
   if (c == "fete") {
     projectDescription.textContent =
       "Photos of family, friends and strangers taken at parties";
+    projectYears.textContent = "2021-Present";
   }
   if (c == "portrait") {
     projectDescription.textContent = "Portraits of friends";
