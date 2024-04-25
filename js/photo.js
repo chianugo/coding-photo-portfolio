@@ -81,6 +81,7 @@ function showSlides() {
 }
 
 function filterSelection(c) {
+  handleProjectDescription(c);
   for (let i = 0; i < slides.length; i++) {
     if (!slides[i].classList.contains(c)) {
       slides[i].classList.add("hidden");
@@ -100,6 +101,37 @@ function filterSelection(c) {
   }
   console.log(slides.length);
   showSlides();
+}
+
+function handleProjectDescription(c) {
+  projectName = document.getElementById("project-title");
+  if (c == "slide") {
+    return;
+  }
+  if (c == "fete") {
+    return;
+  }
+  if (c == "portrait") {
+    return;
+  }
+  if (c == "walk") {
+    return;
+  }
+  if (c == "concert") {
+    return;
+  }
+  if (c == "small") {
+    return;
+  }
+  if (c == "you") {
+    return;
+  }
+  if (c == "polaroid") {
+    return;
+  }
+  if (c == "other") {
+    return;
+  }
 }
 
 // Add active class to the current (photo sidebar) button (underline it)
