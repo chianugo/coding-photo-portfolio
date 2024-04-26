@@ -317,7 +317,7 @@ select {
 
 .project-description-wrapper {
   display: flex;
-  margin-left: 210px;
+  /* margin-left: 210px; */
 }
 
 .project-title > h1 {
