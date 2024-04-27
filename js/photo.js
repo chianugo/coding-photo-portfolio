@@ -109,6 +109,7 @@ function handleProjectDescription(c) {
   let projectYears = document.getElementById("years");
   if (c == "slide") {
     projectDescription.textContent = "";
+    projectYears.textContent = "";
   }
   if (c == "fete") {
     projectDescription.textContent =
@@ -135,6 +136,7 @@ function handleProjectDescription(c) {
   if (c == "polaroid") {
     projectDescription.textContent =
       "Photos taken on polaroid 600 or i-type film";
+    projectYears.textContent = "2019-Present";
   }
   if (c == "other") {
     projectDescription.textContent = "All other photos";
