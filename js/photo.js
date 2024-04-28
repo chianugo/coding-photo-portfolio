@@ -252,3 +252,5 @@ function checkViewPortWidth() {
 }
 
 window.addEventListener("resize", checkViewPortWidth);
+
+window.addEventListener("load", gridify);
