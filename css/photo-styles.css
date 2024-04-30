@@ -400,4 +400,26 @@ select {
     display: flex;
     justify-content: space-between;
   }
+  .project-description-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0px 16px;
+  }
+
+  .grid.project-description-wrapper {
+    margin-left: 0px;
+  }
+
+  #project-title {
+    /* all: unset; */
+    font-family: "General Sans", "Mabry pro", "Helveitca", sans-serif;
+    /* margin: 0 !important; */
+    font-weight: 500;
+    /* font-size: clamp(5vw, 5em, 5.5rem); */
+    line-height: 0.7;
+    font-size: 7em;
+    max-width: 100%;
+  }
 }
