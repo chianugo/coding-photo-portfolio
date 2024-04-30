@@ -167,9 +167,11 @@ for (var i = 0; i < btns.length; i++) {
 
 function gridify() {
   // const column = document.getElementsByClassName("column");
+  const project = document.querySelector(".project-description-wrapper");
   column = document.querySelector(".column");
   const cycleButtons = document.getElementsByClassName("stroke");
   const sidebar = document.querySelector(".sidebar");
+  project.classList.add("grid");
   sidebar.classList.add("grid");
   column.classList.add("grid");
   console.log("gridify");
@@ -180,9 +182,11 @@ function gridify() {
 }
 
 function degridify() {
+  const project = document.querySelector(".project-description-wrapper");
   const column = document.querySelector(".column");
   const cycleButtons = document.getElementsByClassName("stroke");
   const sidebar = document.querySelector(".sidebar");
+  project.classList.remove("grid");
   sidebar.classList.remove("grid");
   column.classList.remove("grid");
   console.log("degridify");

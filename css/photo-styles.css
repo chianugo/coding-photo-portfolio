@@ -319,8 +319,11 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  margin-left: 210px;
   padding: 0px 16px;
+}
+
+.grid.project-description-wrapper {
+  margin-left: 210px;
 }
 
 #project-title {
