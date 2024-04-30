@@ -329,7 +329,8 @@ select {
   /* margin: 0 !important; */
   font-weight: 500;
   /* font-size: clamp(5vw, 5em, 5.5rem); */
-  font-size: 10em;
+  line-height: 0.7;
+  font-size: 9em;
 }
 
 /* .grid-buttons {

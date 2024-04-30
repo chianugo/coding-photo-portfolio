@@ -118,28 +118,35 @@ function handleProjectDescription(c) {
     projectYears.textContent = "2021-Present";
   }
   if (c == "portrait") {
+    projectName.textContent = "Portraits";
     projectDescription.textContent = "Portraits of friends";
   }
   if (c == "walk") {
+    projectName.textContent = "Photo Walks";
     projectDescription.textContent = "Photos taken out and about on the street";
   }
   if (c == "concert") {
+    projectName.textContent = "Concerts";
     projectDescription.textContent = "Pro bono concert photos";
   }
   if (c == "small") {
+    projectName.textContent = "Small Town";
     projectDescription.textContent =
       "Photos spanning the small prison/college town of Lewisburg";
   }
   if (c == "you") {
+    projectName.textContent = "You Take One";
     projectDescription.textContent =
       "Self portratis and photos of myself shot by friends";
   }
   if (c == "polaroid") {
+    projectName.textContent = "Polaroids";
     projectDescription.textContent =
       "Photos taken on polaroid 600 or i-type film";
     projectYears.textContent = "2019-Present";
   }
   if (c == "other") {
+    projectName.textContent = "All Others";
     projectDescription.textContent = "All other photos";
   }
 }
