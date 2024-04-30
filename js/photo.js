@@ -112,6 +112,7 @@ function handleProjectDescription(c) {
     projectYears.textContent = "";
   }
   if (c == "fete") {
+    projectName.textContent = "Fête";
     projectDescription.textContent =
       "Photos of family, friends and strangers taken at parties";
     projectYears.textContent = "2021-Present";
