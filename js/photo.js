@@ -104,12 +104,17 @@ function filterSelection(c) {
 }
 
 function handleProjectDescription(c) {
+  let section = document.getElementsByClassName("project-description-wrapper");
   let projectName = document.getElementById("project-title");
   let projectDescription = document.getElementById("project-description");
   let projectYears = document.getElementById("years");
   if (c == "slide") {
+    section[0].classList.add("hidden");
     projectDescription.textContent = "";
     projectYears.textContent = "";
+  }
+  if (c !== "slide") {
+    section[0].classList.remove("hidden");
   }
   if (c == "fete") {
     projectName.textContent = "Fête";

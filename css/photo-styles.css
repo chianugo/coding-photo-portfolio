@@ -214,7 +214,7 @@ button.grid-active {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .image-carousel {
