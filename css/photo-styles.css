@@ -336,6 +336,15 @@ select {
   font-size: 9em;
 }
 
+div.project-description-wrapper div.sub {
+  line-height: 0.8;
+  margin-bottom: 16px;
+}
+
+div.project-description-wrapper div.sub > * {
+  margin: 2px;
+}
+
 /* .grid-buttons {
   z-index: 10000;
 } */
