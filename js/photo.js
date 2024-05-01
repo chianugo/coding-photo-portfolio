@@ -125,24 +125,29 @@ function handleProjectDescription(c) {
   if (c == "portrait") {
     projectName.textContent = "Portraits";
     projectDescription.textContent = "Portraits of friends";
+    projectYears.textContent = "2020-Present";
   }
   if (c == "walk") {
     projectName.textContent = "Photo Walks";
     projectDescription.textContent = "Photos taken out and about on the street";
+    projectYears.textContent = "2021-Present";
   }
   if (c == "concert") {
     projectName.textContent = "Concerts";
     projectDescription.textContent = "Pro bono concert photos";
+    projectYears.textContent = "2021-Present";
   }
   if (c == "small") {
     projectName.textContent = "Small Town";
     projectDescription.textContent =
       "Photos spanning the small prison/college town of Lewisburg";
+    projectYears.textContent = "2021-2023";
   }
   if (c == "you") {
     projectName.textContent = "You Take One";
     projectDescription.textContent =
       "Self portratis and photos of myself shot by friends";
+    projectYears.textContent = "2020-Present";
   }
   if (c == "polaroid") {
     projectName.textContent = "Polaroids";
@@ -153,6 +158,7 @@ function handleProjectDescription(c) {
   if (c == "other") {
     projectName.textContent = "All Others";
     projectDescription.textContent = "All other photos";
+    projectYears.textContent = "-";
   }
 }
 
