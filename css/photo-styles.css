@@ -339,6 +339,7 @@ select {
 div.project-description-wrapper div.sub {
   line-height: 0.8;
   margin-bottom: 16px;
+  max-width: 50ch;
 }
 
 div.project-description-wrapper div.sub > * {
