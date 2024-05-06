@@ -432,4 +432,13 @@ div.project-description-wrapper div.sub > * {
     line-height: 0.7;
     max-width: 100%;
   }
+
+  div.sub span {
+    font-size: 1.25em;
+    font-weight: 400;
+  }
+
+  div.sub p.sub-text {
+    font-weight: 400;
+  }
 }
