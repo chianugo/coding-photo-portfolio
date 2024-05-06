@@ -84,3 +84,11 @@ ul.text {
   max-width: 80ch;
   text-wrap: balance;
 }
+
+@media (max-width: 600px) {
+  h3.colored-text {
+    font-weight: 500;
+    font-size: clamp(4.75vw, 4.75em, 5.5rem);
+    margin-bottom: 2rem;
+  }
+}

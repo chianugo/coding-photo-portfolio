@@ -427,12 +427,16 @@ div.project-description-wrapper div.sub > * {
     font-family: "General Sans", "Mabry pro", "Helveitca", sans-serif;
     /* margin: 0 !important; */
     font-weight: 500;
-    font-size: clamp(5vw, 5em, 5.5rem);
+    font-size: clamp(4.75vw, 4.75em, 5.5rem);
     margin-bottom: 2rem;
     line-height: 0.7;
     max-width: 100%;
   }
 
+  div.sub p:not(.sub-text) {
+    text-decoration: underline;
+    margin-bottom: 0.5em;
+  }
   div.sub span {
     font-size: 1.25em;
     font-weight: 400;

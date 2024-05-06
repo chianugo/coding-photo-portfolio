@@ -72,3 +72,11 @@ button[type="submit"] {
   font-size: 1.1em;
   /* font-weight: 300; */
 }
+
+@media (max-width: 600px) {
+  h2.extra-large {
+    font-size: clamp(4.75vw, 4.75em, 5.5rem);
+    font-weight: 400 !important;
+    margin-bottom: 2rem;
+  }
+}
