@@ -346,6 +346,19 @@ div.project-description-wrapper div.sub > * {
   margin: 2px;
 }
 
+div.sub p:not(.sub-text) {
+  text-decoration: underline;
+  margin-bottom: 0.5em;
+}
+div.sub span {
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+div.sub p.sub-text {
+  font-weight: 400;
+}
+
 /* .grid-buttons {
   z-index: 10000;
 } */
