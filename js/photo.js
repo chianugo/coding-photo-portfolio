@@ -155,6 +155,12 @@ function handleProjectDescription(c) {
       "Photos taken on polaroid 600 or i-type film";
     projectYears.textContent = "2019-Present";
   }
+  if (c == "job") {
+    projectName.textContent = "Lagos Jobs";
+    projectDescription.textContent =
+      "Portraits showcasing the resilience of Lagosians and the breadth of jobs available in the metropolis ";
+    projectYears.textContent = "2024-Present";
+  }
   if (c == "other") {
     projectName.textContent = "All Others";
     projectDescription.textContent = "All other photos";
@@ -228,6 +234,7 @@ let concertButton = document.getElementById("concertButton");
 let smallButton = document.getElementById("smallButton");
 let youButton = document.getElementById("youButton");
 let polaroidButton = document.getElementById("polaroidButton");
+let jobButton = document.getElementById("jobButton");
 let otherButton = document.getElementById("otherButton");
 
 allButton.addEventListener("click", () => {
@@ -253,6 +260,9 @@ youButton.addEventListener("click", () => {
 });
 polaroidButton.addEventListener("click", () => {
   filterSelection("polaroid");
+});
+jobButton.addEventListener("click", () => {
+  filterSelection("job");
 });
 otherButton.addEventListener("click", () => {
   filterSelection("other");
