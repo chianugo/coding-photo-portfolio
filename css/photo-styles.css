@@ -347,11 +347,14 @@ div.project-description-wrapper div.sub > * {
 }
 
 div.sub p:not(.sub-text) {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   margin-bottom: 0.5em;
 }
+div.sub p:not(.sub-text)::after {
+  content: ":";
+}
 div.sub span {
-  font-size: 1.25em;
+  font-size: 1.125em;
   font-weight: 500;
 }
 
