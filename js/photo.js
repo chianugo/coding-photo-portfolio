@@ -119,7 +119,7 @@ function handleProjectDescription(c) {
   if (c == "fete") {
     projectName.innerHTML = "Fête";
     projectDescription.innerHTML =
-      "/fɛt/ <br/> <br/> Portrait photos of family, friends and even strangers taken at house parties";
+      "/fɛt/ <br/>  Portrait photos of family, friends and even strangers taken at house parties";
     projectYears.innerHTML = "2021-Present";
   }
   if (c == "portrait") {
