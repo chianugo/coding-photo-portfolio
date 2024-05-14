@@ -110,61 +110,61 @@ function handleProjectDescription(c) {
   let projectYears = document.getElementById("years");
   if (c == "slide") {
     section[0].classList.add("hidden");
-    projectDescription.textContent = "";
-    projectYears.textContent = "";
+    projectDescription.innerHTML = "";
+    projectYears.innerHTML = "";
   }
   if (c !== "slide") {
     section[0].classList.remove("hidden");
   }
   if (c == "fete") {
-    projectName.textContent = "Fête";
-    projectDescription.textContent =
-      "Photos of family, friends and strangers taken at parties";
-    projectYears.textContent = "2021-Present";
+    projectName.innerHTML = "Fête";
+    projectDescription.innerHTML =
+      "/fɛt/ <br/> <br/> Portrait photos of family, friends and even strangers taken at house parties";
+    projectYears.innerHTML = "2021-Present";
   }
   if (c == "portrait") {
     projectName.textContent = "Portraits";
-    projectDescription.textContent = "Portraits of friends";
-    projectYears.textContent = "2020-Present";
+    projectDescription.innerHTML = "Portraits of friends";
+    projectYears.innerHTML = "2020-Present";
   }
   if (c == "walk") {
-    projectName.textContent = "Photo Walks";
-    projectDescription.textContent = "Photos taken out and about on the street";
-    projectYears.textContent = "2021-Present";
+    projectName.innerHTML = "Photo Walks";
+    projectDescription.innerHTML = "Photos taken out and about on the street";
+    projectYears.innerHTML = "2021-Present";
   }
   if (c == "concert") {
-    projectName.textContent = "Concerts";
-    projectDescription.textContent = "Pro bono concert photos";
-    projectYears.textContent = "2021-Present";
+    projectName.innerHTML = "Concerts";
+    projectDescription.innerHTML = "Pro bono concert photos";
+    projectYears.innerHTML = "2021-Present";
   }
   if (c == "small") {
-    projectName.textContent = "Small Town";
-    projectDescription.textContent =
+    projectName.innerHTML = "Small Town";
+    projectDescription.innerHTML =
       "Photos spanning the small prison/college town of Lewisburg";
-    projectYears.textContent = "2021-2023";
+    projectYears.innerHTML = "2021-2023";
   }
   if (c == "you") {
-    projectName.textContent = "You Take One";
-    projectDescription.textContent =
+    projectName.innerHTML = "You Take One";
+    projectDescription.innerHTML =
       "Self portratis and photos of myself shot by friends";
-    projectYears.textContent = "2020-Present";
+    projectYears.innerHTML = "2020-Present";
   }
   if (c == "polaroid") {
-    projectName.textContent = "Polaroids";
-    projectDescription.textContent =
+    projectName.innerHTML = "Polaroids";
+    projectDescription.innerHTML =
       "Photos taken on polaroid 600 or i-type film";
-    projectYears.textContent = "2019-Present";
+    projectYears.innerHTML = "2019-Present";
   }
   if (c == "job") {
-    projectName.textContent = "Lagos Jobs";
-    projectDescription.textContent =
+    projectName.innerHTML = "Lagos Jobs";
+    projectDescription.innerHTML =
       "Portraits showcasing the resilience of Lagosians and the breadth of jobs available in the metropolis ";
-    projectYears.textContent = "2024-Present";
+    projectYears.innerHTML = "2024-Present";
   }
   if (c == "other") {
-    projectName.textContent = "All Others";
-    projectDescription.textContent = "All other photos";
-    projectYears.textContent = "-";
+    projectName.innerHTML = "All Others";
+    projectDescription.innerHTML = "All other photos";
+    projectYears.innerHTML = "-";
   }
 }
 
