@@ -348,7 +348,7 @@ div.project-description-wrapper div.sub > * {
 
 div.sub p:not(.sub-text) {
   /* text-decoration: underline; */
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
 }
 div.sub p:not(.sub-text)::after {
   content: ":";
@@ -359,6 +359,8 @@ div.sub span {
 }
 
 div.sub p.sub-text {
+  /* line-height: unset; */
+  line-height: 1;
   font-weight: 400;
 }
 
