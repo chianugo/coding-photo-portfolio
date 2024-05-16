@@ -147,7 +147,7 @@ function handleProjectDescription(c) {
   if (c == "you") {
     projectName.innerHTML = "You Take One";
     projectDescription.innerHTML =
-      "Self portratis and photos of myself shot by friends";
+      '"You\'re always taking photos! Let me take one of you" - Arya Bedi, 2021 <br /> Portraits of Kiz';
     projectYears.innerHTML = "2020-Present";
   }
   if (c == "polaroid") {
