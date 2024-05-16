@@ -134,7 +134,8 @@ function handleProjectDescription(c) {
   }
   if (c == "concert") {
     projectName.innerHTML = "Concerts";
-    projectDescription.innerHTML = "Pro bono concert photos";
+    projectDescription.innerHTML =
+      "Music can be a very transformative experience, oftentimes enhanced when shared in person with friends. This is a collection of photos taken at or around concerts";
     projectYears.innerHTML = "2021-Present";
   }
   if (c == "small") {
