@@ -141,7 +141,7 @@ function handleProjectDescription(c) {
   if (c == "small") {
     projectName.innerHTML = "Small Town";
     projectDescription.innerHTML =
-      "Photos spanning the small prison/college town of Lewisburg";
+      "Photos documenting the small prison/college town of Lewisburg in all its beautiful mundaness";
     projectYears.innerHTML = "2021-2023";
   }
   if (c == "you") {
