@@ -347,7 +347,6 @@ div.project-description-wrapper div.sub > * {
 }
 
 div.sub p:not(.sub-text) {
-  /* text-decoration: underline; */
   margin-bottom: 0.25em;
 }
 div.sub p:not(.sub-text)::after {

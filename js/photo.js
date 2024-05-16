@@ -124,7 +124,8 @@ function handleProjectDescription(c) {
   }
   if (c == "portrait") {
     projectName.textContent = "Portraits";
-    projectDescription.innerHTML = "Portraits of friends";
+    projectDescription.innerHTML =
+      "Natural light, and flash portraits of friends and family. <br /> <br /> Studio portraits coming soon!";
     projectYears.innerHTML = "2020-Present";
   }
   if (c == "walk") {
