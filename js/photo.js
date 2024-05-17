@@ -1,7 +1,7 @@
 let slideIndex = 0;
 let slides = document.getElementsByClassName("slide");
 const TOTAL_SLIDE_LENGTH = slides.length;
-filterSelection("slide"); // Begin by showing all
+filterSelection("fete"); // Begin by showing fete
 plusSlides(0);
 
 // Next/previous controls
@@ -228,7 +228,7 @@ for (var i = 0; i < photobtns.length; i++) {
 }
 
 // Add event listeners to buttons for filtering image categories
-let allButton = document.getElementById("allButton");
+// let allButton = document.getElementById("allButton");
 let feteButton = document.getElementById("feteButton");
 let portraitButton = document.getElementById("portraitButton");
 let walkButton = document.getElementById("walkButton");
@@ -239,9 +239,9 @@ let polaroidButton = document.getElementById("polaroidButton");
 let jobButton = document.getElementById("jobButton");
 let otherButton = document.getElementById("otherButton");
 
-allButton.addEventListener("click", () => {
-  filterSelection("slide");
-});
+// allButton.addEventListener("click", () => {
+//   filterSelection("slide");
+// });
 feteButton.addEventListener("click", () => {
   filterSelection("fete");
 });
