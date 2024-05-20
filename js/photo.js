@@ -1,3 +1,4 @@
+const MOBILE_WIDTH_THRESHOLD = 600;
 let slideIndex = 0;
 let slides = document.getElementsByClassName("slide");
 const TOTAL_SLIDE_LENGTH = slides.length;
@@ -107,9 +108,13 @@ function filterSelection(c) {
 }
 
 function openPicture(index) {
-  degridify();
-  slideIndex = index;
-  showSlides();
+  if (window.innerWidth <= MOBILE_WIDTH_THRESHOLD) {
+    // do nothing
+  } else {
+    degridify();
+    slideIndex = index;
+    showSlides();
+  }
 }
 
 function handleProjectDescription(c) {
@@ -287,7 +292,7 @@ filterSelect.addEventListener("change", () => {
 window.addEventListener("load", checkViewPortWidth);
 
 function checkViewPortWidth() {
-  if (window.innerWidth <= 600) {
+  if (window.innerWidth <= MOBILE_WIDTH_THRESHOLD) {
     gridify();
   }
 }
