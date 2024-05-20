@@ -92,6 +92,9 @@ function filterSelection(c) {
   slideIndex = 0;
 
   for (let i = 0; i < slides.length; i++) {
+    slides[i].addEventListener("click", () => {
+      openPicture(i);
+    });
     if (slides[i].classList.contains(c)) {
       slides[i].classList.remove("hidden");
     }
@@ -99,7 +102,13 @@ function filterSelection(c) {
   if (slides[slideIndex].classList.contains("hidden")) {
     plusSlides(1);
   }
-  console.log(slides.length);
+  // console.log(slides.length);
+  showSlides();
+}
+
+function openPicture(index) {
+  degridify();
+  slideIndex = index;
   showSlides();
 }
 
@@ -185,7 +194,6 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 function gridify() {
-  // const column = document.getElementsByClassName("column");
   const project = document.querySelector(".project-description-wrapper");
   column = document.querySelector(".column");
   const cycleButtons = document.getElementsByClassName("stroke");
@@ -193,7 +201,6 @@ function gridify() {
   project.classList.add("grid");
   sidebar.classList.add("grid");
   column.classList.add("grid");
-  console.log("gridify");
   for (let i = 0; i < cycleButtons.length; i++) {
     cycleButtons[i].style.display = "none";
   }
@@ -208,7 +215,6 @@ function degridify() {
   project.classList.remove("grid");
   sidebar.classList.remove("grid");
   column.classList.remove("grid");
-  console.log("degridify");
   for (let i = 0; i < cycleButtons.length; i++) {
     cycleButtons[i].style.display = "inline-block";
   }
