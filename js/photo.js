@@ -103,7 +103,6 @@ function filterSelection(c) {
   if (slides[slideIndex].classList.contains("hidden")) {
     plusSlides(1);
   }
-  // console.log(slides.length);
   showSlides();
 }
 
@@ -289,14 +288,11 @@ filterSelect.addEventListener("change", () => {
   filterSelection(selectedCategory);
 });
 
-window.addEventListener("load", checkViewPortWidth);
-
 function checkViewPortWidth() {
   if (window.innerWidth <= MOBILE_WIDTH_THRESHOLD) {
     gridify();
   }
 }
 
-window.addEventListener("resize", checkViewPortWidth);
-
 window.addEventListener("load", gridify);
+window.addEventListener("resize", checkViewPortWidth);
