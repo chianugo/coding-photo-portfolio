@@ -5,7 +5,7 @@
 
 body {
   /* overflow-y: hidden; */
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .container {
@@ -94,7 +94,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
-  height: 90vh;
+  min-height: 90vh;
   flex-wrap: wrap;
   margin-top: 5px;
   padding: 6px 0px;
@@ -192,8 +192,10 @@ body {
 
 .stroke {
   color: rgba(var(--accent-color), 1);
-  text-shadow: -1px -1px 0 rgba(var(--main-color), 1),
-    1px -1px 0 rgba(var(--main-color), 1), -1px 1px 0 rgba(var(--main-color), 1),
+  text-shadow:
+    -1px -1px 0 rgba(var(--main-color), 1),
+    1px -1px 0 rgba(var(--main-color), 1),
+    -1px 1px 0 rgba(var(--main-color), 1),
     1px 1px 0 rgba(var(--main-color), 1);
 }
 
